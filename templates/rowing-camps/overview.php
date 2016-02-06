@@ -4,7 +4,7 @@
  **/
 ?>
 	<div class="tabs-panel is-active" id="campOverview">
-		
+		<h1><?php echo $campTitle;?> <em><?php the_field('camp_name');?> Overview</em></h1>
 		
 		<?php
 

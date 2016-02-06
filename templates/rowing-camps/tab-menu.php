@@ -7,7 +7,9 @@
 
 <?php 
 		$showSchedule = get_field('show_schedule'); 
-		$campTitle = get_field('camp_title')
+		$campTitle = get_field('camp_title');
+		$campName = get_field('camp_name');
+		$campLocation = get_field('camp_location');
 	?>
 
 	<ul class="tabs" data-tabs id="rowing-camp-tabs">
@@ -23,5 +25,3 @@
     </ul>
 
 	<div class="tabs-content" data-tabs-content="rowing-camp-tabs">
-
-	<h1><?php echo $campTitle;?></h1>

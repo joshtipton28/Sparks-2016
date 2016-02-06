@@ -16,7 +16,9 @@ get_header(); ?>
 			<?php include(locate_template('templates/rowing-camps/coaching-staff.php' )); ?>
 			<?php include(locate_template('templates/rowing-camps/details.php' )); ?>
 			<?php include(locate_template('templates/rowing-camps/registration.php' )); ?>
-			<?php include(locate_template('templates/rowing-camps/schedule.php' )); ?>
+			<?php 
+				if ($showSchedule == true)
+				include(locate_template('templates/rowing-camps/schedule.php' )); ?>
 
 <?php endwhile;?>
 
