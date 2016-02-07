@@ -25,7 +25,7 @@
 	        
 	        <?php if( !empty($coachPic) ): ?>
 
-				<img src="<?php echo $coachPic['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+				<img src="<?php echo $coachPic['url']; ?>" alt="<?php echo $coachPic['alt']; ?>" />
 
 			<?php endif; ?>
 
