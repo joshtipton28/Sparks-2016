@@ -28,6 +28,36 @@ function foundationpress_sidebar_widgets() {
 	  'before_title' => '<h6>',
 	  'after_title' => '</h6>',
 	));
+
+	register_sidebar(array(
+	  'id' => 'summer-menu',
+	  'name' => __( 'Summer Camps Menu', 'foundationpress' ),
+	  'description' => __( 'Drag widgets to this container', 'foundationpress' ),
+	  'before_widget' => '<div class="accordion-content" data-tab-content>',
+	  'after_widget' => '</div>',
+	  'before_title' => '<a class="accordion-title">',
+	  'after_title' => '</a>',
+	));
+
+	register_sidebar(array(
+	  'id' => 'winter-menu',
+	  'name' => __( 'Winter Camps Menu', 'foundationpress' ),
+	  'description' => __( 'Drag widgets to this container', 'foundationpress' ),
+	  'before_widget' => '<div class="accordion-content" data-tab-content>',
+	  'after_widget' => '</div>',
+	  'before_title' => '<a class="accordion-title">',
+	  'after_title' => '</a>',
+	));
+
+	register_sidebar(array(
+	  'id' => 'development-programs-menu',
+	  'name' => __( 'Development Programs Menu', 'foundationpress' ),
+	  'description' => __( 'Drag widgets to this container', 'foundationpress' ),
+	  'before_widget' => '<div class="accordion-content" data-tab-content>',
+	  'after_widget' => '</div>',
+	  'before_title' => '<a class="accordion-title">',
+	  'after_title' => '</a>',
+	));
 }
 
 add_action( 'widgets_init', 'foundationpress_sidebar_widgets' );

@@ -10,7 +10,7 @@
         <li class="tabs-title"><a href="#panel2">Coxswain Program</a></li>
         <li class="tabs-title"><a href="#panel3">International Applicants</a></li>
         <li class="tabs-title"><a href="#panel4">Gap Year Advising</a></li>
-        <li class="tabs-title"><a href="#panel5">Reports From The Front</a></li>
+        <li class="tabs-title"><a href="#reports-from-the-front">Reports From The Front</a></li>
         <li class="tabs-title"><a href="#panel6">Our Approach</a></li>
         <li class="tabs-title"><a href="#panel7">Counseling Testimonials</a></li>
         <li class="tabs-title"><a href="#panel8">Camp Testimonials</a></li>
