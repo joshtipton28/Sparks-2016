@@ -5109,7 +5109,7 @@ table.hover tr:nth-of-type(even):hover {
     display: block;
     padding: 0.75rem;
     line-height: 1;
-    font-size: 12px;
+    font-size: 14px;
     color: #fefefe; }
     .tabs-title > a:hover {
       background: rgba(0, 0, 0, 0.8); }
