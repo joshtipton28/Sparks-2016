@@ -1,25 +1,36 @@
-.site-header{
-		z-index: 1;
-	}
-	.page-wrap{
-		z-index: 1;
-		position: relative;
-	}
-	.full-bg{
-	  position: fixed; 
-	  top: -50%; 
-	  left: -50%; 
-	  width: 200%; 
-	  height: 200%;	
-	}
+.jumbotron{
+  margin:60px 0px 40px 8px;
 
-	.full-bg img{
-	  position: absolute; 
-	  top: 0; 
-	  left: 0; 
-	  right: 0; 
-	  bottom: 0; 
-	  margin: auto; 
-	  min-width: 50%;
-	  min-height: 50%;
+  h1{
+  	font-size:rem-calc(80);
+  	font-weight: 600;
+  	line-height: rem-calc(80);
+  	letter-spacing: rem-calc(-6);
+  	display: block;
+  	text-shadow:$tshadow;
+  	
+  	small{
+  		font-size:rem-calc(34);
+  		line-height: rem-calc(34);
+  		display: block;	
+  		font-weight: 300;
+  		color:$white;
+  		margin-top:10px;
+  		letter-spacing: rem-calc(-.8);
+  	}
+  }
+}
+
+
+.home-blurb{
+	background: $charc;
+	font-size:rem-calc(18);
+	font-weight: 300;
+	line-height: 27px;
+	padding: 15px 20px;
+	border-radius: 10px;
+
+	p{
+		margin-bottom:0;
 	}
+}

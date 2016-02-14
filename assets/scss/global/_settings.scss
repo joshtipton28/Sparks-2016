@@ -43,15 +43,9 @@
 
 // 1. Global
 // ---------
-$blue: #1770ca;
-$ogrey: rgba(0,0,0,0.1);
-$oblue: rgba(23,112,202,0.5);
-$oblack: rgba(0, 0, 0, 0.8);
-$charc: rgba(0,0,0,0.5);
-$ablue: #b2d6ff;
 
 $global-font-size: 100%;
-$global-width: rem-calc(1280);
+$global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $primary-color: $ablue;
 $secondary-color: #777;
@@ -65,7 +59,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $white;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: $sans;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -497,18 +491,26 @@ $show-header-for-stacked: false;
 // 31. Tabs
 // --------
 
-$tab-margin: 0;
+$tab-margin: 12px;
 $tab-background: $charc;
 $tab-background-active: $blue;
-$tab-border: none;
+$tab-border: 0;
 $tab-item-color: foreground($tab-background, $primary-color);
 $tab-item-background-hover: $oblack;
-$tab-item-padding: 1.25rem 1.5rem;
+$tab-item-padding: rem-calc(12);
 $tab-expand-max: 6;
 $tab-content-background: $oblack;
 $tab-content-border: none;
 $tab-content-color: foreground($tab-background, $primary-color);
 $tab-content-padding: 1rem;
+
+//Tab Styles
+  .tabs-title a{
+    font-size:rem-calc(14);
+  }
+  .tabs-content{
+    border-radius:5px;
+  }
 
 // 32. Thumbnail
 // -------------
@@ -546,7 +548,7 @@ $tooltip-radius: $global-radius;
 // 35. Top Bar
 // -----------
 
-$topbar-padding: 0;
-$topbar-background: #121212;
-$topbar-link-color: #ffffff;
+$topbar-padding: 25px 0;
+$topbar-background: transparent;
+$topbar-link-color: #white;
 $topbar-input-width: 200px;

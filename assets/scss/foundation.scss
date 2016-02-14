@@ -8,6 +8,7 @@
 */
 
 //  Settings
+@import "global/global-styles"; //Site Wide Styles
 @import "global/settings"; // Foundation settings file.
 
 // Foundation mixins & browser resets
@@ -81,5 +82,10 @@
 @import "components/links";
 
 // Templates
-@import "templates/rowing-camps";
 @import "templates/home-page";
+@import "templates/rowing-camps";
+@import "templates/journal-home";
+@import "templates/journal-single";
+@import "templates/about-us";
+@import "templates/contact-us";
+@import "templates/working-with";

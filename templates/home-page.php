@@ -11,11 +11,16 @@ get_header(); ?>
 		the_post_thumbnail('full', array('class' => 'full-bg-img'));
 		} ?>
 	</div>
-<div class="page-wrap">
-			<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-				<h1><?php the_field('page_heading'); ?></h1>
-				<?php the_content(); ?>
-
+	<div class="page-wrap">
+		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
+			<div class="row">
+				<div class="jumbotron">
+					<h1><?php the_field('page_heading'); ?></h1>
+				</div>
+				<div class="home-blurb large-3 columns end">
+					<?php the_content(); ?>
+				</div>
+			</div>
 	</div>			
 <?php endwhile;?>
 <?php do_action( 'foundationpress_after_content' ); ?>

@@ -1,3 +1,59 @@
+/* Tablet and desktop menu */
+.top-bar {
+
+  .menu a {
+    line-height: 20px;
+    color: $white;
+    background:$charc;
+    padding: 10px 15px 10px;
+    font-weight: bold;
+    font-size: rem-calc(14);
+    border-radius: 5px;
+    font-weight:300;
+    margin:0 2px;
+    text-shadow: $tshadow;
+
+    &:hover:not(.button) {
+      background-color: $oblue;
+    }
+  }
+
+  .menu li.active a{
+    background-color:$blue;
+
+    &:hover{
+      background-color:$oblue;
+    }
+  }
+
+  .dropdown.menu .submenu {
+    background-color: #121212;
+    color: #e6e6e6;
+    border: 0;
+  }
+
+  .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
+  .dropdown.menu .has-submenu.is-down-arrow>a::after { border: 0; }
+}
+
+//New Styles
+
+.header-container{
+  width:100%;
+  background:$charc;
+  display: block;
+  margin-bottom:20px;
+  z-index: 1;
+}
+.logo{
+  width:150px;
+  height:50px;
+  transition: all ease 0.5s;
+  &:hover{
+    opacity: 0.6;
+  }
+}
+
 /* Navigation breakpoints */
 
 .main-navigation {
@@ -18,42 +74,7 @@
 
 .title-bar-title {
   a {
-    font-size: 1rem;
+    font-size: rem-calc(16);
     color: #B9B9B9;
   }
-}
-
-/* Tablet and desktop menu */
-.top-bar {
-
-  .menu .home a {
-    font-size: 1rem;
-    color: #B9B9B9;
-  }
-
-  .menu a {
-    height: 45px;
-    line-height: 45px;
-    color: #e6e6e6;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
-
-    &:hover:not(.button) {
-      background-color: #2a2a2a;
-    }
-  }
-
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
-
-  .dropdown.menu .submenu {
-    background-color: #121212;
-    color: #e6e6e6;
-    border: 0;
-  }
-
-  .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
-  .dropdown.menu .has-submenu.is-down-arrow>a::after { border: 0; }
 }

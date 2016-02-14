@@ -20,6 +20,7 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-precomposed.png">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700|Days+One' rel='stylesheet' type='text/css'>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -32,30 +33,34 @@
 	<?php endif; ?>
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
-<div data-sticky-container>
-	<header id="masthead" class="site-header" role="banner" data-sticky>
-		<div class="title-bar" data-responsive-toggle="site-navigation">
-			<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
-			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+	<div data-sticky-container>
+		<div class="header-container sticky" data-sticky data-options="marginTop:0;">
+			<div class="row">
+				<header id="masthead" class="site-header" role="banner">
+					<div class="title-bar" data-responsive-toggle="site-navigation">
+						<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+						<div class="title-bar-title">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Test</a>
+						</div>
+					</div>
+
+					<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
+						<div class="top-bar-left">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<img class="logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sparks_logo.png" alt="Sparks Logo">
+							</a>
+						</div>
+						<div class="top-bar-right">
+							<?php foundationpress_top_bar_r(); ?>
+
+							<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
+								<?php get_template_part( 'parts/mobile-top-bar' ); ?>
+							<?php endif; ?>
+						</div>
+					</nav>
+				</header>
 			</div>
 		</div>
-
-		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-			<div class="top-bar-left">
-				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-				</ul>
-			</div>
-			<div class="top-bar-right">
-				<?php foundationpress_top_bar_r(); ?>
-
-				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
-					<?php get_template_part( 'parts/mobile-top-bar' ); ?>
-				<?php endif; ?>
-			</div>
-		</nav>
-	</header>
-</div>
+	</div>
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' ); ?>
