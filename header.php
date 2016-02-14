@@ -32,8 +32,8 @@
 	<?php endif; ?>
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
-
-	<header id="masthead" class="site-header" role="banner">
+<div data-sticky-container>
+	<header id="masthead" class="site-header" role="banner" data-sticky>
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
 			<div class="title-bar-title">
@@ -56,6 +56,6 @@
 			</div>
 		</nav>
 	</header>
-
+</div>
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' ); ?>
