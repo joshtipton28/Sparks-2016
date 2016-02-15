@@ -1,0 +1,77 @@
+/* Styles for Foundation Tabs used in:
+  - About Us
+  - Working With Us
+*/
+.tabs-wrap{
+  margin-top:20px;
+
+  h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:rem-calc(16);
+    line-height: rem-calc(18);
+    text-shadow: $tshadow;
+    margin:12px 0 6px 45px;
+  }
+}
+
+.tab-block{
+  h3{
+    font-size:rem-calc(21);
+    line-height: rem-calc(30);
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: rem-calc(-.8);
+  }
+  p{
+    line-height: rem-calc(24);
+    font-weight: 300;
+  }
+  img{
+    float: right;
+    margin:20px 0 20px 20px;
+    padding:6px;
+    background-color: $white;
+  }
+
+}
+
+//Tab Menu Styles
+li.tabs-title{
+  margin:0 auto;
+  margin-bottom:3px;
+  max-width:280px;
+  transition: all ease 0.3s;
+
+  &:hover{
+    max-width:300px;
+  }
+  a{
+    background:$charc;
+    color:$white;
+    font-weight: 300;
+    border-radius: 5px;
+  }
+}
+.tabs .is-active{
+  max-width: 300px;
+  a{
+    font-weight: bold;
+  }
+}
+.tabs-content{
+  margin-top:20px;
+  border-radius:10px;
+  border: 1px solid #222;
+  box-shadow: 10px 10px 20px 0px $charc;
+  max-height: 80vh;
+  overflow:auto;
+  padding-top:50px;
+
+  h1, h2{
+    font-size:rem-calc(38.5);
+    line-height: rem-calc(40);
+    text-shadow: $tshadow;
+    font-weight: bold;
+  }
+}

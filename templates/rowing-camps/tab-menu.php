@@ -12,7 +12,10 @@
 		$campLocation = get_field('camp_location');
 	?>
 
-    	<ul class="tabs" data-tabs id="rowing-camp-tabs">
+
+    	<div class="tabs-content" data-tabs-content="rowing-camp-tabs">
+        
+        <ul class="tabs" data-tabs id="rowing-camp-tabs">
             <li class="tabs-title is-active"><a href="#campOverview" aria-selected="true">Camp Overview</a></li>
             <li class="tabs-title"><a href="#campStaff">Coaching Staff</a></li>
             <li class="tabs-title"><a href="#campDetails">Details</a></li>
@@ -23,5 +26,3 @@
             '<li class="tabs-title"><a href="#campSchedule">Schedule</a></li>'
             ?>
         </ul>
-
-    	<div class="tabs-content" data-tabs-content="rowing-camp-tabs">

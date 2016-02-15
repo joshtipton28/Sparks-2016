@@ -4,7 +4,7 @@
  **/
 ?>
 <div class="row">
-    <div class="medium-3 columns">
+    <div class="tabs-wrap medium-4 columns">
       <h3><?php the_title();?></h3>
       <ul class="tabs vertical" data-tabs id="working-with-us">
         <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">College Counseling</a></li>
@@ -19,4 +19,4 @@
       </ul>
     </div>
 
-    <div class="tabs-content vertical medium-9 columns" data-tabs-content="working-with-us">
+    <div class="tabs-content vertical medium-8 columns" data-tabs-content="working-with-us">

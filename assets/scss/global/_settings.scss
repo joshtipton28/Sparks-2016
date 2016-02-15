@@ -56,7 +56,7 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
-$white: #fefefe;
+$white: #ffffff;
 $body-background: $white;
 $body-font-color: $white;
 $body-font-family: $sans;
@@ -186,8 +186,8 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $charc;
-$accordion-plusminus: true;
+$accordion-background: transparent;
+$accordion-plusminus: false;
 $accordion-item-color: foreground($accordion-background, $white);
 $accordion-item-background-hover: $oblack;
 $accordion-item-padding: 1.25rem 1rem;
@@ -491,8 +491,8 @@ $show-header-for-stacked: false;
 // 31. Tabs
 // --------
 
-$tab-margin: 12px;
-$tab-background: $charc;
+$tab-margin: 0 12px;
+$tab-background: transparent;
 $tab-background-active: $blue;
 $tab-border: 0;
 $tab-item-color: foreground($tab-background, $primary-color);
@@ -503,14 +503,6 @@ $tab-content-background: $oblack;
 $tab-content-border: none;
 $tab-content-color: foreground($tab-background, $primary-color);
 $tab-content-padding: 1rem;
-
-//Tab Styles
-  .tabs-title a{
-    font-size:rem-calc(14);
-  }
-  .tabs-content{
-    border-radius:5px;
-  }
 
 // 32. Thumbnail
 // -------------
