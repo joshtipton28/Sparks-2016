@@ -19,4 +19,5 @@
       </ul>
     </div>
 
-    <div class="tabs-content vertical medium-8 columns" data-tabs-content="working-with-us">
+    <div class="nano has-scrollbar tabs-content vertical medium-8 columns" data-tabs-content="working-with-us">
+        <div class="nano-content">

@@ -2075,6 +2075,49 @@ p.wp-caption-text {
   transition-duration: 500ms;
   transition-timing-function: linear; }
 
+/** initial setup **/
+.nano {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+  .nano .nano-content {
+    position: absolute;
+    top: 0;
+    right: 0 !important;
+    bottom: 0;
+    left: 0;
+    overflow: scroll;
+    overflow-x: hidden; }
+    .nano .nano-content:focus {
+      outline: thin dotted; }
+    .nano .nano-content::-webkit-scrollbar {
+      display: none; }
+  .nano > .nano-pane {
+    width: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: .2s;
+    border-radius: 5px;
+    visibility: hidden\9;
+    opacity: .01; }
+    .nano > .nano-pane > .nano-slider {
+      background: #444;
+      background: rgba(255, 255, 255, 0.5);
+      position: relative;
+      margin: 0 1px;
+      border-radius: 3px; }
+
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+  display: block; }
+
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
+  visibility: visible\9;
+  opacity: 0.99; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
    * 1. Set default font family to sans-serif.
@@ -6217,7 +6260,7 @@ li.tabs-title {
   border-radius: 10px;
   border: 1px solid #222;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
-  max-height: 80vh;
+  height: 80vh;
   overflow: auto;
   padding-top: 50px; }
   .tabs-content h1, .tabs-content h2 {
