@@ -11,6 +11,7 @@
 register_nav_menus(array(
 	'top-bar-r'  => 'Right Top Bar',
 	'mobile-nav' => 'Mobile',
+	'top-bar-j' => 'Journal Top Bar',
 ));
 
 
@@ -51,6 +52,21 @@ if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
 	}
 }
 
+/** Navigation for Journal Site **/
+
+if ( ! function_exists( 'foundationpress_top_bar_j' ) ) {
+	function foundationpress_top_bar_j() {
+		wp_nav_menu( array(
+			'container'      => false,
+			'menu_class'     => 'dropdown menu',
+			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+			'theme_location' => 'top-bar-j',
+			'depth'          => 3,
+			'fallback_cb'    => false,
+			'walker'         => new Foundationpress_Top_Bar_Walker(),
+		));
+	}
+}
 
 /**
  * Add support for buttons in the top-bar menu:
