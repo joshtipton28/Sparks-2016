@@ -12,11 +12,11 @@ get_header(); ?>
 		} ?>
 	</div>
 <div class="page-wrap">
-			<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-				<h1><?php the_field('page_heading'); ?></h1>
-				<?php the_content(); ?>
+<h1><?php the_title();?></h1>
+<div class="journal-blurb">
+	<?php the_content();?>
+</div>
 
-	</div>			
 <?php endwhile;?>
 <?php do_action( 'foundationpress_after_content' ); ?>
 

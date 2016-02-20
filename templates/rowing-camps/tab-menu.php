@@ -13,16 +13,16 @@
 	?>
 
 
-    	<div class="tabs-content" data-tabs-content="rowing-camp-tabs">
-        
-        <ul class="tabs" data-tabs id="rowing-camp-tabs">
-            <li class="tabs-title is-active"><a href="#campOverview" aria-selected="true">Camp Overview</a></li>
-            <li class="tabs-title"><a href="#campStaff">Coaching Staff</a></li>
-            <li class="tabs-title"><a href="#campDetails">Details</a></li>
-            <li class="tabs-title"><a href="#campRegistration"><?php the_field('registration_button_label');?></a></li>
-            
-            <?php /**Conditional for Camp Type**/
-            if ($showSchedule == true) echo 
-            '<li class="tabs-title"><a href="#campSchedule">Schedule</a></li>'
-            ?>
-        </ul>
+    	<div class="tabs-content nano has-scrollbar" data-tabs-content="rowing-camp-tabs">
+            <div class="nano-content">
+                <ul class="tabs" data-tabs id="rowing-camp-tabs">
+                    <li class="tabs-title is-active"><a href="#campOverview" aria-selected="true">Camp Overview</a></li>
+                    <li class="tabs-title"><a href="#campStaff">Coaching Staff</a></li>
+                    <li class="tabs-title"><a href="#campDetails">Details</a></li>
+                    <li class="tabs-title"><a href="#campRegistration"><?php the_field('registration_button_label');?></a></li>
+                    
+                    <?php /**Conditional for Camp Type**/
+                    if ($showSchedule == true) echo 
+                    '<li class="tabs-title"><a href="#campSchedule">Schedule</a></li>'
+                    ?>
+                </ul>
