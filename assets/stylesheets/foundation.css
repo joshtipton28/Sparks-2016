@@ -6206,6 +6206,24 @@ table.hover tr:nth-of-type(even):hover {
 .camps-menu a {
   color: #ffffff; }
 
+.journal-hero {
+  position: relative; }
+  .journal-hero .journal-hero-img img {
+    width: 100%;
+    max-height: 100vh;
+    margin-top: -100px; }
+  .journal-hero .journal-hero-content {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0; }
+  .journal-hero .journal-blurb {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px; }
+    .journal-hero .journal-blurb p {
+      color: #0a0a0a; }
+
 /* Styles for Foundation Tabs used in:
   - About Us
   - Working With Us

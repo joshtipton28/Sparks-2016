@@ -35,9 +35,8 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="full-bg">
-        <?php
-                echo get_the_post_thumbnail( '4810', 'full' ); ?>
-                <img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" class="full-bg-img" alt="" />
+	<div class="full-bg">
+        <?php echo get_the_post_thumbnail( '4810', 'full' ); ?>
+            <img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" class="full-bg-img" alt="<?php the_title();?>" />
     </div>
 <?php get_footer(); ?>
