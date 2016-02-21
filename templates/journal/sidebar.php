@@ -23,3 +23,5 @@
   			  <a class="journal-more" href="<?php the_permalink();?>">Read More</a>
       	</div>
     <?php endwhile; ?>
+
+    <?php wp_reset_postdata(); ?>

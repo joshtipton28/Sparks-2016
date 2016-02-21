@@ -5,19 +5,25 @@ Template Name: Camp Blog
 get_header(); ?>
 
 <?php do_action( 'foundationpress_before_content' ); ?>
-  <?php 
-	   	$args = array( 'post_type' => 'camp-blogs', 'posts_per_page' => 100 );
-		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post();?>
-			<ul>
-				<li>
-					<a href="<?php the_permalink();?>"><?php the_title();?></a>  
-				</li>
-			</ul>	
+	<?php while ( have_posts() ) : the_post(); ?>
 
-	<?php endwhile;
-	wp_reset_postdata(); // reset to the original page data
-	?>
+	  	<div class="full-bg">
+			<?php if ( has_post_thumbnail() ) {
+			the_post_thumbnail('full', array('class' => 'full-bg-img'));
+			} ?>
+		</div>
+
+		<div class="page-wrap">
+		  <?php include(locate_template('templates/camp-blog/tab-menu.php' )); ?>
+		  <?php include(locate_template('templates/camp-blog/all-posts.php' )); ?>
+		  <?php include(locate_template('templates/camp-blog/sparks-summer-camp.php' )); ?>
+		  <?php include(locate_template('templates/camp-blog/coxswains-only.php' )); ?>
+		  <?php include(locate_template('templates/camp-blog/florida-winter-camps.php' )); ?>
+		  <?php include(locate_template('templates/camp-blog/new-zealand.php' )); ?>
+		  <?php include(locate_template('templates/camp-blog/advanced-physiology.php' )); ?>
+		</div> 
+    
+  	<?php endwhile;?>
 
 <?php do_action( 'foundationpress_after_content' ); ?>
 
