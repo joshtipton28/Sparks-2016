@@ -7,15 +7,15 @@
     <div class="tabs-wrap medium-4 columns">
       <h3><?php the_title();?></h3>
       <ul class="tabs vertical" data-tabs id="working-with-us">
-        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">College Counseling<i class="fa fa-chevron-right"></i></a></li>
-        <li class="tabs-title"><a href="#panel2">Coxswain Program<i class="fa fa-chevron-right"></i></a></li>
-        <li class="tabs-title"><a href="#panel3">International Applicants<i class="fa fa-chevron-right"></i></a></li>
-        <li class="tabs-title"><a href="#panel4">Gap Year Advising<i class="fa fa-chevron-right"></i></a></li>
+        <li class="tabs-title is-active"><a href="#college-counseling" aria-selected="true">College Counseling<i class="fa fa-chevron-right"></i></a></li>
+        <li class="tabs-title"><a href="#coxswain-program">Coxswain Program<i class="fa fa-chevron-right"></i></a></li>
+        <li class="tabs-title"><a href="#international-applicants">International Applicants<i class="fa fa-chevron-right"></i></a></li>
+        <li class="tabs-title"><a href="#gap-year-advising">Gap Year Advising<i class="fa fa-chevron-right"></i></a></li>
         <li class="tabs-title"><a href="#reports-from-the-front">Reports From The Front<i class="fa fa-chevron-right"></i></a></li>
-        <li class="tabs-title"><a href="#panel6">Our Approach<i class="fa fa-chevron-right"></i></a></li>
-        <li class="tabs-title"><a href="#panel7">Counseling Testimonials<i class="fa fa-chevron-right"></i></a></li>
-        <li class="tabs-title"><a href="#panel8">Camp Testimonials<i class="fa fa-chevron-right"></i></a></li>
-        <li class="tabs-title"><a href="#panel9">Coxswain Testimonials<i class="fa fa-chevron-right"></i></a></li>
+        <li class="tabs-title"><a href="#our-approach">Our Approach<i class="fa fa-chevron-right"></i></a></li>
+        <li class="tabs-title"><a href="#counseling-testimonials">Counseling Testimonials<i class="fa fa-chevron-right"></i></a></li>
+        <li class="tabs-title"><a href="#rowing-camp-testimonials">Camp Testimonials<i class="fa fa-chevron-right"></i></a></li>
+        <li class="tabs-title"><a href="#coxswain-testimonials">Coxswain Testimonials<i class="fa fa-chevron-right"></i></a></li>
       </ul>
     </div>
 

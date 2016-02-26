@@ -4,7 +4,7 @@
  **/
 ?>
 
-<div class="tabs-panel" id="panel4">
+<div class="tabs-panel" id="gap-year-advising">
     <h2>Is a Gap Year Advisable?</h2>
     <hr>
 

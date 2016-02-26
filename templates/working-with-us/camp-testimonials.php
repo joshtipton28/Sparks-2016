@@ -4,7 +4,7 @@
  **/
 ?>
 
-<div class="tabs-panel" id="panel8">
+<div class="tabs-panel" id="rowing-camp-testimonials">
   	<h2>Camp Testimonials</h2>
   	<?php if( have_rows('camp_testimonial_block') ): ?>
 

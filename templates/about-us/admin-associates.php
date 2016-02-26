@@ -5,7 +5,7 @@
  **/
 ?>
 
-			<div class="tabs-panel" id="panel6">
+			<div class="tabs-panel" id="administrative-associates">
 			<h2>Administrative Associates</h2>
 				<?php if( have_rows('administrative_associates') ): ?>
 

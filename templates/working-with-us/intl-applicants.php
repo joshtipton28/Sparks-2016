@@ -4,7 +4,7 @@
  **/
 ?>
 
-<div class="tabs-panel" id="panel3">
+<div class="tabs-panel" id="international-applicants">
     <h2>International Applicants</h2>
     <hr>
 

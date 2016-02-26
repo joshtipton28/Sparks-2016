@@ -4,7 +4,7 @@
  **/
 ?>
 
-<div class="tabs-panel" id="panel2">
+<div class="tabs-panel" id="coxswain-program">
     <h2>Coxswain Program</h2>
     <hr>
 

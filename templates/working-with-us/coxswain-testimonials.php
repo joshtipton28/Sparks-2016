@@ -3,7 +3,7 @@
  * Template part for Working With Us - Coxwain Testimonials
  **/
 ?>
-			<div class="tabs-panel" id="panel9">
+			<div class="tabs-panel" id="coxswain-testimonials">
 			  	<h2>Coxswain Testimonials</h2>
 			  	<?php if( have_rows('coxswain_testimonial_block') ): ?>
 
