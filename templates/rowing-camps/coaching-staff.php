@@ -4,7 +4,16 @@
  **/
 ?>
 <div class="tabs-panel" id="campStaff">
-	<h2><?php echo $campTitle . '<em> ' . $campLocation . ' ';?>Coaching Staff</em></h2>
+	<h2><?php echo $campTitle;?>
+		<em>
+			<?php echo $campLocation;?>
+
+			<?php 
+				if ($programType == 'program') echo 'Program Staff';
+                else echo 'Coaching Staff'; ?>
+		</em>
+	</h2>
+	
 	<?php if( have_rows('coaching_staff') ): ?>
 
     <?php while( have_rows('coaching_staff') ): the_row(); ?>

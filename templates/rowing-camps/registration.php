@@ -7,6 +7,15 @@
 	<h2><?php echo $campTitle . '<em> ' . $campLocation . ' ';?>Registration</em></h2>
 <?php the_field('camp_dates'); ?>
 
+<?php /** If application instructions are present, display them */
+
+	if(get_field('application_instructions'))
+	{
+		echo get_field('application_instructions');
+	}
+
+?>
+
 <table>
 	<?php /*Registration headings*/
 		
@@ -137,5 +146,22 @@
 	</tbody>
 </table>
 
-<?php the_field('registration_promo');?>
+<?php /** If additional instructions are present, display them */
+
+	if(get_field('additional_instructions'))
+	{
+		echo get_field('additional_instructions');
+	}
+
+?>
+
+<?php /** If promo content is present, display it */
+
+	if(get_field('registration_promo'))
+	{
+		echo get_field('registration_promo');
+	}
+
+?>
+
 </div><!--end panel-->
