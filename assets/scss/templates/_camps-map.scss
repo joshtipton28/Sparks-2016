@@ -1,0 +1,41 @@
+.map-camp{
+	position: relative;
+	border-radius: 5px;
+	max-width: 300px;
+
+	&:hover{
+			background: $charc;
+		}
+
+	a{
+		display: block;
+		float: left;
+		font-size:85%;
+		line-height: 16px;
+		color:$white;
+
+		&:hover{
+			color:$white;
+		}
+		
+	}
+}
+
+.summer-camp{
+	background: $oorange;
+}
+
+.winter-camp{
+	background: $onavy;
+}
+
+.map-pin{
+	background:red;
+	border-radius: 100%;
+	display: block;
+	float: left;
+	height:7px;
+	width:7px;
+	margin:10px;
+
+}

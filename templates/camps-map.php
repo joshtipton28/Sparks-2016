@@ -18,7 +18,15 @@ get_header(); ?>
 				
 				<div class="large-12 columns">
 					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/map-of-rowing-camps.png" alt="Map of Rowing Camp Locations and Dates">
+				
+					<?php include(locate_template('templates/camp-maps/seattle.php' )); ?>
+					<?php include(locate_template('templates/camp-maps/middletown.php' )); ?>
+					<?php include(locate_template('templates/camp-maps/pennsylvania.php' )); ?>
+					<?php include(locate_template('templates/camp-maps/oklahoma.php' )); ?>
+					<?php include(locate_template('templates/camp-maps/florida.php' )); ?>
+					<?php include(locate_template('templates/camp-maps/new_zealand.php' )); ?>
 				</div>
+
 			</div>
 	</div>			
 <?php endwhile;?>

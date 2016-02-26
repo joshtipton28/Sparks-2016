@@ -51,6 +51,11 @@ li.tabs-title{
     color:$white;
     font-weight: 300;
     border-radius: 5px;
+
+    i{
+      float: right;
+      margin-right:10px;
+    }
   }
 }
 .tabs .is-active{
