@@ -4,23 +4,26 @@
  **/
 ?>
 
-<?php if( have_rows('seattle_details') ):  /** Seattle Camp Details**/?>
+<?php if( have_rows('seattle_details') ):?>
 
-	<div class="map-camp <?php  the_field('seattle_season');?>-camp seattle-camp clearfix">
+	<div class="map-camp <?php the_field('seattle_season');?>-camp seattle-camp clearfix">
 
-		<div class="map-pin"></div>
+		<a class="tooltip-link" data-toggle="seattle-tip"><i class="map-pin"></i><?php the_field('seattle_label');?></a>
 
-	 	<?php while ( have_rows('seattle_details') ) : the_row();?>
+		<div class="dropdown-pane" id="seattle-tip" data-dropdown data-hover="true" data-hover-pane="true">
 
-	 		<a href="<?php the_sub_field('camp_url');?>">
-		        
-		        <strong><?php the_sub_field('camp_title');?></strong>
-		        <strong><?php the_sub_field('camp_date');?></strong>
+		 	<?php while ( have_rows('seattle_details') ) : the_row();?>
 
-	        </a>
+		 		<a href="<?php the_sub_field('camp_url');?>">
+			        
+			        <strong><?php the_sub_field('camp_title');?></strong>
+			        <?php the_sub_field('camp_date');?>
 
-		<?php endwhile;?>
+		        </a>
 
+			<?php endwhile;?>
+
+		</div>
 	</div>
 
 <?php endif;?>

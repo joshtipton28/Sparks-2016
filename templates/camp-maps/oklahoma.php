@@ -8,17 +8,23 @@
 
 	<div class="map-camp <?php  the_field('ok_season');?>-camp ok-camp clearfix">
 
-	 	<?php while ( have_rows('ok_details') ) : the_row();?>
+		<a class="tooltip-link" data-toggle="ok-tip"><i class="map-pin"></i><?php the_field('ok_label');?></a>
 
-	 		<a href="<?php the_sub_field('camp_url');?>">
-		        
-		        <strong><?php the_sub_field('camp_title');?></strong>
-		        <strong><?php the_sub_field('camp_date');?></strong>
+		<div class="dropdown-pane" id="ok-tip" data-dropdown data-hover="true" data-hover-pane="true">
 
-	        </a>
 
-		<?php endwhile;?>
+		 	<?php while ( have_rows('ok_details') ) : the_row();?>
 
+		 		<a href="<?php the_sub_field('camp_url');?>">
+			        
+			        <strong><?php the_sub_field('camp_title');?></strong>
+			        <strong><?php the_sub_field('camp_date');?></strong>
+
+		        </a>
+
+			<?php endwhile;?>
+
+		</div>
 	</div>
 	
 <?php endif;?>

@@ -25,6 +25,7 @@ get_header(); ?>
 					<?php include(locate_template('templates/camp-maps/oklahoma.php' )); ?>
 					<?php include(locate_template('templates/camp-maps/florida.php' )); ?>
 					<?php include(locate_template('templates/camp-maps/new_zealand.php' )); ?>
+					<?php include(locate_template('templates/camp-maps/holland.php' )); ?>
 				</div>
 
 			</div>

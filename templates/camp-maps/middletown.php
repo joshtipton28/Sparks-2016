@@ -8,17 +8,22 @@
 
 	<div class="map-camp <?php  the_field('middletown_season');?>-camp middletown-camp clearfix">
 
-	 	<?php while ( have_rows('middletown_details') ) : the_row();?>
+	 	<a class="tooltip-link" data-toggle="middletown-tip"><i class="map-pin"></i><?php the_field('middletown_label');?></a>
 
-	 		<a href="<?php the_sub_field('camp_url');?>">
-		        
-		        <strong><?php the_sub_field('camp_title');?></strong>
-		        <strong><?php the_sub_field('camp_date');?></strong>
+		<div class="dropdown-pane" id="middletown-tip" data-dropdown data-hover="true" data-hover-pane="true">
 
-	        </a>
+		 	<?php while ( have_rows('middletown_details') ) : the_row();?>
 
-		<?php endwhile;?>
+		 		<a href="<?php the_sub_field('camp_url');?>">
+			        
+			        <strong><?php the_sub_field('camp_title');?></strong>
+			        <strong><?php the_sub_field('camp_date');?></strong>
 
+		        </a>
+
+			<?php endwhile;?>
+
+		</div>
 	</div>
 	
 <?php endif;?>
