@@ -11,7 +11,11 @@
     font-size:rem-calc(16);
     line-height: rem-calc(18);
     text-shadow: $tshadow;
-    margin:12px 0 6px 45px;
+    margin:12px 0 6px 0;
+  }
+  ul.tabs{
+    max-width: 300px;
+    margin-left:-15px;
   }
 }
 
@@ -71,12 +75,12 @@ li.tabs-title{
   box-shadow: 10px 10px 20px 0px $charc;
   height: 80vh;
   overflow:auto;
-  padding-top:50px;
 
   h1, h2{
     font-size:rem-calc(38.5);
     line-height: rem-calc(40);
     text-shadow: $tshadow;
     font-weight: bold;
+    margin-top:20px;
   }
 }

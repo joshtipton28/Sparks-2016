@@ -1,4 +1,4 @@
-<div class="camp-accordion large-3 columns">
+<div class="camp-accordion large-4 columns">
   <h3><?php the_title();?></h3>
     <ul class="accordion" data-accordion data-allow-all-closed="true">
       <li class="accordion-item" data-accordion-item>

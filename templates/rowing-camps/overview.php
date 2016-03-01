@@ -3,7 +3,7 @@
  * Template part for off canvas menu
  **/
 ?>
-	<div class="tabs-panel is-active" id="campOverview">
+	<div class="tabs-panel is-active" id="camp-overview">
 		<h1><?php echo $campTitle;?> <em><?php the_field('camp_name');?> Overview</em></h1>
 		
 		<?php

@@ -20,7 +20,7 @@ get_header(); ?>
 
 		<?php include(locate_template('parts/rowing-camps-menu.php' )); ?>
 
-		<div id="single-post" class="large-9 columns" role="main">
+		<div id="single-post" class="large-8 columns" role="main">
 
 		<?php do_action( 'foundationpress_before_content' ); ?>
 		<?php while ( have_posts() ) : the_post(); ?>

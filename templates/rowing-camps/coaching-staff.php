@@ -3,7 +3,7 @@
  * Template part for Rowing Camps Custom Post Type
  **/
 ?>
-<div class="tabs-panel" id="campStaff">
+<div class="tabs-panel" id="camp-staff">
 	<h2><?php echo $campTitle;?>
 		<em>
 			<?php echo $campLocation;?>

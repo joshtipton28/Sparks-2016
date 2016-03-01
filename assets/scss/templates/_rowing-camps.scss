@@ -19,39 +19,53 @@
   	a{
   		background: $charc;
   		border-radius: 5px;
-  		margin:0 auto;
-  		max-width: 90%;
-  	  	transition: all ease 0.3s;
+  	  transition: all ease 0.2s;
+      font-size: rem-calc(14);
+      color: $snow;
+
   	  &:hover{
-  	  	max-width: 100%;
+        text-shadow: 0 1px 1px $black;
+        font-weight: bold;
   	  }
   	  i{
   	  	float: right;
   	  	margin-right:10px;
   	  }
   	}
-  	.is-active a{
+  	.is-active a.accordion-title{
   		font-weight: bold;
   		border-bottom-left-radius: 0px;
   		border-bottom-right-radius: 0px;
+      max-width: 80%;
+      background: $charc;
   		&:hover{
-  			max-width: 90%;
-  			background: $charc;
-  			
+  			max-width: 80% !important;
+  			margin-left:0px;
   		}
   	}
+    a.accordion-title{
+      max-width: 80%;
+
+      &:hover{
+        max-width: 85%;
+        margin-left:-10px;
+      }
+    }
 }
 .accordion-content{
 	background:$charc;
-	max-width: 90%;
-	margin:0 auto;
+	max-width: 80%;
 }
 
 //Rowing Camps Content Styles
 .camps-menu li{
 	display: block;
-	background:$oblack;
+	
+  &:hover{
+    background: $oblack;
+  }
 }
 .camps-menu a{
-	color:$white;
+	color:$snow;
+  font-weight: 300 !important;
 }

@@ -3,7 +3,7 @@
  * Template part for Rowing Camps Custom Post Type
  **/
 ?>
-<div class="tabs-panel" id="campRegistration">
+<div class="tabs-panel" id="camp-registration">
 	<h2><?php echo $campTitle . '<em> ' . $campLocation . ' ';?>Registration</em></h2>
 <?php the_field('camp_dates'); ?>
 

@@ -5,6 +5,7 @@ $days: 'Days One', sans-serif;
 // Colors
 $blue: #1770ca;
 $ogrey: rgba(0,0,0,0.1);
+$dgrey: rgba(0,0,0,0.25);
 $oblue: rgba(23,112,202,0.5);
 $onavy: rgba(0,82,187,0.55);
 $oorange: rgba(255, 102, 0, 0.55);
@@ -12,6 +13,7 @@ $oblack: rgba(0, 0, 0, 0.8);
 $charc: rgba(0,0,0,0.5);
 $ablue: #b2d6ff;
 $owhite: rgba(255,255,255,0.8);
+$snow: #ededed;
 
 //Typography Styles
 $tshadow: 1px 1px 1px black;
@@ -20,6 +22,7 @@ $tshadow: 1px 1px 1px black;
 //Global Full Page Background Styles
 .page-wrap{
   position: relative;
+  padding-top:100px;
 }
 .full-bg{
   position: fixed; 
@@ -38,4 +41,9 @@ $tshadow: 1px 1px 1px black;
   margin: auto; 
   min-width: 50%;
   min-height: 50%;
+}
+
+//Nano Styles
+.nano-content{
+  padding:30px;
 }

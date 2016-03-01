@@ -2,17 +2,47 @@
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
-	border-top: 1px solid #ccc;
 	margin-top: rem-calc(0) !important;
+	z-index: 10;
+	position: fixed;
+	bottom:0;
 
 	#footer {
 		@include grid-row();
 		padding: rem-calc(0) 0;
+		text-align: center;
 
 		ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+
+			li{
+				border-left:1px solid $owhite;
+				height: 100%;
+				margin-top:5px;
+			}
+
+			a{
+				padding:0 8px;
+				color:$owhite;
+				font-size:10px;
+
+				&:before{
+					border-left:1px solid blue;
+					display: block;
+					height: 20px;
+				}
+			}
+		}
+
+		.footer-widget{
+			display: inline-block;
+			p{
+				font-size:rem-calc(10);
+				color:$owhite;
+				margin-right:8px;
+			}
 		}
 	}
 }

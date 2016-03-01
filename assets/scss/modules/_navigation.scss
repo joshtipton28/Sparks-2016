@@ -4,14 +4,14 @@
   .menu a {
     line-height: 20px;
     color: $white;
-    background:$charc;
+    background:$dgrey;
     padding: 10px 15px 10px;
     font-weight: bold;
     font-size: rem-calc(14);
     border-radius: 5px;
     font-weight:300;
-    margin:0 2px;
-    text-shadow: $tshadow;
+    margin:rem-calc(0 2.5);
+    text-shadow: -1px -1px 0px black;
 
     &:hover:not(.button) {
       background-color: $oblue;
@@ -27,13 +27,35 @@
   }
 
   .dropdown.menu .submenu {
-    background-color: #121212;
-    color: #e6e6e6;
+    background-color: $charc;
+    color: $white;
     border: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top:10px;
+    padding-bottom:10px;
+
+    a{
+      border-radius: 0;
+      background: transparent;
+      padding: 7px;
+      &:hover{
+        background: $oblue;
+      }
+    }
   }
 
+  .is-dropdown-submenu-parent.is-down-arrow a{padding-right:rem-calc(32)!important;}
+  .is-dropdown-submenu-parent.is-down-arrow > a::after{
+    top:15px;
+    right:13px;
+  }
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
   .dropdown.menu .has-submenu.is-down-arrow>a::after { border: 0; }
+
+  .top-bar-right{
+    margin-right:110px;
+  }
 }
 
 //New Styles
@@ -41,13 +63,14 @@
 .header-container{
   width:100%;
   background:$charc;
-  display: block;
-  margin-bottom:20px;
-  z-index: 1;
+  z-index: 10;
+  position: fixed;
+  box-shadow: 0 1px 10px rgba(0,0,0,.1);
 }
 .logo{
-  width:150px;
-  height:50px;
+  width:122px;
+  height:42px;
+  margin-left: 12px;
   transition: all ease 0.5s;
   &:hover{
     opacity: 0.6;

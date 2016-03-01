@@ -9,8 +9,8 @@
 
 ?>
 
-	<div data-sticky-container>
-		<div class="header-container sticky" data-sticky data-options="marginTop:0;">
+	
+		<div class="header-container">
 			<div class="row">
 				<header id="masthead" class="site-header" role="banner">
 					<div class="title-bar" data-responsive-toggle="site-navigation">
@@ -37,4 +37,3 @@
 				</header>
 			</div>
 		</div>
-	</div>
