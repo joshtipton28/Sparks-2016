@@ -16,7 +16,7 @@
 				        
 				        ?>
 				        <hr>
-				        <div class="ww-coxtest">
+				        <div class="ww-coxtest tab-block">
 					        <p>"<?php echo $coxTestimonialBody;?>"</p>
 					        <em>—&nbsp;<?php echo $coxTestimonialSource;?></em>
 

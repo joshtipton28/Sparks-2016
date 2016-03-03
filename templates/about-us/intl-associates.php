@@ -20,7 +20,7 @@
 		        
 		        ?>
 		        <hr>
-		        <div class="about-intl-assoc">
+		        <div class="about-intl-assoc tab-block">
 			    	<h5>
 			    		<?php 
 			    			echo $intlAssocName; 
@@ -28,12 +28,14 @@
 			    				echo $intlAssocLocation;
 			    		?>
 			    	</h5>
-			    	<?php echo $intlAssocBio;?>
-			    	 <?php if( !empty($intlAssocImg) ): ?>
+			    	
+			    	<?php if( !empty($intlAssocImg) ): ?>
 
 						<img src="<?php echo $intlAssocImg['url']; ?>" alt="<?php echo $intlAssocImg['alt']; ?>" />
 
 					<?php endif; ?>
+
+					<?php echo $intlAssocBio;?>
 
 		        </div>
 		        

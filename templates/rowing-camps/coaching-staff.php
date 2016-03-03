@@ -30,13 +30,14 @@
         <div class="coaching-staff">
 	        <h4><?php echo $coachName;?></h4>
 	        <h5><?php echo $coachCreds;?></h5>
-	        <p><?php echo $coachBio;?></p>
 	        
 	        <?php if( !empty($coachPic) ): ?>
 
 				<img src="<?php echo $coachPic['url']; ?>" alt="<?php echo $coachPic['alt']; ?>" />
 
 			<?php endif; ?>
+
+			<p><?php echo $coachBio;?></p>
 
         </div>
         

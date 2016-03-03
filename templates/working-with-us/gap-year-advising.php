@@ -20,15 +20,16 @@
 	        
 	        ?>
 
-	        <div class="ww-gapyr">
+	        <div class="ww-gapyr tab-block">
 		        <h3><?php echo $gapyrInfoHeading;?></h3>
-		        <?php echo $gapyrInfoBlurb;?>
 		        
 		        <?php if( !empty($gapyrInfoImg) ): ?>
 
 					<img src="<?php echo $gapyrInfoImg['url']; ?>" alt="<?php echo $gapyrInfoImg['alt']; ?>" />
 
 				<?php endif; ?>
+
+				<?php echo $gapyrInfoBlurb;?>
 
 	        </div>
 	        

@@ -19,7 +19,7 @@
 		        
 		        ?>
 		        <hr>
-		        <div class="about-coxingAssocs">
+		        <div class="about-coxingAssocs tab-block">
 			    	<h5>
 			    		<?php 
 			    			echo $coxingAssocName; 
@@ -27,12 +27,14 @@
 			    				echo $coxingAssocLocation;
 			    		?>
 			    	</h5>
-			    	<?php echo $coxingAssocBio;?>
-			    	 <?php if( !empty($coxingAssocImg) ): ?>
+			    	
+			    	<?php if( !empty($coxingAssocImg) ): ?>
 
 						<img src="<?php echo $coxingAssocImg['url']; ?>" alt="<?php echo $coxingAssocImg['alt']; ?>" />
 
 					<?php endif; ?>
+
+					<?php echo $coxingAssocBio;?>
 
 		        </div>
 		        

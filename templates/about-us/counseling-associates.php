@@ -19,7 +19,7 @@
 		        
 		        ?>
 		        <hr>
-		        <div class="about-counsel-assoc">
+		        <div class="about-counsel-assoc tab-block">
 			    	<h5>
 			    		<?php 
 			    			echo $counselAssocName; 
@@ -27,12 +27,14 @@
 			    				echo $counselAssocLocation;
 			    		?>
 			    	</h5>
-			    	<?php echo $counselAssocBio;?>
-			    	 <?php if( !empty($counselAssocImg) ): ?>
+			    	
+			    	<?php if( !empty($counselAssocImg) ): ?>
 
 						<img src="<?php echo $counselAssocImg['url']; ?>" alt="<?php echo $counselAssocImg['alt']; ?>" />
 
 					<?php endif; ?>
+
+					<?php echo $counselAssocBio;?>
 
 		        </div>
 		        

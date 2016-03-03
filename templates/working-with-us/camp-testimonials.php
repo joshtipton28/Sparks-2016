@@ -17,7 +17,7 @@
 	        
 	        ?>
 	        <hr>
-	        <div class="ww-camptest">
+	        <div class="ww-camptest tab-block">
 		        <p>"<?php echo $campTestimonialBody;?>"</p>
 		        <em>—&nbsp;<?php echo $campTestimonialSource;?></em>
 

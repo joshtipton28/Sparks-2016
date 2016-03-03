@@ -17,7 +17,7 @@
 	        
 	        ?>
 	        <hr>
-	        <div class="ww-countest">
+	        <div class="ww-countest tab-block">
 		        <p>"<?php echo $counselTestimonialBody;?>"</p>
 		        <em>—&nbsp;<?php echo $counselTestimonialSource;?></em>
 

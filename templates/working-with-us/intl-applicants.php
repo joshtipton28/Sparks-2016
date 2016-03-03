@@ -20,15 +20,16 @@
 	        
 	        ?>
 
-	        <div class="ww-intl">
+	        <div class="ww-intl tab-block">
 		        <h3><?php echo $intlInfoHeading;?></h3>
-		        <?php echo $intlInfoBlurb;?>
 		        
 		        <?php if( !empty($intlInfoImg) ): ?>
 
 					<img src="<?php echo $intlInfoImg['url']; ?>" alt="<?php echo $intlInfoImg['alt']; ?>" />
 
 				<?php endif; ?>
+
+				<?php echo $intlInfoBlurb;?>
 
 	        </div>
 	        

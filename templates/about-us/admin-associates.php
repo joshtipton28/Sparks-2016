@@ -20,7 +20,7 @@
 				        
 				        ?>
 				        <hr>
-				        <div class="about-admin-assoc">
+				        <div class="about-admin-assoc tab-block">
 					    	<h5>
 					    		<?php 
 					    			echo $adminAssocName; 
@@ -28,12 +28,14 @@
 					    				echo $adminAssocLocation;
 					    		?>
 					    	</h5>
-					    	<?php echo $adminAssocBio;?>
-					    	 <?php if( !empty($adminAssocImg) ): ?>
+					    	
+					    	<?php if( !empty($adminAssocImg) ): ?>
 
 								<img src="<?php echo $adminAssocImg['url']; ?>" alt="<?php echo $adminAssocImg['alt']; ?>" />
 
 							<?php endif; ?>
+
+							<?php echo $adminAssocBio;?>
 
 				        </div>
 				        

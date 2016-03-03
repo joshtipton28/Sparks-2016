@@ -19,7 +19,7 @@
 			        
 			        ?>
 			        <hr>
-			        <div class="about-leaders">
+			        <div class="about-leaders tab-block">
 				    	<h5>
 				    		<?php 
 				    			echo $leaderName; 
@@ -27,12 +27,14 @@
 				    				echo $leaderLocation;
 				    		?>
 				    	</h5>
-				    	<?php echo $leaderBio;?>
-				    	 <?php if( !empty($leaderImg) ): ?>
+				    	
+				    	<?php if( !empty($leaderImg) ): ?>
 
 							<img src="<?php echo $leaderImg['url']; ?>" alt="<?php echo $leaderImg['alt']; ?>" />
 
 						<?php endif; ?>
+
+						<?php echo $leaderBio;?>
 
 			        </div>
 			        

@@ -20,15 +20,16 @@
 	        
 	        ?>
 
-	        <div class="ww-coxprog">
+	        <div class="ww-coxprog tab-block">
 		        <h3><?php echo $coxswainInfoHeading;?></h3>
-		        <?php echo $coxswainInfoBlurb;?>
-		        
+
 		        <?php if( !empty($coxswainInfoImg) ): ?>
 
 					<img src="<?php echo $coxswainInfoImg['url']; ?>" alt="<?php echo $coxswainInfoImg['alt']; ?>" />
 
 				<?php endif; ?>
+		        
+		        <?php echo $coxswainInfoBlurb;?>
 
 	        </div>
 	        

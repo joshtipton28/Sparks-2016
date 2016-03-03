@@ -8,7 +8,8 @@
 
 <div class="tabs-panel" id="reports-from-the-front">
 	<h2>Reports From the Front</h2>
-
+	<hr>
+	
    <?php if( !empty($reportsImg) ): ?>
 
 		<img src="<?php echo $reportsImg['url']; ?>" alt="<?php echo $reportsImg['alt']; ?>" />

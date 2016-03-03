@@ -21,16 +21,17 @@
 	        ?>
 
 	        <div class="ww-ccounsel tab-block">
-		        <h3><?php echo $counselingInfoHeading;?></h3>
 
-		        <?php echo $counselingInfoBlurb;?>
-		        
-		        <?php if( !empty($counselingInfoImg) ): ?>
+	        	<h3><?php echo $counselingInfoHeading;?></h3>
+
+	        	<?php if( !empty($counselingInfoImg) ): ?>
 
 					<img src="<?php echo $counselingInfoImg['url']; ?>" alt="<?php echo $counselingInfoImg['alt']; ?>"/>
 
 				<?php endif; ?>
 
+		        <?php echo $counselingInfoBlurb;?>
+		        
 	        </div>
 	        
 	    <?php endwhile; ?>
