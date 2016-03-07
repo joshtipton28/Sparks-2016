@@ -1,0 +1,40 @@
+.contact-us{
+
+	h3{
+		font-size:rem-calc(21);
+		line-height: rem-calc(30);
+		font-weight: 600;
+		letter-spacing: -0.05em;
+	}
+
+	.contact-icon{
+		height:48px;
+		width:48px;
+		display: inline-block;
+		float: left;
+	}
+
+	.contact-block{
+		display: inline-block;
+		margin-left: 20px;
+
+		h6{
+			font-size: rem-calc(14);
+			line-height: rem-calc(20);
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+		p{
+			font-weight: 300;
+			font-size:rem-calc(16);
+			line-height: rem-calc(24);
+			display: block;
+			margin-bottom: 0;
+		}
+	}
+
+	.contact-goals{
+		display: block;
+	}
+}
+

@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<div class="row">
 			<div class="nano has-scrollbar tabs-content large-8 large-centered columns" data-tabs-content="about-us">
-		        <div class="nano-content">
+		        <div class="contact-us nano-content">
 		        	<h2><?php the_title();?></h2>
 
 		        	<?php
@@ -29,11 +29,12 @@ get_header(); ?>
 
 						        <hr>
 
-						        <img src="<?php echo $img['url'];?>" alt="<?php echo $img['alt']?>">
+						        <img class="contact-icon" src="<?php echo $img['url'];?>" alt="<?php echo $img['alt']?>">
 
-						        <h6><?php the_sub_field('contact_heading');?></h6>
-
-						        <p><?php the_sub_field('contact_block_content');?></p>
+						        <div class="contact-block">
+							        <h6><?php the_sub_field('contact_heading');?></h6>
+							        <p><?php the_sub_field('contact_block_content');?></p>
+							    </div>
 
 
 						    <?php endwhile;
@@ -46,6 +47,8 @@ get_header(); ?>
 
 					?>
 
+					<hr>
+					
 					<div class="contact-goals">
 						<?php the_field('contact_content');?>
 					</div>

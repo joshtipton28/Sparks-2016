@@ -28,6 +28,9 @@
   min-width: 50%;
   min-height: 50%; }
 
+.gc-cs-link {
+  color: #b2d6ff !important; }
+
 /**
  * Foundation for Sites by ZURB
  * Version 6.1.2
@@ -6349,6 +6352,36 @@ li.tabs-title {
     text-shadow: 1px 1px 1px black;
     font-weight: bold;
     margin-top: 20px; }
+
+.contact-us h3 {
+  font-size: 1.3125rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.05em; }
+
+.contact-us .contact-icon {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  float: left; }
+
+.contact-us .contact-block {
+  display: inline-block;
+  margin-left: 20px; }
+  .contact-us .contact-block h6 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0; }
+  .contact-us .contact-block p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    display: block;
+    margin-bottom: 0; }
+
+.contact-us .contact-goals {
+  display: block; }
 
 .map-camp a.tooltip-link {
   font-family: "Days One", sans-serif;
