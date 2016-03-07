@@ -6,7 +6,7 @@
 
 <?php if( have_rows('seattle_details') ):?>
 
-	<div class="map-camp <?php the_field('seattle_season');?>-camp seattle-camp clearfix">
+	<div class="map-camp <?php the_field('seattle_season');?>-camp seattle-camp pin-right clearfix">
 
 		<a class="tooltip-link" data-toggle="seattle-tip"><i class="map-pin"></i><?php the_field('seattle_label');?></a>
 

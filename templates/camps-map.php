@@ -15,8 +15,7 @@ get_header(); ?>
 		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
 			<div class="row">
 				
-				
-				<div class="large-12 columns">
+				<div class="camp-map large-12 columns">
 					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/map-of-rowing-camps.png" alt="Map of Rowing Camp Locations and Dates">
 				
 					<?php include(locate_template('templates/camp-maps/seattle.php' )); ?>

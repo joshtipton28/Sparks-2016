@@ -6,7 +6,7 @@
 
 <?php if( have_rows('ok_details') ):?>
 
-	<div class="map-camp <?php  the_field('ok_season');?>-camp ok-camp clearfix">
+	<div class="map-camp <?php  the_field('ok_season');?>-camp ok-camp pin-top clearfix">
 
 		<a class="tooltip-link" data-toggle="ok-tip"><i class="map-pin"></i><?php the_field('ok_label');?></a>
 

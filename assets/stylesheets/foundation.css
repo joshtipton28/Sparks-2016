@@ -3422,11 +3422,11 @@ dl {
 
 blockquote {
   margin: 0 0 1rem;
-  padding: 0.5625rem 1.25rem 0 1.1875rem;
+  padding: 0.9375rem;
   border-left: 1px solid #cacaca; }
   blockquote, blockquote p {
     line-height: 1.6;
-    color: #8a8a8a; }
+    color: #ffffff; }
 
 cite {
   display: block;
@@ -4260,7 +4260,7 @@ select {
 
 .dropdown-pane {
   background-color: #ffffff;
-  border: 1px solid #cacaca;
+  border: 0px solid #cacaca;
   border-radius: 5px;
   display: block;
   font-size: inherit;
@@ -6383,23 +6383,108 @@ li.tabs-title {
 .contact-us .contact-goals {
   display: block; }
 
-.map-camp a.tooltip-link {
-  font-family: "Days One", sans-serif;
-  color: #ffffff; }
+.camp-map {
+  position: relative; }
+  .camp-map img {
+    width: 100%; }
 
-.map-camp i {
-  height: 7px;
-  width: 7px;
-  border-radius: 100%;
-  display: block; }
+.map-camp {
+  position: absolute; }
+  .map-camp a.tooltip-link {
+    font-family: "Days One", sans-serif;
+    color: #ffffff; }
+  .map-camp i {
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 5px; }
 
-.map-camp .dropdown-pane {
-  background: rgba(0, 0, 0, 0.5); }
+.pin-right i {
+  float: right;
+  margin-top: 7px;
+  margin-left: 5px; }
+
+.pin-top i {
+  display: block;
+  margin: 0 auto; }
+
+.seattle-camp {
+  top: 38%;
+  left: 10%; }
+
+.middletown-camp {
+  top: 40%;
+  left: 27.5%; }
+
+.pa-camp {
+  top: 42%;
+  left: 26%; }
+
+.ok-camp {
+  top: 43%;
+  left: 16%; }
+
+.fl-camp {
+  top: 48%;
+  left: 26%; }
+
+.nz-camp {
+  top: 81.5%;
+  left: 83.5%; }
+
+.holland-camp {
+  top: 35%;
+  left: 48%; }
+
+.summer-camp .dropdown-pane {
+  background: #ff6f20; }
+  .summer-camp .dropdown-pane a {
+    color: #ffffff; }
 
 .summer-camp i {
-  background: orange; }
+  background: #ff6f20; }
+
+.winter-camp .dropdown-pane {
+  background: #1770ca; }
+  .winter-camp .dropdown-pane a {
+    color: #ffffff; }
 
 .winter-camp i {
-  background: blue; }
+  background: #1770ca; }
+
+/**Reports From the Front Styles
+*
+*
+**/
+.rff-single h2 {
+  font-size: 2.25rem;
+  font-weight: normal;
+  letter-spacing: -0.08em;
+  margin: 0 0 30px 0; }
+  .rff-single h2 span {
+    display: block;
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+    opacity: 0.5;
+    text-transform: uppercase; }
+
+.rff-single blockquote {
+  font-style: italic;
+  font-weight: 300;
+  width: 70%;
+  margin-left: 5%;
+  border-left-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.15); }
+
+.rff-single .rff-more {
+  background: #ededed;
+  color: #0a0a0a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all ease 0.5s; }
+  .rff-single .rff-more:hover {
+    background: #bababa; }
 
 /*# sourceMappingURL=foundation.css.map */

@@ -1,4 +1,15 @@
+//Map Dimensions
+.camp-map{
+	position: relative;
+
+	img{
+		width:100%;
+	}
+}
+
+//Base map styles
 .map-camp{
+	position: absolute;
 
 	a.tooltip-link{
 		font-family: $days;
@@ -6,24 +17,85 @@
 	}
 
 	i{
-		height:7px;
-		width:7px;
+		height:12px;
+		width:12px;
 		border-radius: 100%;
-		display: block;
-	}
-	.dropdown-pane{
-		background:$charc;
+		display: inline-block;
+		margin-right:5px;
 	}
 }
 
-.summer-camp{
 
+//Pin Orientations
+.pin-right{
 	i{
-		background: orange;
+		float: right;
+		margin-top:7px;
+		margin-left:5px;
+	}
+}
+.pin-top{
+	i{
+		display: block;
+		margin:0 auto;
+	}
+}
+
+//Camp Pin Positions
+.seattle-camp{
+	top:38%;
+	left:10%;
+}
+
+.middletown-camp{
+	top:40%;
+	left:27.5%;
+}
+
+.pa-camp{
+	top:42%;
+	left:26%;
+}
+
+.ok-camp{
+	top:43%;
+	left:16%;
+}
+
+.fl-camp{
+	top:48%;
+	left:26%;
+}
+.nz-camp{
+	top:81.5%;
+	left:83.5%;
+}
+.holland-camp{
+	top:35%;
+	left:48%;
+}
+//Camp Colors
+.summer-camp{
+	.dropdown-pane{
+		background: $orange;
+
+		a{
+			color:$white;
+		}
+	}
+	i{
+		background: $orange;
 	}
 }
 .winter-camp{
+	.dropdown-pane{
+		background: $blue;
+
+		a{
+			color:$white;
+		}
+	}
 	i{
-		background: blue;
+		background: $blue;
 	}
 }

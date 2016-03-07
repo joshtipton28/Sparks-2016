@@ -6,7 +6,7 @@
 
 <?php if( have_rows('nz_details') ):?>
 
-	<div class="map-camp <?php  the_field('nz_season');?>-camp nz-camp clearfix">
+	<div class="map-camp <?php  the_field('nz_season');?>-camp nz-camp pin-right clearfix">
 
 		<a class="tooltip-link" data-toggle="nz-tip"><i class="map-pin"></i><?php the_field('nz_label');?></a>
 
