@@ -6,7 +6,7 @@
 
 <?php $reportsImg = get_field('reports_featured_image');?>
 
-<div class="tabs-panel" id="reports-from-the-front">
+<div class="rff-archive tabs-panel" id="reports-from-the-front">
 	<h2>Reports From the Front</h2>
 	<hr>
 	
@@ -19,15 +19,20 @@
 
    	<?php 
 	   	$args = array( 'post_type' => 'rff', 'posts_per_page' => 100 );
-		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post();?>
-			<ul>
+		$loop = new WP_Query( $args );?>
+
+		<ul>
+
+			<?php while ( $loop->have_posts() ) : $loop->the_post();?>
+				
 				<li>
 					<a href="<?php the_permalink();?>"><?php the_title();?></a>  
 				</li>
-			</ul>	
+					
+			<?php endwhile;?>
+		
+		</ul>
 
-	<?php endwhile;
-		wp_reset_postdata(); // reset to the original page data
+		<?php wp_reset_postdata(); // reset to the original page data
 	?>
 </div>

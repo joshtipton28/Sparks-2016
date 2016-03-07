@@ -4,7 +4,7 @@
  **/
 ?>
 <div class="nano has-scrollbar tabs-content medium-8 columns">
-    <div class="nano-content">
+    <div class="rff-single nano-content">
       <?php while ( have_posts() ) : the_post(); ?>
 
         <h2>
@@ -16,7 +16,7 @@
 
         <?php the_content();?>
 
-        <a href="<?php echo home_url();?>/working-with-us/#panel1">View All Reports</a>
+        <a class="rff-more" href="<?php echo home_url();?>/working-with-us/#panel1">View All Reports</a>
     
   <?php endwhile;?>
     </div>
