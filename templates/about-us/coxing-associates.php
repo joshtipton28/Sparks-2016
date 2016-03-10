@@ -24,7 +24,7 @@
 			    		<?php 
 			    			echo $coxingAssocName; 
 			    			if (!empty($coxingAssocLocation) )
-			    				echo $coxingAssocLocation;
+			    				echo ' / ' . $coxingAssocLocation;
 			    		?>
 			    	</h5>
 			    	

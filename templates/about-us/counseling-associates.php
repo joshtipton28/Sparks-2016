@@ -22,9 +22,9 @@
 		        <div class="about-counsel-assoc tab-block">
 			    	<h5>
 			    		<?php 
-			    			echo $counselAssocName; 
-			    			if (!empty($counselAssocLocation) )
-			    				echo $counselAssocLocation;
+			    			echo $counselAssocName;
+							if (!empty($counselAssocLocation) )
+			    				echo ' / ' . $counselAssocLocation;
 			    		?>
 			    	</h5>
 			    	

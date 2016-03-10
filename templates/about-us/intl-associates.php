@@ -25,7 +25,7 @@
 			    		<?php 
 			    			echo $intlAssocName; 
 			    			if (!empty($intlAssocLocation) )
-			    				echo $intlAssocLocation;
+			    				echo ' / ' . $intlAssocLocation;
 			    		?>
 			    	</h5>
 			    	

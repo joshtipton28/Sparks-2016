@@ -24,7 +24,7 @@
 				    		<?php 
 				    			echo $leaderName; 
 				    			if (!empty($leaderLocation) )
-				    				echo $leaderLocation;
+				    				echo ' / ' . $leaderLocation;
 				    		?>
 				    	</h5>
 				    	

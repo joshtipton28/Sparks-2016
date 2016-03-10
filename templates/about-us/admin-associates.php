@@ -25,7 +25,7 @@
 					    		<?php 
 					    			echo $adminAssocName; 
 					    			if (!empty($adminAssocLocation) )
-					    				echo $adminAssocLocation;
+					    				echo ' / ' . $adminAssocLocation;
 					    		?>
 					    	</h5>
 					    	
