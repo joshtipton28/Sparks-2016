@@ -62,14 +62,32 @@
 
 .header-container{
   width:100%;
-  background:$charc;
   z-index: 10;
   position: fixed;
   box-shadow: 0 1px 10px rgba(0,0,0,.1);
 }
+
+.main-header{
+  background: $charc;
+}
+
 .logo{
   width:122px;
   height:42px;
+  margin-left: 12px;
+  transition: all ease 0.5s;
+  &:hover{
+    opacity: 0.6;
+  }
+}
+
+//Journal Header Styles
+.journal-header{
+  background:$jlblue;
+}
+.journal-logo{
+  width:234px;
+  height:27px;
   margin-left: 12px;
   transition: all ease 0.5s;
   &:hover{

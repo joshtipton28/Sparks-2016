@@ -6048,10 +6048,12 @@ table.hover tr:nth-of-type(even):hover {
 
 .header-container {
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
   z-index: 10;
   position: fixed;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
+
+.main-header {
+  background: rgba(0, 0, 0, 0.5); }
 
 .logo {
   width: 122px;
@@ -6059,6 +6061,17 @@ table.hover tr:nth-of-type(even):hover {
   margin-left: 12px;
   transition: all ease 0.5s; }
   .logo:hover {
+    opacity: 0.6; }
+
+.journal-header {
+  background: #243956; }
+
+.journal-logo {
+  width: 234px;
+  height: 27px;
+  margin-left: 12px;
+  transition: all ease 0.5s; }
+  .journal-logo:hover {
     opacity: 0.6; }
 
 /* Navigation breakpoints */
@@ -6268,6 +6281,14 @@ table.hover tr:nth-of-type(even):hover {
 
 .journal-hero {
   position: relative; }
+  .journal-hero h1 {
+    font-weight: 300;
+    line-height: 1; }
+    .journal-hero h1 span {
+      font-weight: bold;
+      letter-spacing: -0.05em;
+      display: block;
+      font-size: 3.75rem; }
   .journal-hero .journal-hero-img img {
     width: 100%;
     max-height: 100vh;
@@ -6279,10 +6300,32 @@ table.hover tr:nth-of-type(even):hover {
     right: 0; }
   .journal-hero .journal-blurb {
     background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px; }
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 40px; }
     .journal-hero .journal-blurb p {
-      color: #0a0a0a; }
+      color: #20303f;
+      font-size: 1.25rem;
+      text-align: center; }
+      .journal-hero .journal-blurb p span {
+        font-weight: bold; }
+    .journal-hero .journal-blurb .hero-more {
+      font-size: 2.5rem;
+      color: #e3a600;
+      text-align: center;
+      font-weight: normal;
+      display: block; }
+
+.journal-recent {
+  margin-top: 40px;
+  color: #20303f; }
+
+.journal-home-article {
+  background: #ededed;
+  position: relative;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 50px; }
 
 /* Styles for Foundation Tabs used in:
   - About Us

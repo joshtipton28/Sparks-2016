@@ -1,6 +1,18 @@
 .journal-hero{
 	position: relative;
 
+	h1{
+		font-weight: 300;
+		line-height: 1;
+
+		span{
+			font-weight: bold;
+			letter-spacing: -0.05em;
+			display: block;
+			font-size: rem-calc(60);
+		}
+	}
+
 	.journal-hero-img{
 		img{
 			width: 100%;
@@ -18,11 +30,38 @@
 
 	.journal-blurb{
 		background: $owhite;
-		padding:20px;
-		border-radius: 10px;
+		padding:15px;
+		border-radius: 5px;
+		margin-top:40px;
 
 		p{
-			color:$black;
+			color:$jnavy;
+			font-size:rem-calc(20);
+			text-align: center;
+			span{
+				font-weight: bold;
+			}
+		}
+		.hero-more{
+			font-size: rem-calc(40);
+			color:$jyellow;
+			text-align: center;
+			font-weight: normal;
+			display: block;
+
 		}
 	}
+}
+
+//Journal Home Recent Articles
+.journal-recent{
+	margin-top:40px;
+	color:$jnavy;
+}
+.journal-home-article{
+	background:$snow;
+	position: relative;
+	padding:20px;
+	border-radius: 5px;
+	margin-bottom:50px;
 }

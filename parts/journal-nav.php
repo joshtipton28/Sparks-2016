@@ -9,21 +9,20 @@
 
 ?>
 
-	<div data-sticky-container>
-		<div class="header-container sticky" data-sticky data-options="marginTop:0;">
+		<div class="journal-header header-container">
 			<div class="row">
 				<header id="masthead" class="site-header" role="banner">
 					<div class="title-bar" data-responsive-toggle="site-navigation">
 						<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
 						<div class="title-bar-title">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Test</a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Home</a>
 						</div>
 					</div>
 
 					<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 						<div class="top-bar-left">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-								<img class="logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sparks_logo.png" alt="Sparks Logo">
+								<img class="journal-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sparksjournal-logo.png" alt="Sparks Journal Logo">
 							</a>
 						</div>
 						<div class="top-bar-right">
@@ -37,4 +36,3 @@
 				</header>
 			</div>
 		</div>
-	</div>

@@ -10,7 +10,7 @@
 ?>
 
 	
-		<div class="header-container">
+		<div class="main-header header-container">
 			<div class="row">
 				<header id="masthead" class="site-header" role="banner">
 					<div class="title-bar" data-responsive-toggle="site-navigation">
