@@ -55,3 +55,11 @@ $tshadow: 1px 1px 1px black;
 .gc-cs-link{
   color:$ablue !important;
 }
+
+//Gravatar
+.avatar-img{
+	img{
+		border-radius: 100%;
+		margin-right: 10px;
+	}
+}

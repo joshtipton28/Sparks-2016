@@ -16,13 +16,26 @@
 
 get_header(); ?>
 
-<div id="page" role="main">
+<div id="page" role="main" class="row">
 	<article class="main-content">
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'content', get_post_format() ); ?>
+			<div class="large-4 columns">
+				<?php if ( has_post_thumbnail() ) : ?>
+					
+					<a href="<?php the_permalink();?>">
+						<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
+					</a>
+					<a href="<?php the_permalink;?>">
+						<h5><?php the_title();?></h5>
+					</a>
+
+					<p><?php the_excerpt();?></p>
+
+				<?php endif; ?>
+			</div>
 		<?php endwhile; ?>
 
 		<?php else : ?>
@@ -39,7 +52,6 @@ get_header(); ?>
 		<?php } ?>
 
 	</article>
-	<?php get_sidebar(); ?>
 
 </div>
 
