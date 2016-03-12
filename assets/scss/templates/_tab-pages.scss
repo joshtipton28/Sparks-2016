@@ -40,6 +40,24 @@
 
 }
 
+.tabs-panel{
+  h1, h2{
+    font-size:rem-calc(38.5);
+    line-height: rem-calc(40);
+    text-shadow:$tshadow;
+    text-rendering:optimzelegibility;
+
+    em{
+      display: block;
+      font-weight: 300;
+      font-size:rem-calc(24);
+      letter-spacing: -0.05em;
+      opacity: 0.5;
+      font-style: normal;
+    }
+  }
+}
+
 //Tab Menu Styles
 li.tabs-title{
   margin:0 auto;
@@ -82,5 +100,11 @@ li.tabs-title{
     text-shadow: $tshadow;
     font-weight: bold;
     margin-top:20px;
+  }
+}
+
+.tabs{
+  .horizontal a{
+    margin:0px 2px;
   }
 }

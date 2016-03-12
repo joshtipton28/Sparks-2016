@@ -3,9 +3,9 @@
  * Template part for Rowing Camps Custom Post Type
  **/
 ?>
-<div class="tabs-panel" id="camp-registration">
+<div class="registration tabs-panel" id="camp-registration">
 	<h2><?php echo $campTitle . '<em> ' . $campLocation . ' ';?>Registration</em></h2>
-<?php the_field('camp_dates'); ?>
+	<h4><?php the_field('camp_dates'); ?></h4>
 
 <?php /** If application instructions are present, display them */
 
@@ -78,11 +78,11 @@
 	 		
 			<td>
 	        	<a onclick="_gaq.push(['_trackEvent', 'Outbound Links', 'Click', 'NYC Reg']);" class="button 
-		        		<?php 
-		        			if ($registrationStatus == 'Open') echo 'success'; 
-		        			else echo 'alert';?>" 
-		        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
-		        		?>
+	        		<?php 
+	        			if ($registrationStatus == 'Open') echo 'success'; 
+	        			else echo 'alert';?>" 
+	        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
+	        		?>
 	        	</a>
 			</td>
 
@@ -104,11 +104,11 @@
 
 	        <td>
 	        	<a onclick="_gaq.push(['_trackEvent', 'Outbound Links', 'Click', 'NYC Reg']);" class="button 
-		        		<?php 
-		        			if ($registrationStatus == 'Open') echo 'success'; 
-		        			else echo 'alert';?>" 
-		        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
-		        		?>
+	        		<?php 
+	        			if ($registrationStatus == 'Open') echo 'success'; 
+	        			else echo 'alert';?>" 
+	        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
+	        		?>
 	        	</a>
 			</td>
 	 

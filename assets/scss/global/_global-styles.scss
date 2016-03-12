@@ -16,6 +16,9 @@ $owhite: rgba(255,255,255,0.8);
 $snow: #ededed;
 $orange: #ff6f20;
 $blue: #1770ca;
+$silver: #dddddd;
+$lime: #5bb75b;
+$red: #bd362f;
 
 // Journal Colors
 $jlblue: #243956;
@@ -25,6 +28,13 @@ $jyellow: #e3a600;
 
 //Typography Styles
 $tshadow: 1px 1px 1px black;
+
+
+//Button Styles
+.button{
+  font-size:17.5px !important;
+  text-transform: uppercase;
+}
 
 
 //Global Full Page Background Styles

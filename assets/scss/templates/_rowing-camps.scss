@@ -69,3 +69,41 @@
 	color:$snow;
   font-weight: 300 !important;
 }
+
+//Registration Tab Styles
+.registration{
+  
+  h4{
+    font-weight: 600;
+    font-size:rem-calc(21);
+    margin:10px 0 15px 0;
+  }
+
+  tbody{
+    th, td{
+      border-top:1px solid $silver;
+    }
+    .button{
+      margin:0;
+    }
+  }
+}
+
+//Camp Schedule Styles
+.camp-schedule{
+  th{
+    background:$charc;
+    border:1px solid $silver;
+    text-align: center;
+      &:hover{
+        background: $oblue;
+      }
+  }
+  td{
+    border:1px solid $silver;
+    text-align: center;
+    &:hover{
+      background: $oblue;
+    }
+  }
+}
