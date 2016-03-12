@@ -6000,55 +6000,50 @@ table.hover tr:nth-of-type(even):hover {
   Add your scss files below to structure your project styles
 */
 /* Tablet and desktop menu */
-.top-bar .menu a {
-  line-height: 20px;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.25);
-  padding: 10px 15px 10px;
-  font-weight: bold;
-  font-size: 0.875rem;
-  border-radius: 5px;
-  font-weight: 300;
-  margin: 0 0.15625rem;
-  text-shadow: -1px -1px 0px black; }
-  .top-bar .menu a:hover:not(.button) {
-    background-color: rgba(23, 112, 202, 0.5); }
-
-.top-bar .menu li.active a {
-  background-color: #1770ca; }
-  .top-bar .menu li.active a:hover {
-    background-color: rgba(23, 112, 202, 0.5); }
-
-.top-bar .dropdown.menu .submenu {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  border: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  .top-bar .dropdown.menu .submenu a {
-    border-radius: 0;
-    background: transparent;
-    padding: 7px; }
-    .top-bar .dropdown.menu .submenu a:hover {
-      background: rgba(23, 112, 202, 0.5); }
-
-.top-bar .is-dropdown-submenu-parent.is-down-arrow a {
-  padding-right: 2rem !important; }
-
-.top-bar .is-dropdown-submenu-parent.is-down-arrow > a::after {
-  top: 15px;
-  right: 13px; }
-
-.top-bar .dropdown.menu .has-submenu.is-down-arrow a {
-  padding-right: 1rem; }
-
-.top-bar .dropdown.menu .has-submenu.is-down-arrow > a::after {
-  border: 0; }
-
-.top-bar .top-bar-right {
-  margin-right: 110px; }
+.top-bar {
+  padding: 30px; }
+  .top-bar .menu a {
+    line-height: 20px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 10px 15px 10px;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    font-weight: 300;
+    margin: 0 0.15625rem;
+    text-shadow: -1px -1px 0px black; }
+    .top-bar .menu a:hover:not(.button) {
+      background-color: rgba(23, 112, 202, 0.5); }
+  .top-bar .menu li.active a {
+    background-color: #1770ca; }
+    .top-bar .menu li.active a:hover {
+      background-color: rgba(23, 112, 202, 0.5); }
+  .top-bar .dropdown.menu .submenu {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .top-bar .dropdown.menu .submenu a {
+      border-radius: 0;
+      background: transparent;
+      padding: 7px; }
+      .top-bar .dropdown.menu .submenu a:hover {
+        background: rgba(23, 112, 202, 0.5); }
+  .top-bar .is-dropdown-submenu-parent.is-down-arrow a {
+    padding-right: 2rem !important; }
+  .top-bar .is-dropdown-submenu-parent.is-down-arrow > a::after {
+    top: 15px;
+    right: 13px; }
+  .top-bar .dropdown.menu .has-submenu.is-down-arrow a {
+    padding-right: 1rem; }
+  .top-bar .dropdown.menu .has-submenu.is-down-arrow > a::after {
+    border: 0; }
+  .top-bar .top-bar-right {
+    margin-right: 110px; }
 
 .header-container {
   width: 100%;
@@ -6062,6 +6057,7 @@ table.hover tr:nth-of-type(even):hover {
 .logo {
   width: 122px;
   height: 42px;
+  margin-top: -2px;
   margin-left: 12px;
   transition: all ease 0.5s; }
   .logo:hover {
@@ -6073,6 +6069,7 @@ table.hover tr:nth-of-type(even):hover {
 .journal-logo {
   width: 234px;
   height: 27px;
+  margin-top: 10px;
   margin-left: 12px;
   transition: all ease 0.5s; }
   .journal-logo:hover {
@@ -6295,8 +6292,7 @@ table.hover tr:nth-of-type(even):hover {
       font-size: 3.75rem; }
   .journal-hero .journal-hero-img img {
     width: 100%;
-    max-height: 100vh;
-    margin-top: -100px; }
+    max-height: 100vh; }
   .journal-hero .journal-hero-content {
     position: absolute;
     top: 200px;
@@ -6321,7 +6317,7 @@ table.hover tr:nth-of-type(even):hover {
       display: block; }
 
 .journal-recent {
-  margin-top: 40px;
+  padding-top: 150px;
   color: #20303f; }
 
 .journal-home-article {

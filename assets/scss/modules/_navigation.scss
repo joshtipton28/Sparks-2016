@@ -1,5 +1,6 @@
 /* Tablet and desktop menu */
 .top-bar {
+  padding:30px;
 
   .menu a {
     line-height: 20px;
@@ -74,6 +75,7 @@
 .logo{
   width:122px;
   height:42px;
+  margin-top:-2px;
   margin-left: 12px;
   transition: all ease 0.5s;
   &:hover{
@@ -88,6 +90,7 @@
 .journal-logo{
   width:234px;
   height:27px;
+  margin-top:10px;
   margin-left: 12px;
   transition: all ease 0.5s;
   &:hover{

@@ -18,11 +18,12 @@ get_header(); ?>
 				<h1><?php the_field("blurb_title"); ?></h1>
 					<div class="journal-blurb large-4 small-12 columns end">
 						<?php the_content(); ?>
-						<a class="hero-more" href="#journal-recent">
+						<a class="hero-more scroll" href="#journal-recent">
 							<i class="fa fa-chevron-down"></i>
 						</a>
 					</div>
 			</div>
+		</div>
 	</div>
 
 	<div id="journal-recent" class="journal-recent row">
@@ -80,4 +81,4 @@ get_header(); ?>
 <?php do_action( 'foundationpress_after_content' ); ?>
 
 
-<?php get_footer(); ?>
+<?php include(locate_template('parts/journal-footer.php' )); ?>
