@@ -36,9 +36,9 @@
 
 	<?php if (is_page_template( 'templates/journal-home.php' ))
 				get_template_part( 'parts/journal-nav' ); 
-			elseif (is_singular('journal'))
+			elseif (is_singular('journal-article'))
 				get_template_part( 'parts/journal-nav' ); 
-			elseif (is_tax('journal-category'))
+			elseif (is_page_template('templates/journal-category.php'))
 				get_template_part( 'parts/journal-nav' ); 
 			else 
 				get_template_part( 'parts/main-nav' );?>

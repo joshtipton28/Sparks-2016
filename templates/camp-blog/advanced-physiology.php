@@ -2,20 +2,24 @@
 /**
  * Template part for Camp Blog - Advanced Physiology
  **/
+
+	$tax = array(
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'camp-blog-category',
+				'field' => 'slug',
+				'terms' => 'advanced-physiology'
+			)
+		)
+	);
+
+	$physioCampBlog = new WP_Query( $tax );
+
 ?>
+
+
             <div class="tabs-panel" id="advanced-physiology-camp">
                 <h2>Advanced Physiology Camp</h2>
-                <?php $tax = array(
-					'tax_query' => array(
-						array(
-							'taxonomy' => 'camp-blog-category',
-							'field' => 'slug',
-							'terms' => 'advanced-physiology'
-						)
-					)
-				);?>
-
-				<?php $physioCampBlog = new WP_Query( $tax );?>
 
 				<?php while ( $physioCampBlog->have_posts() ) : $physioCampBlog->the_post();?>
 

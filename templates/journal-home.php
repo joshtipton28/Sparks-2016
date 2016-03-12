@@ -29,7 +29,7 @@ get_header(); ?>
 	<div id="journal-recent" class="journal-recent row">
 		<div class="large-8 small-12 columns">
 			<?php 
-			   	$args = array( 'post_type' => 'journal', 'posts_per_page' => 5 );
+			   	$args = array( 'post_type' => 'journal-article', 'posts_per_page' => 5 );
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
 

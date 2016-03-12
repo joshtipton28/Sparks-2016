@@ -6280,63 +6280,6 @@ table.hover tr:nth-of-type(even):hover {
   color: #ededed;
   font-weight: 300 !important; }
 
-.journal-hero {
-  position: relative; }
-  .journal-hero h1 {
-    font-weight: 300;
-    line-height: 1; }
-    .journal-hero h1 span {
-      font-weight: bold;
-      letter-spacing: -0.05em;
-      display: block;
-      font-size: 3.75rem; }
-  .journal-hero .journal-hero-img img {
-    width: 100%;
-    max-height: 100vh; }
-  .journal-hero .journal-hero-content {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0; }
-  .journal-hero .journal-blurb {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 40px; }
-    .journal-hero .journal-blurb p {
-      color: #20303f;
-      font-size: 1.25rem;
-      text-align: center; }
-      .journal-hero .journal-blurb p span {
-        font-weight: bold; }
-    .journal-hero .journal-blurb .hero-more {
-      font-size: 2.5rem;
-      color: #e3a600;
-      text-align: center;
-      font-weight: normal;
-      display: block; }
-
-.journal-recent {
-  padding-top: 150px;
-  color: #20303f; }
-
-.journal-home-article {
-  background: #ededed;
-  position: relative;
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 50px; }
-
-.journal-single {
-  padding: 30px 20px;
-  background: #ededed;
-  border-radius: 5px;
-  margin-top: 120px; }
-  .journal-single .th {
-    width: 100%; }
-  .journal-single h1, .journal-single h2, .journal-single p {
-    color: #20303f; }
-
 /* Styles for Foundation Tabs used in:
   - About Us
   - Working With Us
@@ -6539,5 +6482,112 @@ li.tabs-title {
   transition: all ease 0.5s; }
   .rff-single .rff-more:hover {
     background: #bababa; }
+
+.journal-hero {
+  position: relative; }
+  .journal-hero h1 {
+    font-weight: 300;
+    line-height: 1; }
+    .journal-hero h1 span {
+      font-weight: bold;
+      letter-spacing: -0.05em;
+      display: block;
+      font-size: 3.75rem; }
+  .journal-hero .journal-hero-img img {
+    width: 100%;
+    max-height: 100vh; }
+  .journal-hero .journal-hero-content {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0; }
+  .journal-hero .journal-blurb {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 40px; }
+    .journal-hero .journal-blurb p {
+      color: #20303f;
+      font-size: 1.25rem;
+      text-align: center; }
+      .journal-hero .journal-blurb p span {
+        font-weight: bold; }
+    .journal-hero .journal-blurb .hero-more {
+      font-size: 2.5rem;
+      color: #e3a600;
+      text-align: center;
+      font-weight: normal;
+      display: block; }
+
+.journal-recent {
+  padding-top: 150px;
+  color: #20303f; }
+
+.journal-home-article {
+  background: #ededed;
+  position: relative;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 50px; }
+
+.journal-single {
+  padding: 30px 20px;
+  background: #ededed;
+  border-radius: 5px;
+  margin-top: 120px; }
+  .journal-single .th {
+    width: 100%; }
+  .journal-single h1, .journal-single h2, .journal-single p {
+    color: #20303f; }
+
+.journal-hero {
+  position: relative; }
+  .journal-hero h1 {
+    font-weight: 300;
+    line-height: 1; }
+    .journal-hero h1 span {
+      font-weight: bold;
+      letter-spacing: -0.05em;
+      display: block;
+      font-size: 3.75rem; }
+  .journal-hero .journal-hero-img img {
+    width: 100%;
+    max-height: 100vh; }
+  .journal-hero .journal-hero-content {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0; }
+  .journal-hero .journal-blurb {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 40px; }
+    .journal-hero .journal-blurb p {
+      color: #20303f;
+      font-size: 1.25rem;
+      text-align: center; }
+      .journal-hero .journal-blurb p span {
+        font-weight: bold; }
+    .journal-hero .journal-blurb .hero-more {
+      font-size: 2.5rem;
+      color: #e3a600;
+      text-align: center;
+      font-weight: normal;
+      display: block; }
+
+.journal-recent {
+  padding-top: 150px;
+  color: #20303f; }
+
+.journal-home-article {
+  background: #ededed;
+  position: relative;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 50px; }
+
+.journal-archive {
+  margin-top: 150px; }
 
 /*# sourceMappingURL=foundation.css.map */

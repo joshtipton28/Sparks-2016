@@ -1,23 +1,16 @@
 <?php
 /**
- * The main template file
+ * Journal Category Pages Template
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * e.g., it puts together the home page when no home.php file exists.
  *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
- *
- * @package WordPress
- * @subpackage FoundationPress
- * @since FoundationPress 1.0.0
  */
 
-get_header(); ?>
+get_header(); 
+?>
 
 <div id="page" role="main" class="row">
-	<article class="main-content">
+	<article class="journal-archive">
+
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
@@ -28,7 +21,7 @@ get_header(); ?>
 					<a href="<?php the_permalink();?>">
 						<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
 					</a>
-					<a href="<?php the_permalink;?>">
+					<a href="<?php the_permalink();?>">
 						<h5><?php the_title();?></h5>
 					</a>
 
