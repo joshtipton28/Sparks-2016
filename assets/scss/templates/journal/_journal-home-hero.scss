@@ -1,7 +1,7 @@
 .journal-hero{
 	position: relative;
 
-
+	//Opening Heading
 	h1{
 		font-weight: 300;
 		line-height: 1;
@@ -14,6 +14,7 @@
 		}
 	}
 
+	//Background Image for Journal Home
 	.journal-hero-img{
 		img{
 			width: 100%;
@@ -22,6 +23,7 @@
 		}
 	}
 
+	//Content Box positioning on Journal Home
 	.journal-hero-content{
 		position: absolute;
 		top:200px;
@@ -29,6 +31,7 @@
 		right:0;
 	}
 
+	//Content Box Styles
 	.journal-blurb{
 		background: $owhite;
 		padding:15px;
@@ -43,26 +46,23 @@
 				font-weight: bold;
 			}
 		}
+
+		//Chevron down arrow in content box
 		.hero-more{
 			font-size: rem-calc(40);
 			color:$jyellow;
 			text-align: center;
 			font-weight: normal;
 			display: block;
+			background: url(../images/chevron.png) no-repeat;
+			display: block;
+			height: 37px;
+			width:74px;
+			margin:0 auto;
 
+			&:hover{
+				background-position: 0 -37px;
+			}
 		}
 	}
-}
-
-//Journal Home Recent Articles
-.journal-recent{
-	padding-top:150px;
-	color:$jnavy;
-}
-.journal-home-article{
-	background:$snow;
-	position: relative;
-	padding:20px;
-	border-radius: 5px;
-	margin-bottom:50px;
 }

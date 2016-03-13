@@ -6069,18 +6069,6 @@ table.hover tr:nth-of-type(even):hover {
   .logo:hover {
     opacity: 0.6; }
 
-.journal-header {
-  background: #243956; }
-
-.journal-logo {
-  width: 234px;
-  height: 27px;
-  margin-top: 10px;
-  margin-left: 12px;
-  transition: all ease 0.5s; }
-  .journal-logo:hover {
-    opacity: 0.6; }
-
 /* Navigation breakpoints */
 @media screen and (max-width: 39.9375em) {
   .main-navigation {
@@ -6529,6 +6517,22 @@ li.tabs-title {
   .rff-single .rff-more:hover {
     background: #bababa; }
 
+/** Styles for Journal Nav Bar
+* Extends /scss/modules/navigation.scss
+*
+**/
+.journal-header {
+  background: #243956; }
+
+.journal-logo {
+  width: 234px;
+  height: 27px;
+  margin-top: 10px;
+  margin-left: 12px;
+  transition: all ease 0.5s; }
+  .journal-logo:hover {
+    opacity: 0.6; }
+
 .journal-hero {
   position: relative; }
   .journal-hero h1 {
@@ -6563,7 +6567,14 @@ li.tabs-title {
       color: #e3a600;
       text-align: center;
       font-weight: normal;
-      display: block; }
+      display: block;
+      background: url(../images/chevron.png) no-repeat;
+      display: block;
+      height: 37px;
+      width: 74px;
+      margin: 0 auto; }
+      .journal-hero .journal-blurb .hero-more:hover {
+        background-position: 0 -37px; }
 
 .journal-recent {
   padding-top: 150px;
@@ -6575,6 +6586,18 @@ li.tabs-title {
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 50px; }
+  .journal-home-article .journal-category {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    height: 44px;
+    background: #243956;
+    color: #ffffff;
+    padding: 10px 20px; }
+  .journal-home-article .recent-title a {
+    color: #243956;
+    font-weight: bold;
+    font-size: 2.5rem; }
 
 .journal-single {
   padding: 30px 20px;
@@ -6586,54 +6609,22 @@ li.tabs-title {
   .journal-single h1, .journal-single h2, .journal-single p {
     color: #20303f; }
 
-.journal-hero {
-  position: relative; }
-  .journal-hero h1 {
-    font-weight: 300;
-    line-height: 1; }
-    .journal-hero h1 span {
-      font-weight: bold;
-      letter-spacing: -0.05em;
-      display: block;
-      font-size: 3.75rem; }
-  .journal-hero .journal-hero-img img {
-    width: 100%;
-    max-height: 100vh; }
-  .journal-hero .journal-hero-content {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0; }
-  .journal-hero .journal-blurb {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 40px; }
-    .journal-hero .journal-blurb p {
-      color: #20303f;
-      font-size: 1.25rem;
-      text-align: center; }
-      .journal-hero .journal-blurb p span {
-        font-weight: bold; }
-    .journal-hero .journal-blurb .hero-more {
-      font-size: 2.5rem;
-      color: #e3a600;
-      text-align: center;
-      font-weight: normal;
-      display: block; }
-
-.journal-recent {
-  padding-top: 150px;
-  color: #20303f; }
-
-.journal-home-article {
-  background: #ededed;
-  position: relative;
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 50px; }
-
 .journal-archive {
   margin-top: 150px; }
+
+.featured-journal-post a {
+  display: block; }
+  .featured-journal-post a img {
+    width: 100%;
+    overflow: hidden; }
+
+.featured-title {
+  background: #e3a600;
+  border-radius: 5px; }
+  .featured-title h4 {
+    color: #182536;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 0; }
 
 /*# sourceMappingURL=foundation.css.map */

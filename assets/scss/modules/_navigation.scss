@@ -83,21 +83,6 @@
   }
 }
 
-//Journal Header Styles
-.journal-header{
-  background:$jlblue;
-}
-.journal-logo{
-  width:234px;
-  height:27px;
-  margin-top:10px;
-  margin-left: 12px;
-  transition: all ease 0.5s;
-  &:hover{
-    opacity: 0.6;
-  }
-}
-
 /* Navigation breakpoints */
 
 .main-navigation {

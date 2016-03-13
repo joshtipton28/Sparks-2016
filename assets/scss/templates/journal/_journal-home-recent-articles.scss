@@ -1,0 +1,29 @@
+//Journal Home - Recent Articles below fold content
+
+.journal-recent{
+	padding-top:150px;
+	color:$jnavy;
+}
+.journal-home-article{
+	background:$snow;
+	position: relative;
+	padding:20px;
+	border-radius: 5px;
+	margin-bottom:50px;
+
+	//Category Flag on Image of Recent Articles
+	.journal-category{
+		position: absolute;
+		left:0;
+		top:40px;
+		height:44px;
+		background: $jlblue;
+		color:$white;
+		padding:10px 20px;
+	}
+	.recent-title a{
+		color:$jlblue;
+		font-weight: bold;
+		font-size:rem-calc(40);
+	}
+}

@@ -21,7 +21,7 @@
 
 					<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 						<div class="top-bar-left">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<a href="<?php echo esc_url( home_url( '/journal' ) ); ?>" rel="home">
 								<img class="journal-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sparksjournal-logo.png" alt="Sparks Journal Logo">
 							</a>
 						</div>

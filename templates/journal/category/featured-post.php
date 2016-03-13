@@ -8,10 +8,12 @@ $featuredPost = get_field('featured_article'); ?>
     	$post = $featuredPost;
     	setup_postdata($post);
 	?>
- 			
-		<a href="<?php the_permalink(); ?>">
-			<?php the_post_thumbnail(''); ?>
-		</a>
+ 	
+ 		<div class="featured-journal-post">		
+			<a href="<?php the_permalink(); ?>">
+				<?php the_post_thumbnail('featured-journal'); ?>
+			</a>
+		</div>
 
 	   	<?php wp_reset_postdata(); ?>
 	<?php endif; ?>

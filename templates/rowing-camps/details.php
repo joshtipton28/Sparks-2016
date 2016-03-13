@@ -6,7 +6,8 @@
 <div class="tabs-panel" id="camp-details">
 	<h2><?php echo $campTitle . '<em> ' . $campLocation . ' ';?>Details</em></h2>
 <?php if( have_rows('camp_details') ): ?>
- 
+    
+    <ul>
  
     <?php while( have_rows('camp_details') ): the_row(); ?>
         
@@ -14,18 +15,14 @@
         
 	        $detailType = get_sub_field('detail_type'); 
 	        $detailContent = get_sub_field('detail_content');
-        
+            
         ?>
 
-    <ul>
     	<li><?php echo $detailType . ': ' . $detailContent;?></li>
-    </ul>
-
-        
+    
     <?php endwhile; ?>
 
-  
- 
+    </ul>
  
 <?php endif; ?>
 </div>

@@ -1,3 +1,13 @@
 .journal-archive{
 	margin-top:150px;
 }
+
+.featured-journal-post{
+	a{
+		display: block;
+		img{
+			width: 100%;
+			overflow: hidden;
+		}
+	}
+}

@@ -1,14 +1,16 @@
 <?php $tax = array(
-		'tax_query' => array(
-			array(
-				'taxonomy' => 'journal-category',
-				'field' => 'slug',
-				'terms' => 'featured'
-			)
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'journal-category',
+			'field' => 'slug',
+			'terms' => 'featured'
 		)
-	);
+	)
+);
 
-    $featuredJournal = new WP_Query( $tax );?>
+$featuredJournal = new WP_Query( $tax );?>
+
+<div class="small-12 large-4 columns">
 
     <?php if ($featuredJournal->have_posts() ):?>
 
@@ -34,3 +36,5 @@
 	<?php endif;?>
 
     <?php wp_reset_postdata();?>
+    
+</div>
