@@ -15,7 +15,7 @@ get_header(); ?>
 	<div class="page-wrap">
 
 		<div class="row">
-			<div class="nano has-scrollbar tabs-content large-8 large-centered columns" data-tabs-content="about-us">
+			<div class="nano has-scrollbar tabs-content large-8 large-centered columns">
 		        <div class="contact-us nano-content">
 		        	<h2><?php the_title();?></h2>
 
