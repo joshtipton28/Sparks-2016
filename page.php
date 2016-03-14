@@ -25,7 +25,7 @@
   <div class="page-wrap">
 
     <div class="row">
-      <div class="nano has-scrollbar tabs-content large-12 columns">
+      <div class="nano has-scrollbar tabs-content large-8 large-centered columns">
             <div class="contact-us nano-content">
               <h2><?php the_title();?></h2>
 
