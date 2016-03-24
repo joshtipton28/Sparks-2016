@@ -29,7 +29,8 @@
 
         <div class="coaching-staff">
 	        <h4><?php echo $coachName;?></h4>
-	        <h5><?php echo $coachCreds;?></h5>
+
+	        
 	        
 	        <?php if( !empty($coachPic) ): ?>
 
@@ -37,9 +38,13 @@
 
 			<?php endif; ?>
 
+			<h5><?php echo $coachCreds;?></h5>
+
 			<p><?php echo $coachBio;?></p>
 
         </div>
+
+        <hr>
         
     <?php endwhile; ?>
 

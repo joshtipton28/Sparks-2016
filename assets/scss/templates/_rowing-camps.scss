@@ -57,6 +57,35 @@
 	max-width: 80%;
 }
 
+//Rowing Camps - Coaching Staff Styles
+.coaching-staff{
+
+  h4{
+    font-size:rem-calc(20);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    margin-bottom: 0;
+    max-width: 475px;
+  }
+  h5{
+    font-size:rem-calc(16);
+    color:#ccc;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    max-width: 475px;
+  }
+  img{
+    float: right;
+    display: inline-block;
+    margin: -5px 0 20px 20px;
+    padding:6px;
+    background: $white;
+  }
+  hr{
+    margin:2rem auto;
+  }
+}
+
 //Rowing Camps Content Styles
 .camps-menu li{
 	display: block;
