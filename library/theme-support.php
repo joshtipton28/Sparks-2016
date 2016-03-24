@@ -35,5 +35,5 @@ add_action( 'after_setup_theme', 'foundationpress_theme_support' );
 endif;
 
 //Adding custom thumbnail size for Journal Featured Article
-add_image_size( 'featured-journal', 9999, 460, false );
+add_image_size( 'featured-journal', 1600, 460, true );
 ?>

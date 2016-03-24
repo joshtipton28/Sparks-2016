@@ -10,7 +10,7 @@
 
 $featuredJournal = new WP_Query( $tax );?>
 
-<div class="small-12 large-4 columns">
+<div class="journal-sidebar small-12 large-4 columns">
 
     <?php if ($featuredJournal->have_posts() ):?>
 

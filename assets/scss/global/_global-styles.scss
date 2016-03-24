@@ -1,4 +1,24 @@
-// Fonts
+//Font Imports
+@font-face {
+    font-family: 'Bookerly';
+    src: url('../fonts/bookerly-regular-webfont.eot');
+    src: url('../fonts/bookerly-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bookerly-regular-webfont.woff2') format('woff2'),
+         url('../fonts/bookerly-regular-webfont.woff') format('woff'),
+         url('../fonts/bookerly-regular-webfont.ttf') format('truetype'),
+         url('../fonts/bookerly-regular-webfont.svg#bookerlyregular') format('svg');
+}
+
+@font-face {
+    font-family: 'Bookerly';
+    src: url('../fonts/bookerly-bold-webfont.eot');
+    src: url('../fonts/bookerly-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bookerly-bold-webfont.woff2') format('woff2'),
+         url('../fonts/bookerly-bold-webfont.woff') format('woff'),
+         url('../fonts/bookerly-bold-webfont.ttf') format('truetype'),
+         url('../fonts/bookerly-bold-webfont.svg#bookerlybold') format('svg');
+}
+$booker : 'Bookerly', 'Open Sans', sans-serif;
 $sans: 'Open Sans', sans-serif;
 $days: 'Days One', sans-serif;
 
@@ -21,10 +41,12 @@ $lime: #5bb75b;
 $red: #bd362f;
 
 // Journal Colors
-$jlblue: #243956;
-$jdblue: #182536;
+$jdblue: #243956;
 $jnavy: #20303f;
 $jyellow: #e3a600;
+$jheadingblue: #2c5781;
+$jlblue :#30445f;
+$bookerlyblue: #202d3d;
 
 //Typography Styles
 $tshadow: 1px 1px 1px black;

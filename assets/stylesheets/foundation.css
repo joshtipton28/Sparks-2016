@@ -7,6 +7,16 @@
   The Foundation framework is built by Zurb
   Licensed under MIT Open Source
 */
+@font-face {
+  font-family: 'Bookerly';
+  src: url("../fonts/bookerly-regular-webfont.eot");
+  src: url("../fonts/bookerly-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bookerly-regular-webfont.woff2") format("woff2"), url("../fonts/bookerly-regular-webfont.woff") format("woff"), url("../fonts/bookerly-regular-webfont.ttf") format("truetype"), url("../fonts/bookerly-regular-webfont.svg#bookerlyregular") format("svg"); }
+
+@font-face {
+  font-family: 'Bookerly';
+  src: url("../fonts/bookerly-bold-webfont.eot");
+  src: url("../fonts/bookerly-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bookerly-bold-webfont.woff2") format("woff2"), url("../fonts/bookerly-bold-webfont.woff") format("woff"), url("../fonts/bookerly-bold-webfont.ttf") format("truetype"), url("../fonts/bookerly-bold-webfont.svg#bookerlybold") format("svg"); }
+
 .button {
   font-size: 17.5px !important;
   text-transform: uppercase; }
@@ -4372,7 +4382,7 @@ select {
   position: absolute;
   top: 0;
   left: 100%;
-  min-width: 175px;
+  min-width: 185px;
   z-index: 1;
   background: #ffffff;
   border: 1px solid #cacaca; }
@@ -6265,6 +6275,30 @@ table.hover tr:nth-of-type(even):hover {
   background: rgba(0, 0, 0, 0.5);
   max-width: 80%; }
 
+.coaching-staff h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  margin-bottom: 0;
+  max-width: 475px; }
+
+.coaching-staff h5 {
+  font-size: 1rem;
+  color: #ccc;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  max-width: 475px; }
+
+.coaching-staff img {
+  float: right;
+  display: inline-block;
+  margin: -5px 0 20px 20px;
+  padding: 6px;
+  background: #ffffff; }
+
+.coaching-staff hr {
+  margin: 2rem auto; }
+
 .camps-menu li {
   display: block; }
   .camps-menu li:hover {
@@ -6522,7 +6556,7 @@ li.tabs-title {
 *
 **/
 .journal-header {
-  background: #243956; }
+  background: #30445f; }
 
 .journal-logo {
   width: 234px;
@@ -6591,23 +6625,34 @@ li.tabs-title {
     left: 0;
     top: 40px;
     height: 44px;
-    background: #243956;
+    background: #30445f;
     color: #ffffff;
     padding: 10px 20px; }
   .journal-home-article .recent-title a {
-    color: #243956;
+    color: #30445f;
     font-weight: bold;
     font-size: 2.5rem; }
 
 .journal-single {
-  padding: 30px 20px;
+  padding: 25px;
   background: #ededed;
   border-radius: 5px;
   margin-top: 120px; }
   .journal-single .th {
     width: 100%; }
-  .journal-single h1, .journal-single h2, .journal-single p {
-    color: #20303f; }
+  .journal-single h1, .journal-single h2, .journal-single h3, .journal-single h4, .journal-single h5, .journal-single h6 {
+    color: #2c5781;
+    font-weight: bold; }
+  .journal-single .entry-title {
+    font-size: 1.4375rem;
+    letter-spacing: -0.03em;
+    margin: 10px 0; }
+  .journal-single p {
+    color: #202d3d;
+    font-family: "Bookerly", "Open Sans", sans-serif; }
+
+.single-post .journal-sidebar {
+  margin-top: 120px; }
 
 .journal-archive {
   margin-top: 150px; }
@@ -6616,15 +6661,27 @@ li.tabs-title {
   display: block; }
   .featured-journal-post a img {
     width: 100%;
-    overflow: hidden; }
+    height: 460px; }
 
 .featured-title {
   background: #e3a600;
   border-radius: 5px; }
   .featured-title h4 {
-    color: #182536;
+    color: #243956;
     text-align: center;
     font-weight: 600;
     padding: 5px 0; }
+
+.featured-article img {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  display: block; }
+
+.featured-article h4 {
+  margin: 10px 50px;
+  font-size: 1.375rem;
+  color: #30445f;
+  font-weight: bold; }
 
 /*# sourceMappingURL=foundation.css.map */

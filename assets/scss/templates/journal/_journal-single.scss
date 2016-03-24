@@ -1,5 +1,5 @@
 .journal-single{
-	padding:30px 20px;
+	padding:25px;
 	background: $snow;
 	border-radius: 5px;
 	margin-top:120px;
@@ -8,7 +8,25 @@
 		width:100%;
 	}
 
-	h1, h2, p{
-		color:$jnavy;
+	h1, h2, h3, h4, h5, h6{
+		color:$jheadingblue;
+		font-weight: bold;
+	}
+
+	.entry-title{
+		font-size: rem-calc(23);
+		letter-spacing: -0.03em;
+		margin:10px 0;
+	}
+
+	p{
+		color:$bookerlyblue;
+		font-family: $booker;
+	}
+}
+
+.single-post{
+	.journal-sidebar{
+		margin-top:120px;
 	}
 }

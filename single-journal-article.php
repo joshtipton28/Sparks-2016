@@ -9,24 +9,22 @@
 
 get_header(); ?>
 
-<div id="single-post" role="main" class="row">
+<div id="single-post" role="main" class="row single-post">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
-	<article class="journal-single clearfix" id="post-<?php the_ID(); ?>">
+	<article class="journal-single small-12 large-8 columns" id="post-<?php the_ID(); ?>">
 		
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 		
 
 		<?php if ( has_post_thumbnail() ) : ?>
 
-				<div class="column">
-					<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
-				</div>
+			<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
 
 		<?php endif; ?>
 
-		<div class="large-12 columns">
+		
 
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -40,13 +38,17 @@ get_header(); ?>
 				<p><?php the_tags(); ?></p>
 			</footer>
 
-		</div>
+		
 
 	</article>
 <?php endwhile;?>
 
 <?php do_action( 'foundationpress_after_content' ); ?>
 
+<?php include(locate_template('templates/journal/home/sidebar.php' )); //Journal Home Sidebar?>
+
 </div>
+
+
 
 <?php get_footer(); ?>
