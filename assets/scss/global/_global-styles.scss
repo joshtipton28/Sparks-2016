@@ -139,6 +139,7 @@ p{
   width:125px;
   margin:0 auto;
   font-weight: 600;
+  transition: all ease 0.3s;
 
   &:hover{
     background:$oblue;

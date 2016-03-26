@@ -21,10 +21,10 @@ get_header(); ?>
 	<div class="page-wrap">
 		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
 			<div class="row">
-				
+
 				<div class="camp-map large-12 columns">
 					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/map-of-rowing-camps.png" alt="Map of Rowing Camp Locations and Dates">
-				
+
 					<?php include(locate_template('templates/camp-maps/seattle.php' )); ?>
 					<?php include(locate_template('templates/camp-maps/middletown.php' )); ?>
 					<?php include(locate_template('templates/camp-maps/pennsylvania.php' )); ?>
@@ -36,13 +36,28 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="row">
-				
+
 					<a href="javascript:history.back();" class="sparks-back"><i class="fa fa-chevron-left"></i> Back</a>
-				
+
 			</div>
-	</div>			
+	</div>
 <?php endwhile;?>
 <?php do_action( 'foundationpress_after_content' ); ?>
 
+<?php /*Hiding Footer*/?>
 
-<?php get_footer(); ?>
+		</section>
+
+		<?php do_action( 'foundationpress_layout_end' ); ?>
+
+<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
+		</div><!-- Close off-canvas wrapper inner -->
+	</div><!-- Close off-canvas wrapper -->
+</div><!-- Close off-canvas content wrapper -->
+<?php endif; ?>
+
+
+<?php wp_footer(); ?>
+<?php do_action( 'foundationpress_before_closing_body' ); ?>
+</body>
+</html>

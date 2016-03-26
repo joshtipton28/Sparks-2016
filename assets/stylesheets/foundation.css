@@ -86,7 +86,8 @@ p {
   text-align: center;
   width: 125px;
   margin: 0 auto;
-  font-weight: 600; }
+  font-weight: 600;
+  transition: all ease 0.3s; }
   .sparks-back:hover {
     background: rgba(23, 112, 202, 0.65);
     color: #ffffff; }
@@ -6303,8 +6304,7 @@ table.hover tr:nth-of-type(even):hover {
     font-size: 0.875rem;
     color: #ededed; }
     .camp-accordion a:hover {
-      text-shadow: 0 1px 1px #0a0a0a;
-      font-weight: bold; }
+      text-shadow: 0 1px 1px #0a0a0a; }
     .camp-accordion a i {
       float: right;
       opacity: 0.5; }
@@ -6780,11 +6780,6 @@ li.tabs-title {
       .journal-hero .journal-blurb p span {
         font-weight: bold; }
     .journal-hero .journal-blurb .hero-more {
-      font-size: 2.5rem;
-      color: #e3a600;
-      text-align: center;
-      font-weight: normal;
-      display: block;
       background: url(../images/chevron.png) no-repeat;
       display: block;
       height: 37px;
