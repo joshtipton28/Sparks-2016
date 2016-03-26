@@ -8,18 +8,26 @@
 	    font-size:rem-calc(16);
 	    line-height: rem-calc(18);
 	    text-shadow: $tshadow;
-	    margin:12px 0 6px 0;
+	    margin:12px 0 26px 28px;
   	}
+
   	ul{
   		margin-bottom: 0;
+      max-width: 300px;
   	}
+
   	li{
   		margin:3px 0;
+
   	}
+
+    p{
+      font-weight: 300;
+    }
+
   	a{
   		background: $charc;
   		border-radius: 5px;
-  	  transition: all ease 0.2s;
       font-size: rem-calc(14);
       color: $snow;
 
@@ -29,32 +37,46 @@
   	  }
   	  i{
   	  	float: right;
-  	  	margin-right:10px;
+        opacity: 0.5;
   	  }
   	}
+
+    .is-active:hover{
+      max-width: 280px !important;
+    }
   	.is-active a.accordion-title{
   		font-weight: bold;
   		border-bottom-left-radius: 0px;
   		border-bottom-right-radius: 0px;
-      max-width: 80%;
+      max-width: 280px;
       background: $charc;
   		&:hover{
-  			max-width: 80% !important;
-  			margin-left:0px;
+  			max-width: 280px !important;
   		}
   	}
-    a.accordion-title{
-      max-width: 80%;
+
+    li.accordion-item{
+      max-width:280px;
+      transition: max-width 0.3s;
+      margin:3px auto;
 
       &:hover{
-        max-width: 85%;
-        margin-left:-10px;
+        max-width: 300px;
       }
     }
 }
 .accordion-content{
 	background:$charc;
-	max-width: 80%;
+	max-width: 280px;
+}
+
+.accordion{
+  margin-left:18px;
+}
+
+//Rowing Camps - Overview Tab
+.featured-media{
+  margin-bottom:42px;
 }
 
 //Rowing Camps - Coaching Staff Styles
@@ -92,11 +114,24 @@
 	
   &:hover{
     background: $oblack;
+    border-radius: 5px;
   }
 }
 .camps-menu a{
 	color:$snow;
   font-weight: 300 !important;
+}
+
+//Camp Details Styles
+.camp-details{
+  li{
+    font-weight: 300;
+    line-height: rem-calc(20);
+
+    ul{
+      list-style-type: circle;
+    }
+  }
 }
 
 //Registration Tab Styles
@@ -108,31 +143,74 @@
     margin:10px 0 15px 0;
   }
 
+  thead{
+    th{
+      font-size:rem-calc(14);
+      padding:8px;
+      text-align: center;
+    }
+  }
+
   tbody{
     th, td{
       border-top:1px solid $silver;
+      padding:8px;
+    }
+    th{
+      line-height: 20px;
+      font-weight: bold;
+      font-size:rem-calc(14);
+
     }
     .button{
-      margin:0;
+      margin:0 auto;
+      display: block;
+      text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
+      font-size:rem-calc(14);
+      width:100px;
     }
   }
 }
 
 //Camp Schedule Styles
 .camp-schedule{
+  th, td{
+    font-size:rem-calc(13);
+    padding:8px;
+    text-align: center;
+    border:1px solid $silver;
+  }
   th{
     background:$charc;
-    border:1px solid $silver;
-    text-align: center;
       &:hover{
         background: $oblue;
       }
   }
   td{
-    border:1px solid $silver;
-    text-align: center;
+    font-weight: 300;
     &:hover{
       background: $oblue;
+    }
+  }
+  .dropdown-pane{
+    color:$black;
+    border-radius: 5px;
+    max-width: 250px;
+
+    ul{
+      list-style: none;
+      margin:0;
+    }
+    li, p{
+      font-size:rem-calc(13);
+      text-align: left;
+      margin:0;
+    }
+    .title{
+      font-weight: 600;
+    }
+    a{
+      color:$blue;
     }
   }
 }

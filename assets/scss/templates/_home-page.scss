@@ -8,6 +8,7 @@
   	letter-spacing: rem-calc(-6);
   	display: block;
   	text-shadow:-1px 1px 0px $black;
+    margin-left:28px;
   	
   	small{
   		font-size:rem-calc(34);
@@ -30,8 +31,8 @@
 	line-height: 27px;
 	padding: 15px 20px;
 	border-radius: 10px;
-  text-shadow: $tshadow;
-  margin-left:12px;
+  text-shadow: 1px 1px 0px $black;
+  margin-left:38px;
 
 	p{
 		margin-bottom:0;

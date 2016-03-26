@@ -9,7 +9,7 @@ get_header(); ?>
 <?php include(locate_template('templates/journal/home/hero.php' )); ?>
 
 <?php include(locate_template('templates/journal/home/recent-articles.php' )); ?>
-	
+
 <?php do_action( 'foundationpress_after_content' ); ?>
 
 

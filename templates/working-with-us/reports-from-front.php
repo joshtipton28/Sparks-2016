@@ -6,7 +6,7 @@
 
 <?php $reportsImg = get_field('reports_featured_image');?>
 
-<div class="rff-archive tabs-panel" id="reports-from-the-front">
+<div class="rff-archive tabs-panel tab-block" id="reports-from-the-front">
 	<h2>Reports From the Front</h2>
 	<hr>
 	
@@ -20,6 +20,10 @@
    	<?php 
 	   	$args = array( 'post_type' => 'rff', 'posts_per_page' => 100 );
 		$loop = new WP_Query( $args );?>
+
+		<hr>
+
+		<h3>All Posts:</h3>
 
 		<ul>
 

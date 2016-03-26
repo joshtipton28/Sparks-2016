@@ -10,7 +10,7 @@
         <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/">Coxswain Program<i class="fa fa-chevron-right"></i></a></li>
         <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/">International Applicants<i class="fa fa-chevron-right"></i></a></li>
         <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/">Gap Year Advising<i class="fa fa-chevron-right"></i></a></li>
-        <li class="tabs-title is-active"><a href="<?php echo home_url();?>/working-with-us/#reports-from-the-front">Reports From The Front<i class="fa fa-chevron-right"></i></a></li>
+        <li class="tabs-title is-active"><a href="<?php echo home_url();?>/working-with-us/#reports-from-the-front" aria-selected="true">Reports From The Front<i class="fa fa-chevron-right"></i></a></li>
         <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/">Our Approach<i class="fa fa-chevron-right"></i></a></li>
         <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/">Counseling Testimonials<i class="fa fa-chevron-right"></i></a></li>
         <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/">Camp Testimonials<i class="fa fa-chevron-right"></i></a></li>

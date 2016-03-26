@@ -16,7 +16,11 @@
 
         <?php the_content();?>
 
-        <a class="rff-more" href="<?php echo home_url();?>/working-with-us/#panel1">View All Reports</a>
+        <br>
+        
+        <a class="sparks-back" href="<?php echo home_url();?>/working-with-us/#reports-from-the-front">
+          <i class="fa fa-chevron-left"></i> Back
+        </a>
     
   <?php endwhile;?>
     </div>

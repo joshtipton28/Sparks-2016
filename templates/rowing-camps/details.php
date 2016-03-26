@@ -3,7 +3,7 @@
  * Template part for Rowing Camps Custom Post Type
  **/
 ?>
-<div class="tabs-panel" id="camp-details">
+<div class="tabs-panel camp-details" id="camp-details">
 	<h2><?php echo $campTitle . '<em> ' . $campLocation . ' ';?>Details</em></h2>
 <?php if( have_rows('camp_details') ): ?>
     
@@ -18,7 +18,10 @@
             
         ?>
 
-    	<li><?php echo $detailType . ': ' . $detailContent;?></li>
+    	<li>
+            <strong><?php echo $detailType; ?>:&nbsp;</strong>
+            <?php echo $detailContent; ?>
+        </li>
     
     <?php endwhile; ?>
 

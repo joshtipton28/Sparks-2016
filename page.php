@@ -25,10 +25,10 @@
   <div class="page-wrap">
 
     <div class="row">
-      <div class="nano has-scrollbar tabs-content large-8 large-centered columns">
-            <div class="contact-us nano-content">
+      <div class="nano has-scrollbar page-default large-8 large-centered columns">
+            <div class="nano-content">
               <h2><?php the_title();?></h2>
-
+                <hr>
               <?php the_content();?>
 
             </div>

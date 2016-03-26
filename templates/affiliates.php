@@ -15,7 +15,7 @@ get_header(); ?>
 <div class="page-wrap">
 
 	<div class="row">
-		<div class="nano has-scrollbar tabs-content large-8 large-centered columns">
+		<div class="nano has-scrollbar page-default large-8 large-centered columns">
 	        <div class="nano-content">
 	        	<h2><?php the_title(); ?></h2>
 	        		<hr>
@@ -31,11 +31,11 @@ get_header(); ?>
 							
 							<hr>
 
-					        <h4>
+					        <h3>
 					        	<a href="<?php the_sub_field('affiliate_url'); ?>" target="_blank">
 					        		<?php the_sub_field('affiliate_title'); ?>
 					        	</a>
-					        </h4>
+					        </h3>
 
 					        <?php the_sub_field('affiliate_description'); ?>
 

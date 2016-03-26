@@ -15,7 +15,7 @@
 
 		 	<?php while ( have_rows('ok_details') ) : the_row();?>
 
-		 		<a href="<?php the_sub_field('camp_url');?>">
+		 		<a class="camp-link" href="<?php the_sub_field('camp_url');?>">
 			        
 			        <strong><?php the_sub_field('camp_title');?></strong>
 			        <strong><?php the_sub_field('camp_date');?></strong>

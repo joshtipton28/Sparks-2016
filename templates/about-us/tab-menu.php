@@ -5,7 +5,7 @@
 ?>
 <div class="row">
     <div class="tabs-wrap medium-4 columns">
-        <h3><?php the_title();?></h3>
+        <h3 class="dark"><?php the_title();?></h3>
           <ul class="tabs vertical" data-tabs id="about-us">
             <li class="tabs-title is-active"><a href="#overview" aria-selected="true">Overview<i class="fa fa-chevron-right"></i></a></li>
             <li class="tabs-title"><a href="#leadership">Leadership<i class="fa fa-chevron-right"></i></a></li>

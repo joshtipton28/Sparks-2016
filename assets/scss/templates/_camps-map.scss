@@ -1,6 +1,7 @@
 //Map Dimensions
 .camp-map{
 	position: relative;
+	margin-top:10px;
 
 	img{
 		width:100%;
@@ -14,11 +15,13 @@
 	a.tooltip-link{
 		font-family: $days;
 		color:$white;
+		font-size:rem-calc(13.5);
+		text-shadow:$tshadow;
 	}
 
 	i{
-		height:12px;
-		width:12px;
+		height:rem-calc(11.5);
+		width:rem-calc(11.5);
 		border-radius: 100%;
 		display: inline-block;
 		margin-right:5px;
@@ -30,7 +33,7 @@
 .pin-right{
 	i{
 		float: right;
-		margin-top:7px;
+		margin-top:rem-calc(4.5);
 		margin-left:5px;
 	}
 }
@@ -77,11 +80,7 @@
 //Camp Colors
 .summer-camp{
 	.dropdown-pane{
-		background: $orange;
-
-		a{
-			color:$white;
-		}
+		background: $oorange;
 	}
 	i{
 		background: $orange;
@@ -89,13 +88,63 @@
 }
 .winter-camp{
 	.dropdown-pane{
-		background: $blue;
-
-		a{
-			color:$white;
-		}
+		background: $oblue;
 	}
 	i{
 		background: $blue;
+	}
+}
+.summer-camp, .winter-camp{
+	.dropdown-pane{}
+	a{
+		color:$white;
+		display: block;
+		font-size:rem-calc(14);
+		text-shadow:$tshadow;
+		margin:3px 0;
+	}
+	.camp-link{
+		transition:all ease 0.3s;
+		&:hover{
+			opacity:.6;
+		}
+	}
+}
+
+//Map Legend
+.map-title, .map-key{
+	background: rgba(0,0,0,0.45);
+	border-radius: 5px;
+
+	h1, h4{
+		font-family: $days;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+.map-title{
+	top:82%;
+	left:38%;
+	padding:10px 30px;
+	max-width: 354px;
+
+	h1{
+		font-size:rem-calc(18);
+		margin-bottom:0;
+	}
+}
+.map-key{
+	top:74%;
+	left:9%;
+	padding:20px;
+
+
+	h4{
+		font-size:rem-calc(15.5);
+		margin-bottom:5px;
+	}
+	h6{
+		margin-bottom: 3px;
+		font-size:rem-calc(15);
 	}
 }

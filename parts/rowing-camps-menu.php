@@ -22,5 +22,12 @@
          
 
     </ul>
-    <a class="accordion-title" href="<?php echo get_home_url(); ?>/map-of-camp-locations">Camp Map &amp; Dates<i class="fa fa-chevron-right"></i></a>
+    <ul class="accordion">
+      <li class="accordion-item">
+        <a class="accordion-title map-button" href="<?php echo get_home_url(); ?>/map-of-camp-locations">
+          Camp Map &amp; Dates<i class="fa fa-chevron-right"></i>
+        </a>
+      </li>
+    </ul>
+
   </div>

@@ -19,7 +19,7 @@ get_header(); ?>
 		<?php include(locate_template('parts/rowing-camps-menu.php' )); ?>
 
 		<div class="nano has-scrollbar tabs-content large-8 columns">
-	        <div class="nano-content">
+	        <div class="nano-content tab-block">
 	        	<h2><?php the_title(); ?></h2>
 	        		<hr>
 	        	<?php the_content(); ?>

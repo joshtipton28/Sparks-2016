@@ -10,6 +10,13 @@ get_header(); ?>
 		<?php if ( has_post_thumbnail() ) {
 		the_post_thumbnail('full', array('class' => 'full-bg-img'));
 		} ?>
+
+		<div class="bg-caption">
+			<?php $bgCaption =  get_post(get_post_thumbnail_id())->post_excerpt; ?>
+			<?php if (!empty($bgCaption) ): ?>
+				<p><?php echo $bgCaption; ?></p>
+			<?php endif; ?>
+		</div>
 	</div>
 	<div class="page-wrap">
 		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
@@ -25,8 +32,13 @@ get_header(); ?>
 					<?php include(locate_template('templates/camp-maps/florida.php' )); ?>
 					<?php include(locate_template('templates/camp-maps/new_zealand.php' )); ?>
 					<?php include(locate_template('templates/camp-maps/holland.php' )); ?>
+					<?php include(locate_template('templates/camp-maps/map-legend.php' )); ?>
 				</div>
-
+			</div>
+			<div class="row">
+				
+					<a href="javascript:history.back();" class="sparks-back"><i class="fa fa-chevron-left"></i> Back</a>
+				
 			</div>
 	</div>			
 <?php endwhile;?>
