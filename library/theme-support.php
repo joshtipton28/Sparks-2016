@@ -36,4 +36,6 @@ endif;
 
 //Adding custom thumbnail size for Journal Featured Article
 add_image_size( 'featured-journal', 1600, 460, true );
+add_image_size( 'recent-journal', 845, 500, true );
+add_image_size( 'featured-journal-sidebar', 300, 200, true );
 ?>

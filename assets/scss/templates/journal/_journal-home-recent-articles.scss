@@ -1,29 +1,64 @@
 //Journal Home - Recent Articles below fold content
 
 .journal-recent{
-	padding-top:150px;
+	padding-top:55px;
 	color:$jnavy;
 }
 .journal-home-article{
 	background:$snow;
 	position: relative;
-	padding:20px;
+	padding:rem-calc(25);
 	border-radius: 5px;
 	margin-bottom:50px;
 
+	.recent-title{
+		margin:40px 35px 10px 35px;
+		 a{
+			text-shadow: 0 0 0;
+			font-weight: bold;
+			font-size:rem-calc(32);
+			line-height: rem-calc(32);
+		}
+	}
+	a{
+		color: $jhomeblue;
+		transition: all ease 0.3s;
+
+		&:hover{
+			color:$jyellow;
+		}
+	}
+	p{
+		color:$jnavy;
+		font-family: $booker;
+		margin:rem-calc(0 36 18 36);
+		line-height: rem-calc(30);
+		text-align: justify;
+		font-size:rem-calc(17);
+	}
+	.journal-read-more{
+		display: inline-block;
+		padding:5px 20px;
+		background: $jyellow;
+		border-radius: 5px;
+		color: $jnavy;
+		margin:rem-calc(14 35);
+		font-family: $booker;
+		font-weight: bold;
+		&:hover{
+			color: $jnavy;
+			background: scale-color($jyellow, $lightness: 10%);
+		}
+	}
 	//Category Flag on Image of Recent Articles
 	.journal-category{
 		position: absolute;
 		left:0;
 		top:40px;
-		height:44px;
 		background: $jlblue;
 		color:$white;
-		padding:10px 20px;
-	}
-	.recent-title a{
-		color:$jlblue;
-		font-weight: bold;
-		font-size:rem-calc(40);
+		padding:rem-calc(6 35);
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
 	}
 }

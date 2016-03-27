@@ -3,11 +3,38 @@
 }
 
 .featured-journal-post{
-	a{
-		display: block;
-		img{
-			width:100%;
-			height:460px;
-		}
+	position: relative;
+
+	h1{
+		position: absolute;
+		top:30%;
+		text-align: center;
+		width: 100%;
+		font-weight: bold;
+		text-shadow:$tshadow;
+		letter-spacing: -0.05em;
 	}
+
+	p{
+		position: absolute;
+		top:50%;
+		left:0;
+		right:0;
+		margin:0 auto;
+		max-width: 980px;
+		font-weight: normal;
+		font-size:rem-calc(28);
+		line-height: rem-calc(34);
+		text-align: center;
+		text-shadow: $tshadow;
+	}
+
+
+	img{
+		width:100%;
+		height:460px;
+		object-fit:cover;
+		margin-top:25px;
+	}
+
 }

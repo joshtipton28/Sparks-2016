@@ -1,4 +1,5 @@
 <?php $tax = array(
+	'posts_per_page' => 3,
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'journal-category',
@@ -6,9 +7,9 @@
 			'terms' => 'featured'
 		)
 	)
-);
+); ?>
 
-$featuredJournal = new WP_Query( $tax );?>
+<?php $featuredJournal = new WP_Query( $tax );?>
 
 <div class="journal-sidebar small-12 large-4 columns">
 
@@ -21,11 +22,13 @@ $featuredJournal = new WP_Query( $tax );?>
 		<?php while ( $featuredJournal->have_posts() ) : $featuredJournal->the_post();?>
 
 			<div class="featured-article">
-				<?php if ( has_post_thumbnail() ):?>
-			  		<a class="journal-feat-img" href="<?php the_permalink(); ?>">
-	              		<?php the_post_thumbnail('thumbnail');?>
-	          		</a>
-	          	<?php endif;?>
+				<div class="featured-article-media">
+					<?php if ( has_post_thumbnail() ):?>
+				  		<a class="journal-feat-img" href="<?php the_permalink(); ?>">
+		              		<?php the_post_thumbnail('featured-journal-sidebar');?>
+		          		</a>
+		          	<?php endif;?>
+	          	</div>
 
 			  <a class="title-more" href="<?php the_permalink();?>">
 			  	<h4><?php the_title(); ?></h4>
@@ -36,5 +39,5 @@ $featuredJournal = new WP_Query( $tax );?>
 	<?php endif;?>
 
     <?php wp_reset_postdata();?>
-    
+
 </div>

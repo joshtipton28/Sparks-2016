@@ -25,12 +25,13 @@
 								<img class="journal-logo" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/sparksjournal-logo.png" alt="Sparks Journal Logo">
 							</a>
 						</div>
-						<div class="top-bar-right">
+						<div class="top-bar-right journal-nav">
 						<?php foundationpress_top_bar_j();?>
 
 							<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
 								<?php get_template_part( 'parts/mobile-top-bar' ); ?>
 							<?php endif; ?>
+							<a class="journal-learn-more" data-open="journal-learn-more">Learn More</a>
 						</div>
 					</nav>
 				</header>

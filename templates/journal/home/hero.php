@@ -13,6 +13,7 @@
 						<?php the_content(); ?>
 						<a class="hero-more scroll" href="#journal-recent"></a>
 					</div>
+
 			</div>
 		</div>
 	</div>

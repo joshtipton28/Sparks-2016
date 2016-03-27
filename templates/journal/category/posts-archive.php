@@ -43,12 +43,8 @@
 			    <p><?php the_excerpt();?></p>
 
 		    </div>
-				    
+
 	   	<?php endwhile;?>
-
-
-
-			   	
 
 	<?php /* Display navigation to next/previous pages when applicable */ ?>
 	<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>

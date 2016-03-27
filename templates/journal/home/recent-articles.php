@@ -1,6 +1,6 @@
 <div id="journal-recent" class="journal-recent row">
 	<div class="large-8 small-12 columns">
-		<?php 
+		<?php
 		   	$args = array( 'post_type' => 'journal-article', 'posts_per_page' => 5 );
 			$loop = new WP_Query( $args );
 			while ( $loop->have_posts() ) : $loop->the_post();
@@ -12,13 +12,13 @@
 
 				<?php if ( has_post_thumbnail() ):?>
 					<a class="feat-journal-img" href="<?php the_permalink();?>">
-						<?php the_post_thumbnail('large'); ?>
+						<?php the_post_thumbnail('recent-journal'); ?>
 					</a>
 
-					<?php if ($journalCat): 
+					<?php if ($journalCat):
 						foreach ($journalCat as $custom_tax): ?>
 							<div class="journal-category">
-								<strong>	
+								<strong>
     								<?php echo $custom_tax->name; ?>
     							</strong>
     						</div>
@@ -34,10 +34,10 @@
 
 				<h6><?php foundationpress_entry_meta(); ?></h6>
 
-				<p><?php the_excerpt();?></p>
+				<?php the_excerpt();?>
 
-				<a class="read-more" href="<?php the_permalink(); ?>">Read More</a>
-					
+				<a class="journal-read-more" href="<?php the_permalink(); ?>">Read More</a>
+
 			</div>
 
 		<?php endwhile;

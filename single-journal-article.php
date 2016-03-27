@@ -14,9 +14,9 @@ get_header(); ?>
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article class="journal-single small-12 large-8 columns" id="post-<?php the_ID(); ?>">
-		
+
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
-		
+
 
 		<?php if ( has_post_thumbnail() ) : ?>
 
@@ -24,7 +24,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		
+
 
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -32,13 +32,13 @@ get_header(); ?>
 			</header>
 
 			<?php the_content(); ?>
-			
+
 			<footer>
 				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
 				<p><?php the_tags(); ?></p>
 			</footer>
 
-		
+
 
 	</article>
 <?php endwhile;?>
@@ -51,4 +51,4 @@ get_header(); ?>
 
 
 
-<?php get_footer(); ?>
+<?php include(locate_template('parts/journal-footer.php' )); ?>

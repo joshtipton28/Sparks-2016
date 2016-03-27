@@ -1,6 +1,11 @@
 <?php //Setting up Featured Post
 
-$featuredPost = get_field('featured_article'); ?>
+$featuredPost = get_field('featured_article');
+$categoryImg = get_field('featured_category_image');
+$featTitle = get_field('featured_title');
+$featBlurb = get_field('featured_blurb');
+
+?>
 
 <?php //Display Featured Post
 	if ($featuredPost):
@@ -8,18 +13,19 @@ $featuredPost = get_field('featured_article'); ?>
     	$post = $featuredPost;
     	setup_postdata($post);
 
-    	$featuredImg = get_field('featured_article_image');
 	?>
- 	
- 		<div class="featured-journal-post">		
-			<a href="<?php the_permalink(); ?>">
-				<?php 
-					if (!empty($featuredImg) ): ?>
 
-						<img src="<?php echo $featuredImg['url']; ?>" alt="<?php echo $featuredImg['alt'];?>" >
-						
-				<?php endif; ?>
-			</a>
+ 		<div class="featured-journal-post">
+
+	 		<h1><?php echo $featTitle; ?></h1>
+
+	 		<?php echo $featBlurb; ?>
+
+	 		<?php if( !empty($categoryImg) ): ?>
+
+				<img src="<?php echo $categoryImg['url']; ?>" alt="<?php echo $categoryImg['alt']; ?>" />
+
+			<?php endif; ?>
 		</div>
 
 	   	<?php wp_reset_postdata(); ?>

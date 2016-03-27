@@ -16,3 +16,24 @@
     opacity: 0.6;
   }
 }
+.journal-nav{
+	> ul{
+		display: inline-block;
+	}
+}
+//Modal Styles
+.journal-learn-more{
+	display: inline-block;
+	float: right;
+	background: $blue;
+	padding: rem-calc(9 15);
+	margin-left: 3px;
+	border-radius: 5px;
+	color: $white;
+	font-size:rem-calc(14);
+}
+
+//Modal fix
+body.is-reveal-open{
+overflow-y: scroll;
+}
