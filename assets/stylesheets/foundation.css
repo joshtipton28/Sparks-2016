@@ -107,15 +107,19 @@ body.admin-bar.f-topbar-fixed .sticky.fixed {
   margin-top: 2rem; }
 
 .wp-caption {
-  padding: 0.25rem; }
+  padding: 0.25rem;
+  display: block;
+  min-width: 100%; }
 
 .wp-caption img {
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0 auto; }
 
 p.wp-caption-text {
   font-size: 90%;
-  color: #666;
-  padding: 0.625rem 0; }
+  color: #ffffff;
+  padding: 0.625rem 0;
+  font-style: italic; }
 
 /*!
  *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -6732,7 +6736,11 @@ li.tabs-title {
 
 .rff-single img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  border: 8px solid #ffffff; }
+
+.rff-single iframe {
+  border: 8px solid #ffffff; }
 
 /** Styles for Journal Nav Bar
 * Extends /scss/modules/navigation.scss

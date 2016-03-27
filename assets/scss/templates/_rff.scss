@@ -23,7 +23,7 @@
 		font-weight: normal;
 		letter-spacing: -0.08em;
 		margin:0 0 30px 0;
-		
+
 		span{
 			display: block;
 			font-weight: 300;
@@ -57,6 +57,11 @@
 	img{
 		width: 100%;
 		height: auto;
+		border: 8px solid $white;
+	}
+
+	iframe{
+		border: 8px solid $white;
 	}
 
 }

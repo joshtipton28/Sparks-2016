@@ -13,13 +13,13 @@
 
 ?>
 
-<div class="tabs-panel is-active" id="all-posts">
+<div class="tabs-panel is-active rff-archive" id="all-posts">
     <h2>All Camp Blog Posts</h2>
     <hr>
 
     <?php while ( $allPosts->have_posts() ) : $allPosts->the_post();?>
 
-  <?php 
+  <?php
 
     $post_month = get_the_date('F');
       $post_year = get_the_date('Y');
@@ -32,8 +32,8 @@
     }?>
 
     <li><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title();?></a></li>
-    
+
     <?php endwhile;?>
-   
+
 <?php wp_reset_postdata();?>
 </div><!--tab panels-->

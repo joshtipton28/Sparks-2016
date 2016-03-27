@@ -3,24 +3,25 @@
  * Template part for Camp Blog - Florida Winter Camps
  **/
 ?>
-<div class="tabs-panel" id="florida-winter-camps">
+<div class="tabs-panel rff-archive" id="florida-winter-camps">
     <h2>Florida Winter camps</h2>
    	<?php $tax = array(
-				'tax_query' => array(
-					array(
-						'taxonomy' => 'camp-blog-category',
-						'field' => 'slug',
-						'terms' => 'florida-winter-camps'
-					)
+			'posts_per_page' => -1,
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'camp-blog-category',
+					'field' => 'slug',
+					'terms' => 'florida-winter-camps'
 				)
+			)
 		);?>
 
 	<?php $floridaCampBlog = new WP_Query( $tax );?>
 
 	<?php while ( $floridaCampBlog->have_posts() ) : $floridaCampBlog->the_post();?>
 
-	<?php 
-	
+	<?php
+
 		$post_month = get_the_date('F');
 	  	$post_year = get_the_date('Y');
 
@@ -32,7 +33,7 @@
   	}?>
 
     <li><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title();?></a></li>
-    
+
    	<?php endwhile;?>
 	<?php wp_reset_postdata();?>
 

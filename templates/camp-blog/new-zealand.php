@@ -4,23 +4,24 @@
  **/
 ?>
 
-<div class="tabs-panel" id="new-zealand-development-program">
+<div class="tabs-panel rff-archive" id="new-zealand-development-program">
     <h2>New Zealand Development Camp</h2>
    	<?php $tax = array(
-				'tax_query' => array(
-					array(
-						'taxonomy' => 'camp-blog-category',
-						'field' => 'slug',
-						'terms' => 'new-zealand'
-					)
+			'posts_per_page' => -1,
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'camp-blog-category',
+					'field' => 'slug',
+					'terms' => 'new-zealand'
 				)
+			)
 		);?>
 
 	<?php $zealandCampBlog = new WP_Query( $tax );?>
 
 	<?php while ( $zealandCampBlog->have_posts() ) : $zealandCampBlog->the_post();?>
 
-	<?php 
+	<?php
 
 		$post_month = get_the_date('F');
 	  	$post_year = get_the_date('Y');
@@ -33,7 +34,7 @@
   	}?>
 
     <li><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title();?></a></li>
-    
+
    	<?php endwhile;?>
 	<?php wp_reset_postdata();?>
 

@@ -3,24 +3,25 @@
  * Template part for Camp Blog - Coxswains Only
  **/
 ?>
-<div class="tabs-panel" id="coxswains-only">
+<div class="tabs-panel rff-archive" id="coxswains-only">
     <h2>Summer Coxswains Only</h2>
     <?php $tax = array(
-				'tax_query' => array(
-					array(
-						'taxonomy' => 'camp-blog-category',
-						'field' => 'slug',
-						'terms' => 'coxswains-only'
-					)
+			'posts_per_page' => -1,
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'camp-blog-category',
+					'field' => 'slug',
+					'terms' => 'coxswains-only'
 				)
+			)
 		);?>
 
 	<?php $coxswainsCampBlog = new WP_Query( $tax );?>
 
 	<?php while ( $coxswainsCampBlog->have_posts() ) : $coxswainsCampBlog->the_post();?>
 
-	<?php 
-	
+	<?php
+
 		$post_month = get_the_date('F');
 	  	$post_year = get_the_date('Y');
 
@@ -32,7 +33,7 @@
   	}?>
 
     <li><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title();?></a></li>
-    
+
    	<?php endwhile;?>
 	<?php wp_reset_postdata();?>
 

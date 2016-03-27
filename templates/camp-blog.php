@@ -21,8 +21,8 @@ get_header(); ?>
 		  <?php include(locate_template('templates/camp-blog/florida-winter-camps.php' )); ?>
 		  <?php include(locate_template('templates/camp-blog/new-zealand.php' )); ?>
 		  <?php include(locate_template('templates/camp-blog/advanced-physiology.php' )); ?>
-		</div> 
-    
+		</div>
+
   	<?php endwhile;?>
 
 <?php do_action( 'foundationpress_after_content' ); ?>

@@ -4,6 +4,7 @@
  **/
 
 	$tax = array(
+		'posts_per_page' => -1,
 		'tax_query' => array(
 			array(
 				'taxonomy' => 'camp-blog-category',
@@ -18,12 +19,12 @@
 ?>
 
 
-            <div class="tabs-panel" id="advanced-physiology-camp">
+            <div class="tabs-panel rff-archive" id="advanced-physiology-camp">
                 <h2>Advanced Physiology Camp</h2>
 
 				<?php while ( $physioCampBlog->have_posts() ) : $physioCampBlog->the_post();?>
 
-				<?php 
+				<?php
 
 					$post_month = get_the_date('F');
 				  	$post_year = get_the_date('Y');
@@ -36,10 +37,10 @@
 			  	}?>
 
 			    <li><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title();?></a></li>
-			    
+
 			   	<?php endwhile;?>
 				<?php wp_reset_postdata();?>
-               
+
             </div><!--tab panels-->
         </div><!--nano-content-->
     </div><!--nano-->
