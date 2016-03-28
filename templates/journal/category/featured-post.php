@@ -17,7 +17,7 @@ $featBlurb = get_field('featured_blurb');
 
  		<div class="featured-journal-post">
 
-	 		<h1><?php echo $featTitle; ?></h1>
+	 		<h1><a href="<?php the_permalink();?>"><?php echo $featTitle; ?></a></h1>
 
 	 		<?php echo $featBlurb; ?>
 

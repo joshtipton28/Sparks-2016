@@ -7,16 +7,6 @@
   The Foundation framework is built by Zurb
   Licensed under MIT Open Source
 */
-@font-face {
-  font-family: 'Bookerly';
-  src: url("../fonts/bookerly-regular-webfont.eot");
-  src: url("../fonts/bookerly-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bookerly-regular-webfont.woff2") format("woff2"), url("../fonts/bookerly-regular-webfont.woff") format("woff"), url("../fonts/bookerly-regular-webfont.ttf") format("truetype"), url("../fonts/bookerly-regular-webfont.svg#bookerlyregular") format("svg"); }
-
-@font-face {
-  font-family: 'Bookerly';
-  src: url("../fonts/bookerly-bold-webfont.eot");
-  src: url("../fonts/bookerly-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bookerly-bold-webfont.woff2") format("woff2"), url("../fonts/bookerly-bold-webfont.woff") format("woff"), url("../fonts/bookerly-bold-webfont.ttf") format("truetype"), url("../fonts/bookerly-bold-webfont.svg#bookerlybold") format("svg"); }
-
 hr {
   opacity: 0.5; }
 
@@ -73,9 +63,13 @@ p {
 .gc-cs-link {
   color: #b2d6ff !important; }
 
-.avatar-img img {
-  border-radius: 100%;
-  margin-right: 10px; }
+.avatar-img {
+  margin-left: 20px; }
+  .avatar-img img {
+    border-radius: 100%;
+    margin-right: 10px;
+    height: 44px;
+    width: 44px; }
 
 .sparks-back {
   background: rgba(255, 255, 255, 0.7);
@@ -120,6 +114,12 @@ p.wp-caption-text {
   color: #ffffff;
   padding: 0.625rem 0;
   font-style: italic; }
+
+.admin-bar .header-container {
+  top: 32px; }
+
+.admin-bar .page-wrap {
+  margin-top: 32px; }
 
 /*!
  *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -6761,6 +6761,13 @@ li.tabs-title {
 .journal-nav > ul {
   display: inline-block; }
 
+.journal-nav li a:hover {
+  background: rgba(0, 0, 0, 0.25) !important; }
+
+.journal-nav .active a {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  font-weight: bold; }
+
 .journal-learn-more {
   display: inline-block;
   float: right;
@@ -6779,7 +6786,8 @@ body.is-reveal-open {
   .journal-hero h1 {
     font-weight: 300;
     line-height: 1;
-    text-shadow: 1px 1px 1px black; }
+    text-shadow: 1px 1px 1px black;
+    margin-left: 40px; }
     .journal-hero h1 span {
       font-weight: bold;
       letter-spacing: -0.05em;
@@ -6799,6 +6807,7 @@ body.is-reveal-open {
     padding: 28px 22px;
     border-radius: 5px;
     margin-top: 40px;
+    margin-left: 43px;
     max-width: 350px; }
     .journal-hero .journal-blurb p {
       color: #30445f;
@@ -6828,12 +6837,13 @@ body.is-reveal-open {
   border-radius: 5px;
   margin-bottom: 50px; }
   .journal-home-article .recent-title {
-    margin: 40px 35px 10px 35px; }
+    margin: 40px 20px 10px 20px; }
     .journal-home-article .recent-title a {
       text-shadow: 0 0 0;
       font-weight: bold;
-      font-size: 2rem;
-      line-height: 2rem; }
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+      letter-spacing: -0.05em; }
   .journal-home-article a {
     color: #285480;
     transition: all ease 0.3s; }
@@ -6841,11 +6851,12 @@ body.is-reveal-open {
       color: #e3a600; }
   .journal-home-article p {
     color: #20303f;
-    font-family: "Bookerly", "Open Sans", sans-serif;
-    margin: 0 2.25rem 1.125rem 2.25rem;
+    font-family: "Roboto Slab", "Open Sans", sans-serif;
     line-height: 1.875rem;
     text-align: justify;
-    font-size: 1.0625rem; }
+    font-size: 1.0625rem;
+    font-weight: normal;
+    letter-spacing: -0.02em; }
   .journal-home-article .journal-read-more {
     display: inline-block;
     padding: 5px 20px;
@@ -6853,41 +6864,91 @@ body.is-reveal-open {
     border-radius: 5px;
     color: #20303f;
     margin: 0.875rem 2.1875rem;
-    font-family: "Bookerly", "Open Sans", sans-serif;
+    font-family: "Roboto Slab", "Open Sans", sans-serif;
     font-weight: bold; }
     .journal-home-article .journal-read-more:hover {
       color: #20303f;
       background: #ffbb00; }
-  .journal-home-article .journal-category {
-    position: absolute;
-    left: 0;
-    top: 40px;
-    background: #30445f;
-    color: #ffffff;
-    padding: 0.375rem 2.1875rem;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px; }
+
+.category-tag {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  background: #30445f;
+  color: #ffffff;
+  padding: 0.375rem 2.1875rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.journal-footer {
+  background: #23282d;
+  font-size: 0.75rem;
+  padding: 10px 0; }
+  .journal-footer p {
+    margin: 0 8px 0 0; }
+  .journal-footer ul li {
+    border-left: 1px solid rgba(255, 255, 255, 0.8); }
+  .journal-footer a {
+    padding: 0 8px !important;
+    line-height: 0.5rem !important;
+    color: #ffffff; }
+    .journal-footer a:hover {
+      color: #e3a600; }
+  .journal-footer .footer-widget {
+    display: inline-block; }
 
 .journal-single {
   padding: 25px;
   background: #ededed;
   border-radius: 5px;
-  margin-top: 120px; }
+  margin: 160px 0 110px 0;
+  position: relative; }
   .journal-single .th {
     width: 100%; }
   .journal-single h1, .journal-single h2, .journal-single h3, .journal-single h4, .journal-single h5, .journal-single h6 {
     color: #2c5781;
-    font-weight: bold; }
+    font-weight: bold;
+    text-shadow: 0 0 0;
+    letter-spacing: -0.05em; }
+  .journal-single a {
+    color: #285480; }
   .journal-single .entry-title {
-    font-size: 1.4375rem;
-    letter-spacing: -0.03em;
-    margin: 10px 0; }
-  .journal-single p {
-    color: #202d3d;
-    font-family: "Bookerly", "Open Sans", sans-serif; }
+    text-shadow: 0 0 0;
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 2rem;
+    letter-spacing: -0.05em;
+    margin: 40px 40px 10px 20px; }
+  .journal-single p, .journal-single li {
+    color: #20303f;
+    font-family: "Roboto Slab", "Open Sans", sans-serif;
+    line-height: 1.875rem;
+    text-align: justify;
+    font-size: 1.0625rem;
+    font-weight: normal;
+    letter-spacing: -0.02em; }
+  .journal-single blockquote {
+    background: #dbdbdb;
+    border-radius: 5px;
+    border: 0px solid #dbdbdb;
+    padding: 20px 40px; }
+    .journal-single blockquote p {
+      font-size: 1.3125rem;
+      margin-bottom: 0;
+      line-height: 1.9375rem;
+      font-family: "Open Sans", sans-serif;
+      letter-spacing: -0.03em; }
+
+.journal-single-content {
+  margin: 0 1.25rem 1.125rem 1.25rem; }
+  .journal-single-content a {
+    color: #e3a600;
+    transition: all ease 0.5s; }
+    .journal-single-content a:hover {
+      color: #1770ca; }
 
 .single-post .journal-sidebar {
-  margin-top: 120px; }
+  margin-top: 160px; }
 
 .journal-archive {
   margin-top: 150px; }
@@ -6901,24 +6962,108 @@ body.is-reveal-open {
     width: 100%;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
-    letter-spacing: -0.05em; }
+    letter-spacing: -0.05em;
+    font-size: 2.75rem; }
+  .featured-journal-post a {
+    color: #ffffff;
+    transition: all ease 0.3s; }
+    .featured-journal-post a:hover {
+      color: #e3a600; }
   .featured-journal-post p {
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 0;
     right: 0;
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 850px;
     font-weight: normal;
-    font-size: 1.75rem;
-    line-height: 2.125rem;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     text-align: center;
-    text-shadow: 1px 1px 1px black; }
+    text-shadow: 1px 1px 1px black;
+    font-family: "Roboto Slab", "Open Sans", sans-serif; }
   .featured-journal-post img {
     width: 100%;
-    height: 460px;
+    height: 475px;
     object-fit: cover;
-    margin-top: 25px; }
+    margin-top: 106px; }
+
+.journal-category {
+  background: #ededed;
+  border-radius: 5px;
+  margin: 40px 0;
+  padding: 55px 40px; }
+  .journal-category h6 {
+    font-weight: bold;
+    font-size: 1.375rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.05em;
+    margin: 10px 0; }
+  .journal-category a {
+    color: #285480; }
+  .journal-category img {
+    height: 208px;
+    width: 343px;
+    object-fit: cover; }
+  .journal-category p {
+    color: #20303f;
+    font-family: "Roboto Slab", "Open Sans", sans-serif;
+    line-height: 1.75rem; }
+  .journal-category .journal-archive-article {
+    margin-bottom: 30px; }
+  .journal-category .journal-more {
+    color: #e3a600;
+    transition: all ease 0.3s; }
+    .journal-category .journal-more:hover {
+      color: #30445f; }
+
+.journal-cat-title {
+  margin-bottom: 55px; }
+  .journal-cat-title h2 {
+    color: #30445f;
+    font-family: "Roboto Slab", "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 0;
+    padding: 0.375rem 0.9375rem;
+    text-align: center;
+    background: #e3a600;
+    border-radius: 5px;
+    max-width: 325px;
+    margin: 0 auto; }
+
+.journal-cat-thumb {
+  background: #0a0a0a; }
+  .journal-cat-thumb img {
+    transition: all ease 0.5s; }
+    .journal-cat-thumb img:hover {
+      opacity: .5; }
+
+.pagination-centered {
+  clear: both;
+  text-align: center; }
+  .pagination-centered .pagination {
+    display: inline-block;
+    background: #e3a600;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 20px; }
+    .pagination-centered .pagination li {
+      font-weight: bold;
+      color: #243956; }
+    .pagination-centered .pagination .current {
+      background: #e3a600;
+      padding: 0; }
+      .pagination-centered .pagination .current a {
+        color: #ffffff; }
+    .pagination-centered .pagination .dots {
+      color: #243956; }
+  .pagination-centered .current {
+    background: #e3a600;
+    color: #ffffff; }
+  .pagination-centered a:hover {
+    background: inherit;
+    color: #ffffff; }
 
 .featured-title {
   background: #e3a600;
@@ -6929,8 +7074,8 @@ body.is-reveal-open {
     color: #243956;
     text-align: center;
     font-weight: 600;
-    padding: 10px 0 6px 0;
-    font-family: "Bookerly", "Open Sans", sans-serif;
+    padding: 6px 0 6px 0;
+    font-family: "Roboto Slab", "Open Sans", sans-serif;
     text-shadow: 0 0 0;
     font-size: 1.25rem;
     margin-bottom: 35px; }
@@ -6946,8 +7091,9 @@ body.is-reveal-open {
     opacity: .5; }
 
 .featured-article h4 {
-  margin: 1rem 6.25rem 2.1875rem 2.125rem;
-  font-size: 1.375rem;
+  margin: 1rem 2.125rem 2.1875rem 2.125rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.05em;
   color: #30445f;
   font-weight: bold;
   text-shadow: 0 0 0;

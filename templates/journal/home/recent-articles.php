@@ -17,7 +17,7 @@
 
 					<?php if ($journalCat):
 						foreach ($journalCat as $custom_tax): ?>
-							<div class="journal-category">
+							<div class="category-tag">
 								<strong>
     								<?php echo $custom_tax->name; ?>
     							</strong>
@@ -33,8 +33,9 @@
 				</h4>
 
 				<h6><?php foundationpress_entry_meta(); ?></h6>
-
-				<?php the_excerpt();?>
+				<div class="journal-single-content">
+					<?php the_excerpt();?>
+				</div>
 
 				<a class="journal-read-more" href="<?php the_permalink(); ?>">Read More</a>
 

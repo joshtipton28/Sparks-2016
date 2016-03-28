@@ -1,0 +1,26 @@
+.journal-footer{
+	background:$wpgrey;
+	font-size:rem-calc(12);
+	padding:10px 0;
+	p{
+		margin:0 8px 0 0;
+	}
+	ul{
+		li{
+			border-left: 1px solid rgba(255, 255, 255, 0.8);
+		}
+	}
+	a{
+		padding:0 8px !important;
+		line-height: rem-calc(8) !important;
+		color:$white;
+
+		&:hover{
+			color:$jyellow;
+		}
+	}
+
+	.footer-widget{
+		display: inline-block;
+	}
+}

@@ -12,12 +12,13 @@
 	margin-bottom:50px;
 
 	.recent-title{
-		margin:40px 35px 10px 35px;
+		margin:40px 20px 10px 20px;
 		 a{
 			text-shadow: 0 0 0;
 			font-weight: bold;
-			font-size:rem-calc(32);
-			line-height: rem-calc(32);
+			font-size:rem-calc(30);
+			line-height: rem-calc(30);
+			letter-spacing: -0.05em;
 		}
 	}
 	a{
@@ -31,10 +32,11 @@
 	p{
 		color:$jnavy;
 		font-family: $booker;
-		margin:rem-calc(0 36 18 36);
 		line-height: rem-calc(30);
 		text-align: justify;
 		font-size:rem-calc(17);
+		font-weight: normal;
+		letter-spacing: -0.02em;
 	}
 	.journal-read-more{
 		display: inline-block;
@@ -50,15 +52,16 @@
 			background: scale-color($jyellow, $lightness: 10%);
 		}
 	}
+}
+
 	//Category Flag on Image of Recent Articles
-	.journal-category{
+	.category-tag{
 		position: absolute;
 		left:0;
 		top:40px;
 		background: $jlblue;
 		color:$white;
 		padding:rem-calc(6 35);
-		border-top-right-radius: 8px;
-		border-bottom-right-radius: 8px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
 	}
-}

@@ -35,7 +35,25 @@ add_action( 'after_setup_theme', 'foundationpress_theme_support' );
 endif;
 
 //Adding custom thumbnail size for Journal Featured Article
-add_image_size( 'featured-journal', 1600, 460, true );
+add_image_size( 'featured-journal', 1600, 500, true );
 add_image_size( 'recent-journal', 845, 500, true );
 add_image_size( 'featured-journal-sidebar', 300, 200, true );
+
+//Custom Excerpt for Journal Archive
+function get_excerpt(){
+$excerpt = get_the_content();
+$excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+$excerpt = strip_shortcodes($excerpt);
+$excerpt = strip_tags($excerpt);
+$excerpt = substr($excerpt, 0, 245);
+$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+$excerpt = $excerpt.' <a class="journal-more" href="'.$permalink.'">[...]</a>';
+return $excerpt;
+}
+
+add_action('get_header', 'remove_admin_login_header');
+function remove_admin_login_header() {
+	remove_action('wp_head', '_admin_bar_bump_cb');
+}
+
 ?>

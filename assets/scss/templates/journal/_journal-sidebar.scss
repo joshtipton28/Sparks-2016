@@ -8,7 +8,7 @@
 		color:$jdblue;
 		text-align: center;
 		font-weight: 600;
-		padding:10px 0 6px 0;
+		padding:6px 0 6px 0;
 		font-family: $booker;
 		text-shadow: 0 0 0;
 		font-size:rem-calc(20);
@@ -33,8 +33,9 @@
 		}
 	}
 	h4{
-		margin:rem-calc(16 100 35 34);
-		font-size:rem-calc(22);
+		margin:rem-calc(16 34 35 34);
+		font-size:rem-calc(20);
+		letter-spacing: -0.05em;
 		color:$jlblue;
 		font-weight: bold;
 		text-shadow: 0 0 0;

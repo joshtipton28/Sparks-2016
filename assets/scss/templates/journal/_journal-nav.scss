@@ -20,6 +20,15 @@
 	> ul{
 		display: inline-block;
 	}
+	li a{
+		&:hover{
+			background: $dgrey !important;
+		}
+	}
+	.active a{
+		background-color: $dgrey !important;
+		font-weight: bold;
+	}
 }
 //Modal Styles
 .journal-learn-more{
