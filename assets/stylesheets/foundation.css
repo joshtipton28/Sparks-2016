@@ -4973,7 +4973,7 @@ body.is-reveal-open {
   padding: 1rem;
   border: 0px solid #cacaca;
   margin: 0 auto 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.97);
   border-radius: 5px;
   position: absolute;
   overflow-y: auto; }
@@ -6328,6 +6328,15 @@ table.hover tr:nth-of-type(even):hover {
     margin: 3px auto; }
     .camp-accordion li.accordion-item:hover {
       max-width: 300px; }
+  .camp-accordion .menu-item-has-children:hover {
+    background: transparent; }
+  .camp-accordion .sub-menu li:hover {
+    background: transparent; }
+  .camp-accordion .sub-menu a {
+    background: transparent;
+    padding-left: 50px; }
+    .camp-accordion .sub-menu a:hover {
+      color: #1770ca; }
 
 .accordion-content {
   background: rgba(0, 0, 0, 0.5);
@@ -6896,6 +6905,15 @@ body.is-reveal-open {
       color: #e3a600; }
   .journal-footer .footer-widget {
     display: inline-block; }
+
+.reveal {
+  min-height: 500px; }
+  .reveal li, .reveal p {
+    color: #0a0a0a;
+    font-weight: normal; }
+  .reveal a {
+    font-weight: normal;
+    color: #1770ca; }
 
 .journal-single {
   padding: 25px;

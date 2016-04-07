@@ -63,6 +63,28 @@
         max-width: 300px;
       }
     }
+
+    .menu-item-has-children{
+      &:hover{
+        background: transparent;
+      }
+    }
+
+    .sub-menu{
+      li{
+        &:hover{
+          background: transparent;
+        }
+      }
+      a{
+        background:   transparent;
+        padding-left:50px;
+
+        &:hover{
+          color:$blue;
+        }
+      }
+    }
 }
 .accordion-content{
 	background:$charc;
@@ -110,7 +132,7 @@
 //Rowing Camps Content Styles
 .camps-menu li{
 	display: block;
-	
+
   &:hover{
     background: $oblack;
     border-radius: 5px;
@@ -135,7 +157,7 @@
 
 //Registration Tab Styles
 .registration{
-  
+
   h4{
     font-weight: 600;
     font-size:rem-calc(21);

@@ -24,3 +24,18 @@
 		display: inline-block;
 	}
 }
+
+//Modal Styles
+
+.reveal{
+	min-height: 500px;
+
+	li, p{
+		color:$black;
+		font-weight: normal;
+	}
+	a{
+		font-weight: normal;
+		color: $blue;
+	}
+}
