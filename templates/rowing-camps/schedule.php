@@ -24,7 +24,7 @@
 					<tr>
 						<?php if (have_rows('schedule_column') ): $colID = 0; ?>
 							<?php while (have_rows('schedule_column') ): the_row(); ?>
-								<?php 
+								<?php
 									$rowSpan = get_sub_field('rowspan');
 									$showDropdown = get_sub_field('display_dropdown');
 									$rowID++;
@@ -34,7 +34,7 @@
 
 									<td rowspan="<?php echo $rowSpan;?>"
 
-										<?php if ($showDropdown == "yes") : ?> 
+										<?php if ($showDropdown == "yes") : ?>
 											data-toggle="column-<?php echo $dropdownID; ?>">
 
 											<div class="dropdown-pane <?php if ($colID >= 3) echo "left";?>" id="column-<?php echo $dropdownID; ?>" data-dropdown data-hover="true" data-hover-pane="true">
@@ -49,7 +49,7 @@
 
 									</td>
 							<?php endwhile; ?>
-						<?php endif;?>	
+						<?php endif;?>
 					</tr>
 				<?php endwhile; ?>
 			<?php endif; ?>

@@ -1,8 +1,16 @@
 <div id="journal-recent" class="journal-recent row">
 	<div class="large-8 small-12 columns">
 		<?php
-		   	$args = array( 'post_type' => 'journal-article', 'posts_per_page' => 5 );
+			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			$args = array(
+			    'post_type' => array('journal-article'),
+			    'posts_per_page' => "6",
+			    'paged' => $paged
+			);
 			$loop = new WP_Query( $args );
+
+
+
 			while ( $loop->have_posts() ) : $loop->the_post();
 
 			$journalCat = get_the_terms(0, 'journal-category'); //Get custom taxonomy
@@ -41,9 +49,17 @@
 
 			</div>
 
-		<?php endwhile;
-		wp_reset_postdata(); // reset to the original page data
-		?>
+		<?php endwhile; ?>
+
+		<?php /* Display navigation to next/previous pages when applicable */ ?>
+		<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) : ?>
+			<nav id="post-nav">
+				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+			</nav>
+		<?php endif; ?>
+
+		<?php wp_reset_postdata(); // reset to the original page data ?>
 	</div>
 
 	<?php include(locate_template('templates/journal/home/sidebar.php' )); //Journal Home Sidebar?>

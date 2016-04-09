@@ -5,8 +5,8 @@
  **/
 ?>
 
-<?php 
-	$showSchedule = get_field('show_schedule'); 
+<?php
+	$showSchedule = get_field('show_schedule');
 	$campTitle = get_field('camp_title');
 	$campName = get_field('camp_name');
 	$campLocation = get_field('camp_location');
@@ -30,9 +30,9 @@
                             else echo 'Registration'; ?>
                     </a>
                 </li>
-                
+
                 <?php /**Conditional for Camp Type**/
-                if ($programType == 'camp') 
+                if ($programType == 'camp')
                     echo '<li class="horizontal tabs-title"><a href="#camp-schedule">Schedule</a></li>';
                 ?>
             </ul>

@@ -30,9 +30,9 @@ get_header(); ?>
 					<?php include(locate_template('templates/rowing-camps/coaching-staff.php' )); ?>
 					<?php include(locate_template('templates/rowing-camps/details.php' )); ?>
 					<?php include(locate_template('templates/rowing-camps/registration.php' )); ?>
-					<?php 
+					<?php
 						if ($programType == 'camp')
-							include(locate_template('templates/rowing-camps/schedule.php' )); 
+							include(locate_template('templates/rowing-camps/schedule.php' ));
 					?>
 
 		<?php endwhile;?>
@@ -44,5 +44,4 @@ get_header(); ?>
 	</div>
 </div>
 
-	
 <?php get_footer(); ?>
