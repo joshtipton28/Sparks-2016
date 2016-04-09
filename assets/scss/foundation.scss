@@ -8,7 +8,6 @@
 */
 
 //  Settings
-@import "global/global-styles"; //Site Wide Styles
 @import "global/settings"; // Foundation settings file.
 
 // Foundation mixins & browser resets
@@ -83,6 +82,7 @@
 @import "components/links";
 
 // Templates
+@import "global/global-styles"; //Site Wide Styles
 @import "templates/home-page";
 @import "templates/rowing-camps";
 @import "templates/tab-pages";

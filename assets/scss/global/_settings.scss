@@ -44,6 +44,44 @@
 // 1. Global
 // ---------
 
+//Fonts
+$booker : 'Roboto Slab', 'Open Sans', sans-serif;
+$sans: 'Open Sans', sans-serif;
+$days: 'Days One', sans-serif;
+
+// Sparks Colors
+$blue: #1770ca;
+$ogrey: rgba(0,0,0,0.1);
+$dgrey: rgba(0,0,0,0.25);
+$oblue: rgba(23,112,202,0.65);
+$onavy: rgba(0,82,187,0.55);
+$oorange: rgba(255, 102, 0, 0.65);
+$oblack: rgba(0, 0, 0, 0.8);
+$charc: rgba(0,0,0,0.5);
+$ablue: #b2d6ff;
+$white: #ffffff;
+$owhite: rgba(255,255,255,0.8);
+$snow: #ededed;
+$orange: #ff6f20;
+$blue: #1770ca;
+$silver: #dddddd;
+$lime: #5bb75b;
+$red: #bd362f;
+
+// Journal Colors
+$jdblue: #243956;
+$jdoblue: rgba(17,24,41,0.8);
+$jnavy: #20303f;
+$jyellow: #e3a600;
+$jheadingblue: #2c5781;
+$jlblue :#30445f;
+$jhomeblue: #285480;
+$bookerlyblue: #202d3d;
+$wpgrey: #23282d;
+
+//Typography Styles
+$tshadow: 1px 1px 1px black;
+
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
@@ -379,7 +417,7 @@ $menu-expand-max: 6;
 
 $offcanvas-size: 250px;
 $offcanvas-background: $light-gray;
-$offcanvas-zindex: -1;
+$offcanvas-zindex: -1000;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
