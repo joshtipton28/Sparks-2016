@@ -96,9 +96,24 @@
 
 /* Mobile menu */
 .off-canvas {
-  ul#menu-main-menu {
-    height: 100vh;
-    padding: 1rem;
+  padding:25px 0;
+  a{
+    color:$white;
+    letter-spacing: -0.05em;
+
+     &:hover{
+      background: $white;
+      color: $black;
+      &:after{
+        border-color: $black transparent transparent;
+      }
+    }
+
+    &:after{
+      border-color:$white transparent transparent;
+      right:43%;
+      top:55%;
+    }
   }
 }
 
@@ -106,5 +121,7 @@
   a {
     font-size: rem-calc(16);
     color: #B9B9B9;
+    font-family: $days;
+    text-transform: uppercase;
   }
 }

@@ -9,14 +9,13 @@
 
 ?>
 
-	
 		<div class="main-header header-container">
 			<div class="row">
 				<header id="masthead" class="site-header" role="banner">
 					<div class="title-bar" data-responsive-toggle="site-navigation">
 						<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
 						<div class="title-bar-title">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Test</a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Sparks Consulting</a>
 						</div>
 					</div>
 

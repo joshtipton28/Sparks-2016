@@ -95,7 +95,7 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #ffffff;
-$body-background: $white;
+$body-background: $black;
 $body-font-color: $white;
 $body-font-family: $sans;
 $body-antialiased: true;
@@ -416,7 +416,7 @@ $menu-expand-max: 6;
 // --------------
 
 $offcanvas-size: 250px;
-$offcanvas-background: $light-gray;
+$offcanvas-background: transparent;
 $offcanvas-zindex: -1000;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
