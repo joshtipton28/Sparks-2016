@@ -15,7 +15,7 @@
 					<div class="title-bar" data-responsive-toggle="site-navigation">
 						<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
 						<div class="title-bar-title">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Sparks Consulting</a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Sparks <span>Consulting</span></a>
 						</div>
 					</div>
 

@@ -119,9 +119,14 @@
 
 .title-bar-title {
   a {
-    font-size: rem-calc(16);
+    font-size: rem-calc(14);
     color: #B9B9B9;
     font-family: $days;
     text-transform: uppercase;
+    font-weight: normal;
+
+    span{
+      font-family: $sans;
+    }
   }
 }

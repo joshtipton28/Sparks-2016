@@ -6071,10 +6071,13 @@ table.hover tr:nth-of-type(even):hover {
       top: 55%; }
 
 .title-bar-title a {
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #B9B9B9;
   font-family: "Days One", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: normal; }
+  .title-bar-title a span {
+    font-family: "Open Sans", sans-serif; }
 
 #footer-container {
   max-width: 100%;
