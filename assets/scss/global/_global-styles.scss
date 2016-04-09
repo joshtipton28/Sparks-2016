@@ -24,29 +24,39 @@ p{
 //Global Full Page Background Styles
 .page-wrap{
   position: relative;
-  padding-top:100px;
-}
-.full-bg{
- 
+  height: 100vh;
 
   @include breakpoint(medium) {
-     position: fixed;
-  top: -50%;
-  left: -50%;
+    padding-top:130px;
+  }
+}
+.full-bg{
+
   width: 200%;
   height: 200%;
+
+  @include breakpoint(medium) {
+    position: fixed;
+    top: -50%;
+    left: -50%;
   }
 }
 
 .full-bg img{
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
+  object-fit:cover;
+  min-height: 100%;
+
+   @include breakpoint(medium) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+   }
 }
 .bg-caption{
   background: $charc;

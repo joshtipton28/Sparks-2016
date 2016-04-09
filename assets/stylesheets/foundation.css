@@ -7,87 +7,6 @@
   The Foundation framework is built by Zurb
   Licensed under MIT Open Source
 */
-hr {
-  opacity: 0.5; }
-
-h1, h2, h3, h4 {
-  text-shadow: 1px 1px 1px black; }
-
-h3 {
-  letter-spacing: -0.05em; }
-
-p {
-  font-weight: 300; }
-
-.button {
-  font-size: 17.5px !important;
-  text-transform: uppercase; }
-
-.page-wrap {
-  position: relative;
-  padding-top: 100px; }
-
-.full-bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%; }
-
-.full-bg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%; }
-
-.bg-caption {
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  bottom: 40px;
-  right: 20px;
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
-  width: 260px; }
-  .bg-caption p {
-    text-shadow: 1px 1px 1px black;
-    font-size: 11px;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0; }
-
-.gc-cs-link {
-  color: #b2d6ff !important; }
-
-.avatar-img {
-  margin-left: 20px; }
-  .avatar-img img {
-    border-radius: 100%;
-    margin-right: 10px;
-    height: 44px;
-    width: 44px; }
-
-.sparks-back {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  border-radius: 5px;
-  color: #333333;
-  display: block;
-  text-align: center;
-  width: 125px;
-  margin: 0 auto;
-  font-weight: 600;
-  transition: all ease 0.3s; }
-  .sparks-back:hover {
-    background: rgba(23, 112, 202, 0.65);
-    color: #ffffff; }
-  .sparks-back:focus {
-    color: #333333; }
-
 /**
  * Foundation for Sites by ZURB
  * Version 6.1.2
@@ -117,9 +36,6 @@ p.wp-caption-text {
 
 .admin-bar .header-container {
   top: 32px; }
-
-.admin-bar .page-wrap {
-  margin-top: 32px; }
 
 /*!
  *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -4633,7 +4549,7 @@ body {
 .off-canvas {
   position: absolute;
   background: #e6e6e6;
-  z-index: -1;
+  z-index: -1000;
   max-height: 100%;
   overflow-y: auto;
   -webkit-transform: translateX(0);
@@ -6254,37 +6170,147 @@ table.hover tr:nth-of-type(even):hover {
 [data-whatinput="touch"] a:focus, button:focus {
   outline: none; }
 
+hr {
+  opacity: 0.5; }
+
+h1, h2, h3, h4 {
+  text-shadow: 1px 1px 1px black; }
+
+h3 {
+  letter-spacing: -0.05em; }
+
+p {
+  font-weight: 300; }
+
+.button {
+  font-size: 17.5px !important;
+  text-transform: uppercase; }
+
+.page-wrap {
+  position: relative;
+  height: 100vh; }
+  @media screen and (min-width: 40em) {
+    .page-wrap {
+      padding-top: 130px; } }
+
+.full-bg {
+  width: 200%;
+  height: 200%; }
+  @media screen and (min-width: 40em) {
+    .full-bg {
+      position: fixed;
+      top: -50%;
+      left: -50%; } }
+
+.full-bg img {
+  position: absolute;
+  object-fit: cover;
+  min-height: 100%; }
+  @media screen and (min-width: 40em) {
+    .full-bg img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      min-width: 50%;
+      min-height: 50%; } }
+
+.bg-caption {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  width: 260px; }
+  .bg-caption p {
+    text-shadow: 1px 1px 1px black;
+    font-size: 11px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0; }
+
+.gc-cs-link {
+  color: #b2d6ff !important; }
+
+.avatar-img {
+  margin-left: 20px; }
+  .avatar-img img {
+    border-radius: 100%;
+    margin-right: 10px;
+    height: 44px;
+    width: 44px; }
+
+.sparks-back {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  color: #333333;
+  display: block;
+  text-align: center;
+  width: 125px;
+  margin: 0 auto;
+  font-weight: 600;
+  transition: all ease 0.3s; }
+  .sparks-back:hover {
+    background: rgba(23, 112, 202, 0.65);
+    color: #ffffff; }
+  .sparks-back:focus {
+    color: #333333; }
+
 .jumbotron {
-  margin: 75px 0px 40px 8px; }
+  margin: 75px 0px 40px 0px; }
+  @media screen and (min-width: 40em) {
+    .jumbotron {
+      margin: 75px 0px 40px 8px; } }
   .jumbotron h1 {
-    font-size: 5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     font-weight: 600;
-    line-height: 5rem;
-    letter-spacing: -0.375rem;
-    display: block;
+    letter-spacing: -0.05em;
     text-shadow: -1px 1px 0px #0a0a0a;
-    margin-left: 28px; }
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      .jumbotron h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+        letter-spacing: -0.375rem;
+        margin-left: 28px;
+        text-align: left; } }
     .jumbotron h1 small {
-      font-size: 2.125rem;
-      line-height: 2.125rem;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
       display: block;
       font-weight: 300;
       color: #ffffff;
       margin-top: 10px;
       letter-spacing: -0.05rem;
-      text-shadow: -1px 1px 0px #0a0a0a; }
+      text-shadow: -1px 1px 0px #0a0a0a;
+      padding: 0 30px; }
+      @media screen and (min-width: 40em) {
+        .jumbotron h1 small {
+          font-size: 2.125rem;
+          line-height: 2.125rem;
+          padding: 0; } }
 
 .home-blurb {
   background: rgba(0, 0, 0, 0.5);
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 300;
-  line-height: 27px;
+  line-height: 1.4375rem;
   padding: 15px 20px;
-  border-radius: 10px;
   text-shadow: 1px 1px 0px #0a0a0a;
-  margin-left: 38px; }
+  border-radius: 10px; }
   .home-blurb p {
     margin-bottom: 0; }
+  @media screen and (min-width: 40em) {
+    .home-blurb {
+      font-size: 1.125rem;
+      line-height: 1.6875rem;
+      margin-left: 38px; } }
 
 .camp-accordion {
   margin-top: 20px; }
@@ -6542,7 +6568,7 @@ li.tabs-title {
   border-radius: 10px;
   border: 1px solid #222;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
-  height: 80vh;
+  height: 76vh;
   overflow: auto; }
   .tabs-content h1, .tabs-content h2 {
     font-size: 2.40625rem;
