@@ -5,13 +5,23 @@
 		font-weight: 300;
 		line-height: 1;
 		text-shadow:$tshadow;
-		margin-left: 40px;
+		text-align: center;
+		font-size:rem-calc(30);
+		@include breakpoint(medium){
+			margin-left: 40px;
+			text-align: left;
+		}
+
 
 		span{
 			font-weight: bold;
 			letter-spacing: -0.05em;
 			display: block;
-			font-size: rem-calc(60);
+			font-size:rem-calc(40);
+
+			@include breakpoint(medium){
+				font-size: rem-calc(60);
+			}
 		}
 	}
 
@@ -27,9 +37,13 @@
 	//Content Box positioning on Journal Home
 	.journal-hero-content{
 		position: absolute;
-		top:200px;
+		top:65px;
 		left:0;
 		right:0;
+
+		@include breakpoint(medium){
+			top:200px;
+		}
 	}
 
 	//Content Box Styles
@@ -37,9 +51,18 @@
 		background: $owhite;
 		padding:28px 22px;
 		border-radius: 5px;
-		margin-top:40px;
-		margin-left:43px;
-		max-width: 350px;
+		margin:0 auto;
+		margin-top:30px;
+
+		@include breakpoint(small only){
+			float: none !important;
+		}
+
+		@include breakpoint(medium){
+			margin-top:40px;
+			margin-left:43px;
+
+		}
 
 		p{
 			color:$jlblue;
@@ -56,12 +79,22 @@
 		.hero-more{
 			background: url(../images/chevron.png) no-repeat;
 			display: block;
-			height: 37px;
-			width:74px;
+			height: 24px;
+			width:49px;
 			margin:0 auto;
+			background-size: cover;
+
+			@include breakpoint(medium){
+				height: 37px;
+				width:74px;
+			}
 
 			&:hover{
-				background-position: 0 -37px;
+				background-position: 0 -24px;
+
+				@include breakpoint(medium){
+					background-position: 0 -37px;
+				}
 			}
 		}
 	}

@@ -6974,28 +6974,45 @@ body.is-reveal-open {
     font-weight: 300;
     line-height: 1;
     text-shadow: 1px 1px 1px black;
-    margin-left: 40px; }
+    text-align: center;
+    font-size: 1.875rem; }
+    @media screen and (min-width: 40em) {
+      .journal-hero h1 {
+        margin-left: 40px;
+        text-align: left; } }
     .journal-hero h1 span {
       font-weight: bold;
       letter-spacing: -0.05em;
       display: block;
-      font-size: 3.75rem; }
+      font-size: 2.5rem; }
+      @media screen and (min-width: 40em) {
+        .journal-hero h1 span {
+          font-size: 3.75rem; } }
   .journal-hero .journal-hero-img img {
     min-width: 100%;
     height: 100vh;
     object-fit: cover; }
   .journal-hero .journal-hero-content {
     position: absolute;
-    top: 200px;
+    top: 65px;
     left: 0;
     right: 0; }
+    @media screen and (min-width: 40em) {
+      .journal-hero .journal-hero-content {
+        top: 200px; } }
   .journal-hero .journal-blurb {
     background: rgba(255, 255, 255, 0.8);
     padding: 28px 22px;
     border-radius: 5px;
-    margin-top: 40px;
-    margin-left: 43px;
-    max-width: 350px; }
+    margin: 0 auto;
+    margin-top: 30px; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .journal-hero .journal-blurb {
+        float: none !important; } }
+    @media screen and (min-width: 40em) {
+      .journal-hero .journal-blurb {
+        margin-top: 40px;
+        margin-left: 43px; } }
     .journal-hero .journal-blurb p {
       color: #30445f;
       font-size: 1.25rem;
@@ -7007,11 +7024,19 @@ body.is-reveal-open {
     .journal-hero .journal-blurb .hero-more {
       background: url(../images/chevron.png) no-repeat;
       display: block;
-      height: 37px;
-      width: 74px;
-      margin: 0 auto; }
+      height: 24px;
+      width: 49px;
+      margin: 0 auto;
+      background-size: cover; }
+      @media screen and (min-width: 40em) {
+        .journal-hero .journal-blurb .hero-more {
+          height: 37px;
+          width: 74px; } }
       .journal-hero .journal-blurb .hero-more:hover {
-        background-position: 0 -37px; }
+        background-position: 0 -24px; }
+        @media screen and (min-width: 40em) {
+          .journal-hero .journal-blurb .hero-more:hover {
+            background-position: 0 -37px; } }
 
 .journal-recent {
   padding-top: 55px;
