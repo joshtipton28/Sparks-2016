@@ -4,8 +4,16 @@
 	padding:10px 0;
 	p{
 		margin:0 8px 0 0;
+		text-align: center;
+
+		@include breakpoint(medium){
+			text-align: left;
+		}
 	}
 	ul{
+		@include breakpoint(small only){
+			display: none;
+		}
 		li{
 			border-left: 1px solid rgba(255, 255, 255, 0.8);
 		}
@@ -21,7 +29,11 @@
 	}
 
 	.footer-widget{
-		display: inline-block;
+		display: block;
+
+		@include breakpoint(medium){
+			display: inline-block;
+		}
 	}
 }
 

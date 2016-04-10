@@ -14,7 +14,7 @@ $featBlurb = get_field('featured_blurb');
     	setup_postdata($post);
 
 	?>
-
+	<div class="journal-container">
  		<div class="featured-journal-post">
 
 	 		<h1><a href="<?php the_permalink();?>"><?php echo $featTitle; ?></a></h1>
@@ -27,6 +27,7 @@ $featBlurb = get_field('featured_blurb');
 
 			<?php endif; ?>
 		</div>
+	</div>
 
 	   	<?php wp_reset_postdata(); ?>
 	<?php endif; ?>

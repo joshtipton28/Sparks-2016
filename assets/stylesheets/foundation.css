@@ -7138,7 +7138,14 @@ body.is-reveal-open {
   font-size: 0.75rem;
   padding: 10px 0; }
   .journal-footer p {
-    margin: 0 8px 0 0; }
+    margin: 0 8px 0 0;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      .journal-footer p {
+        text-align: left; } }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .journal-footer ul {
+      display: none; } }
   .journal-footer ul li {
     border-left: 1px solid rgba(255, 255, 255, 0.8); }
   .journal-footer a {
@@ -7148,7 +7155,10 @@ body.is-reveal-open {
     .journal-footer a:hover {
       color: #e3a600; }
   .journal-footer .footer-widget {
-    display: inline-block; }
+    display: block; }
+    @media screen and (min-width: 40em) {
+      .journal-footer .footer-widget {
+        display: inline-block; } }
 
 .reveal {
   min-height: 500px; }
@@ -7244,13 +7254,19 @@ body.is-reveal-open {
   position: relative; }
   .featured-journal-post h1 {
     position: absolute;
-    top: 30%;
+    top: 15%;
     text-align: center;
-    width: 100%;
+    padding: 0 1.25rem;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
     letter-spacing: -0.05em;
-    font-size: 2.75rem; }
+    font-size: 1.625rem; }
+    @media screen and (min-width: 40em) {
+      .featured-journal-post h1 {
+        width: 100%;
+        top: 30%;
+        font-size: 2.75rem;
+        padding: 0; } }
   .featured-journal-post a {
     color: #ffffff;
     transition: all ease 0.3s; }
@@ -7264,16 +7280,33 @@ body.is-reveal-open {
     margin: 0 auto;
     max-width: 850px;
     font-weight: normal;
-    font-size: 1.5rem;
-    line-height: 1.875rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     text-align: center;
-    text-shadow: 1px 1px 1px black;
-    font-family: "Roboto Slab", "Open Sans", sans-serif; }
+    font-family: "Roboto Slab", "Open Sans", sans-serif;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    color: #20303f; }
+    @media screen and (min-width: 40em) {
+      .featured-journal-post p {
+        color: #ffffff;
+        padding: 0;
+        margin: 0 auto;
+        background: transparent;
+        border-radius: 0;
+        text-shadow: 1px 1px 1px black;
+        font-size: 1.5rem;
+        line-height: 1.875rem; } }
   .featured-journal-post img {
     width: 100%;
-    height: 475px;
-    object-fit: cover;
-    margin-top: 106px; }
+    height: 80vh;
+    object-fit: cover; }
+    @media screen and (min-width: 40em) {
+      .featured-journal-post img {
+        height: 475px;
+        margin-top: 106px; } }
 
 .journal-category {
   background: #ededed;
