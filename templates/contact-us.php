@@ -15,8 +15,8 @@ get_header(); ?>
 	<div class="page-wrap">
 
 		<div class="row">
-			<div class="nano has-scrollbar tabs-content large-8 large-centered columns">
-		        <div class="contact-us nano-content">
+			<div class="contact-us nano has-scrollbar tabs-content large-8 large-centered columns">
+		        <div class="nano-content">
 		        	<h2><?php the_title();?></h2>
 
 		        	<?php
@@ -48,7 +48,7 @@ get_header(); ?>
 					?>
 
 					<hr>
-					
+
 					<div class="contact-goals">
 						<?php the_field('contact_content');?>
 					</div>
@@ -58,7 +58,7 @@ get_header(); ?>
 	    </div>
 
 	</div>
-  
+
   <?php endwhile;?>
 <?php do_action( 'foundationpress_after_content' ); ?>
 

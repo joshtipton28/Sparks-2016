@@ -6502,6 +6502,7 @@ p {
 /* Styles for Foundation Tabs used in:
   - About Us
   - Working With Us
+  - Contact Us
 */
 .tabs-wrap {
   margin-top: 20px; }
@@ -6673,6 +6674,11 @@ li.tabs-title {
       margin: 0 auto;
       margin-top: 0.09312rem; }
 
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  .contact-us {
+    margin-top: 65px;
+    height: 78vh; } }
+
 .contact-us h3 {
   font-size: 1.3125rem;
   line-height: 1.875rem;
@@ -6682,23 +6688,38 @@ li.tabs-title {
 .contact-us .contact-icon {
   height: 48px;
   width: 48px;
-  display: inline-block;
-  float: left; }
+  display: block;
+  margin: 20px auto; }
+  @media screen and (min-width: 40em) {
+    .contact-us .contact-icon {
+      margin: 0;
+      display: inline-block;
+      float: left; } }
 
 .contact-us .contact-block {
-  display: inline-block;
-  margin-left: 20px; }
+  display: block; }
+  @media screen and (min-width: 40em) {
+    .contact-us .contact-block {
+      display: inline-block;
+      margin-left: 20px; } }
   .contact-us .contact-block h6 {
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: bold;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      .contact-us .contact-block h6 {
+        text-align: left; } }
   .contact-us .contact-block p {
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.5rem;
     display: block;
     margin-bottom: 0; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .contact-us .contact-block p {
+        margin-top: 10px; } }
 
 .contact-us .contact-goals {
   display: block; }
