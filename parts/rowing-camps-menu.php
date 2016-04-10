@@ -1,5 +1,6 @@
 <div class="camp-accordion large-4 columns">
 
+  <?php /*Mobile Accordion Menu */ ?>
   <div class="tab-accordion show-for-small-only">
     <ul class="accordion" data-accordion-menu>
         <li class="accordion-item" data-accordion-item>
@@ -37,7 +38,7 @@
   </div>
 
 
-
+  <?php /*Desktop Menu*/ ?>
   <div class="hide-for-small-only">
     <h3><?php the_title();?></h3>
       <ul class="accordion" data-accordion data-allow-all-closed="true">

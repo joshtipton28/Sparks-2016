@@ -6199,7 +6199,6 @@ p {
   font-weight: 300; }
 
 .button {
-  font-size: 17.5px !important;
   text-transform: uppercase; }
 
 .page-wrap {
@@ -6398,6 +6397,17 @@ p {
   .camp-accordion .accordion-title:after {
     display: none; }
 
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  .camps-tab .tabs {
+    text-align: center; }
+    .camps-tab .tabs a {
+      font-weight: 300 !important;
+      font-size: 0.75rem;
+      margin: 0 !important;
+      padding: 0.5rem; }
+  .camps-tab .nano-content {
+    padding: 10px; } }
+
 .featured-media {
   margin-bottom: 42px; }
 
@@ -6406,21 +6416,33 @@ p {
   font-weight: 600;
   letter-spacing: -0.05em;
   margin-bottom: 0;
-  max-width: 475px; }
+  max-width: 475px;
+  text-align: center; }
+  @media screen and (min-width: 40em) {
+    .coaching-staff h4 {
+      text-align: left; } }
 
 .coaching-staff h5 {
   font-size: 1rem;
   color: #ccc;
   font-weight: 400;
   letter-spacing: -0.05em;
-  max-width: 475px; }
+  max-width: 475px;
+  text-align: center; }
+  @media screen and (min-width: 40em) {
+    .coaching-staff h5 {
+      text-align: left; } }
 
 .coaching-staff img {
-  float: right;
-  display: inline-block;
-  margin: -5px 0 20px 20px;
+  display: block;
+  margin: 10px auto;
   padding: 6px;
   background: #ffffff; }
+  @media screen and (min-width: 40em) {
+    .coaching-staff img {
+      float: right;
+      display: inline-block;
+      margin: -5px 0 20px 20px; } }
 
 .coaching-staff hr {
   margin: 2rem auto; }
@@ -6437,7 +6459,11 @@ p {
 
 .camp-details li {
   font-weight: 300;
-  line-height: 1.25rem; }
+  line-height: 1.25rem;
+  margin: 10px 0; }
+  @media screen and (min-width: 40em) {
+    .camp-details li {
+      margin: 0; } }
   .camp-details li ul {
     list-style-type: circle; }
 
@@ -6447,25 +6473,40 @@ p {
   margin: 10px 0 15px 0; }
 
 .registration thead th {
-  font-size: 0.875rem;
-  padding: 8px;
+  font-size: 0.625rem;
+  padding: 8px 0;
   text-align: center; }
+  @media screen and (min-width: 40em) {
+    .registration thead th {
+      font-size: 0.875rem;
+      padding: 8px; } }
 
 .registration tbody th, .registration tbody td {
   border-top: 1px solid #dddddd;
-  padding: 8px; }
+  padding: 2px; }
+  @media screen and (min-width: 40em) {
+    .registration tbody th, .registration tbody td {
+      padding: 8px; } }
 
 .registration tbody th {
   line-height: 20px;
-  font-weight: bold;
-  font-size: 0.875rem; }
+  font-size: 0.625rem; }
+  @media screen and (min-width: 40em) {
+    .registration tbody th {
+      font-size: 0.875rem;
+      font-weight: bold; } }
 
 .registration tbody .button {
   margin: 0 auto;
   display: block;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  font-size: 0.875rem;
-  width: 100px; }
+  font-size: 0.65625rem;
+  padding: 0.5rem; }
+  @media screen and (min-width: 40em) {
+    .registration tbody .button {
+      font-size: 0.875rem;
+      width: 100px;
+      padding: 0.85em 1em; } }
 
 .camp-schedule th, .camp-schedule td {
   font-size: 0.8125rem;
@@ -6569,10 +6610,13 @@ p {
     .tabs-panel h1 em, .tabs-panel h2 em {
       display: block;
       font-weight: 300;
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       letter-spacing: -0.05em;
       opacity: 0.5;
       font-style: normal; }
+      @media screen and (min-width: 40em) {
+        .tabs-panel h1 em, .tabs-panel h2 em {
+          font-size: 1.5rem; } }
   .tabs-panel h3 {
     font-size: 1.3125rem;
     line-height: 1.875rem;

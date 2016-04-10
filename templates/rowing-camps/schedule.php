@@ -64,7 +64,7 @@
 				<?php endif;?>
 			</tr>
 		</tfoot>
-
+	</table>
 
 </div>
 

@@ -83,10 +83,14 @@
     em{
       display: block;
       font-weight: 300;
-      font-size:rem-calc(24);
+      font-size:rem-calc(18);
       letter-spacing: -0.05em;
       opacity: 0.5;
       font-style: normal;
+
+      @include breakpoint(medium) {
+        font-size:rem-calc(24);
+      }
     }
   }
   h3{
