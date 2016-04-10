@@ -8,7 +8,11 @@
 	    font-size:rem-calc(16);
 	    line-height: rem-calc(18);
 	    text-shadow: $tshadow;
-	    margin:12px 0 26px 28px;
+	    margin:0;
+
+      @include breakpoint(medium) {
+        margin:12px 0 26px 28px;
+      }
   	}
 
   	ul{
@@ -44,15 +48,24 @@
       max-width: 280px !important;
     }
   	.is-active a.accordion-title{
-  		font-weight: bold;
-  		border-bottom-left-radius: 0px;
-  		border-bottom-right-radius: 0px;
       max-width: 280px;
       background: $charc;
+
+      @include breakpoint(medium) {
+        font-weight: bold;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
   		&:hover{
   			max-width: 280px !important;
   		}
   	}
+
+    .submenu .is-active a.accordion-title{
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
 
     li.accordion-item{
       max-width:280px;
@@ -85,15 +98,26 @@
         }
       }
     }
-}
-.accordion-content{
-	background:$charc;
-	max-width: 280px;
+
+  .accordion{
+    margin:0 auto;
+     @include breakpoint(medium) {
+      margin-left:18px;
+    }
+  }
+  .accordion-content{
+    background:$charc;
+    max-width: 280px;
+  }
+  .accordion-title{
+    &:after{
+      display: none;
+    }
+  }
 }
 
-.accordion{
-  margin-left:18px;
-}
+
+
 
 //Rowing Camps - Overview Tab
 .featured-media{

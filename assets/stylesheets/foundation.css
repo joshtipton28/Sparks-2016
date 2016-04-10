@@ -6336,7 +6336,10 @@ p {
     font-size: 1rem;
     line-height: 1.125rem;
     text-shadow: 1px 1px 1px black;
-    margin: 12px 0 26px 28px; }
+    margin: 0; }
+    @media screen and (min-width: 40em) {
+      .camp-accordion h3 {
+        margin: 12px 0 26px 28px; } }
   .camp-accordion ul {
     margin-bottom: 0;
     max-width: 300px; }
@@ -6357,13 +6360,18 @@ p {
   .camp-accordion .is-active:hover {
     max-width: 280px !important; }
   .camp-accordion .is-active a.accordion-title {
-    font-weight: bold;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     max-width: 280px;
     background: rgba(0, 0, 0, 0.5); }
+    @media screen and (min-width: 40em) {
+      .camp-accordion .is-active a.accordion-title {
+        font-weight: bold;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px; } }
     .camp-accordion .is-active a.accordion-title:hover {
       max-width: 280px !important; }
+  .camp-accordion .submenu .is-active a.accordion-title {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; }
   .camp-accordion li.accordion-item {
     max-width: 280px;
     transition: max-width 0.3s;
@@ -6379,13 +6387,16 @@ p {
     padding-left: 50px; }
     .camp-accordion .sub-menu a:hover {
       color: #1770ca; }
-
-.accordion-content {
-  background: rgba(0, 0, 0, 0.5);
-  max-width: 280px; }
-
-.accordion {
-  margin-left: 18px; }
+  .camp-accordion .accordion {
+    margin: 0 auto; }
+    @media screen and (min-width: 40em) {
+      .camp-accordion .accordion {
+        margin-left: 18px; } }
+  .camp-accordion .accordion-content {
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 280px; }
+  .camp-accordion .accordion-title:after {
+    display: none; }
 
 .featured-media {
   margin-bottom: 42px; }
@@ -6499,7 +6510,14 @@ p {
     font-weight: bold;
     font-size: 1rem;
     line-height: 1.125rem;
-    margin: 12px 0 6px 28px; }
+    margin: 0;
+    margin-left: -15px;
+    display: inline-block;
+    position: relative; }
+    @media screen and (min-width: 40em) {
+      .tabs-wrap h3 {
+        margin: 12px 0 6px 28px;
+        display: block; } }
   .tabs-wrap h3.dark {
     color: #444;
     text-shadow: 0 1px 1px #ffffff; }
@@ -6515,7 +6533,11 @@ p {
 .tab-block h5 {
   font-weight: bold;
   text-shadow: 1px 1px 1px black;
-  font-size: 1rem; }
+  font-size: 1rem;
+  text-align: center; }
+  @media screen and (min-width: 40em) {
+    .tab-block h5 {
+      text-align: left; } }
   .tab-block h5 span {
     font-weight: 300; }
 
@@ -6524,28 +6546,41 @@ p {
   font-weight: 300; }
 
 .tab-block img {
-  float: right;
-  margin: 20px 0 20px 20px;
+  margin: 20px auto;
+  display: block;
   padding: 6px;
   background-color: #ffffff; }
+  @media screen and (min-width: 40em) {
+    .tab-block img {
+      float: right;
+      margin: 20px 0 20px 20px;
+      display: inline-block; } }
 
-.tabs-panel h1, .tabs-panel h2 {
-  font-size: 2.40625rem;
-  line-height: 2.5rem;
-  text-shadow: 1px 1px 1px black; }
-  .tabs-panel h1 em, .tabs-panel h2 em {
-    display: block;
-    font-weight: 300;
-    font-size: 1.5rem;
-    letter-spacing: -0.05em;
-    opacity: 0.5;
-    font-style: normal; }
-
-.tabs-panel h3 {
-  font-size: 1.3125rem;
-  line-height: 1.875rem;
-  margin: 25px 0;
-  font-weight: 600; }
+.tabs-panel {
+  padding: 0; }
+  @media screen and (min-width: 40em) {
+    .tabs-panel {
+      padding: 1rem; } }
+  .tabs-panel h1, .tabs-panel h2 {
+    font-size: 2.40625rem;
+    line-height: 2.5rem;
+    text-shadow: 1px 1px 1px black; }
+    .tabs-panel h1 em, .tabs-panel h2 em {
+      display: block;
+      font-weight: 300;
+      font-size: 1.5rem;
+      letter-spacing: -0.05em;
+      opacity: 0.5;
+      font-style: normal; }
+  .tabs-panel h3 {
+    font-size: 1.3125rem;
+    line-height: 1.875rem;
+    margin: 25px 0;
+    font-weight: 600;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      .tabs-panel h3 {
+        text-align: left; } }
 
 li.tabs-title {
   margin: 0 auto;
@@ -6584,14 +6619,26 @@ li.tabs-title {
   border-radius: 10px;
   border: 1px solid #222;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
-  height: 76vh;
-  overflow: auto; }
+  height: 67vh;
+  overflow: auto;
+  position: relative;
+  z-index: 100; }
+  @media screen and (min-width: 40em) {
+    .tabs-content {
+      height: 76vh; } }
   .tabs-content h1, .tabs-content h2 {
-    font-size: 2.40625rem;
-    line-height: 2.5rem;
+    font-size: 1.375rem;
+    line-height: 1.5rem;
     text-shadow: 1px 1px 1px black;
     font-weight: bold;
-    margin-top: 20px; }
+    margin-bottom: 0;
+    text-align: center; }
+    @media screen and (min-width: 40em) {
+      .tabs-content h1, .tabs-content h2 {
+        font-size: 2.40625rem;
+        line-height: 2.5rem;
+        margin-top: 20px;
+        text-align: left; } }
 
 .tabs {
   display: block;
@@ -6601,6 +6648,30 @@ li.tabs-title {
     text-align: center; }
     .tabs .horizontal a {
       margin: 0px 2px; }
+
+.tab-accordion {
+  padding-top: 50px; }
+  .tab-accordion .tabs {
+    margin: 0 auto;
+    margin-right: 0 !important; }
+  .tab-accordion .accordion {
+    margin-bottom: 0; }
+    .tab-accordion .accordion .accordion-title {
+      background: #1770ca;
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+      border-radius: 8px;
+      color: #ffffff;
+      text-align: center;
+      padding: 12px;
+      max-width: 300px;
+      margin: 0 auto; }
+      .tab-accordion .accordion .accordion-title i {
+        margin-left: 10px;
+        position: absolute; }
+    .tab-accordion .accordion .accordion-content {
+      max-width: 300px;
+      margin: 0 auto;
+      margin-top: 0.09312rem; }
 
 .contact-us h3 {
   font-size: 1.3125rem;
