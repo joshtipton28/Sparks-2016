@@ -83,14 +83,33 @@ p{
 
 //Gravatar
 .avatar-img{
-  margin-left:20px;
+  display: block;
+  margin-bottom: 10px;
+
+  @include breakpoint(medium){
+    margin-left:20px;
+    margin-bottom: 0;
+    display: inline-block;
+  }
 	img{
 		border-radius: 100%;
-		margin-right: 10px;
     height: 44px;
     width: 44px;
+    display: block;
+    margin:0 auto;
+
+    @include breakpoint(medium){
+      display: inline-block;
+      margin-right: 10px;
+    }
 	}
 }
+.author{
+    @include breakpoint(small only){
+      font-size:rem-calc(12) !important;
+      text-align: center !important;
+    }
+  }
 
 //Back Button Styles
 .sparks-back{
