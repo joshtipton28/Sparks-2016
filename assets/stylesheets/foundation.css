@@ -4146,21 +4146,21 @@ select {
   border-radius: 5px;
   position: relative;
   color: #ffffff;
-  background-color: white; }
+  background-color: #ffffff; }
   .callout > :first-child {
     margin-top: 0; }
   .callout > :last-child {
     margin-bottom: 0; }
   .callout.primary {
-    background-color: #f3f9ff; }
+    background-color: #ffffff; }
   .callout.secondary {
-    background-color: #ebebeb; }
+    background-color: #ffffff; }
   .callout.success {
-    background-color: #e6f4e6; }
+    background-color: #ffffff; }
   .callout.alert {
-    background-color: #f7dfde; }
+    background-color: #ffffff; }
   .callout.warning {
-    background-color: #fff3d9; }
+    background-color: #ffffff; }
   .callout.small {
     padding-top: 0.5rem;
     padding-right: 0.5rem;
@@ -6395,13 +6395,21 @@ p {
       max-width: 300px; }
   .camp-accordion .menu-item-has-children:hover {
     background: transparent; }
-  .camp-accordion .sub-menu li:hover {
-    background: transparent; }
-  .camp-accordion .sub-menu a {
-    background: transparent;
-    padding-left: 50px; }
-    .camp-accordion .sub-menu a:hover {
-      color: #1770ca; }
+  .camp-accordion .sub-menu {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 0.375rem 0.25rem;
+    margin: 0.1875rem 0 0.1875rem 1.25rem; }
+    .camp-accordion .sub-menu li {
+      margin: 0; }
+      .camp-accordion .sub-menu li:hover {
+        background: transparent; }
+    .camp-accordion .sub-menu a {
+      background: transparent;
+      padding: 0 1rem;
+      display: block; }
+      .camp-accordion .sub-menu a:hover {
+        opacity: .8; }
   .camp-accordion .accordion {
     margin: 0 auto; }
     @media screen and (min-width: 40em) {
@@ -6426,6 +6434,8 @@ p {
 
 .featured-media {
   margin-bottom: 42px; }
+  .featured-media img {
+    width: 100%; }
 
 .coaching-staff h4 {
   font-size: 1.25rem;

@@ -84,17 +84,25 @@
     }
 
     .sub-menu{
+      background: rgba(0,0,0,0.3);
+      border-radius:5px;
+      padding:rem-calc(6 4);
+      margin:rem-calc(3 0 3 20);
+
       li{
+        margin:0;
+
         &:hover{
           background: transparent;
         }
       }
       a{
         background:   transparent;
-        padding-left:50px;
+        padding:rem-calc(0 16);
+        display: block;
 
         &:hover{
-          color:$blue;
+          opacity: .8;
         }
       }
     }
@@ -139,6 +147,9 @@
 //Rowing Camps - Overview Tab
 .featured-media{
   margin-bottom:42px;
+  img{
+    width: 100%;
+  }
 }
 
 //Rowing Camps - Coaching Staff Styles
