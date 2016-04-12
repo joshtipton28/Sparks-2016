@@ -10,7 +10,7 @@
 	    text-shadow: $tshadow;
 	    margin:0;
 
-      @include breakpoint(medium) {
+      @include breakpoint(large) {
         margin:12px 0 26px 28px;
       }
   	}
@@ -109,7 +109,7 @@
 
   .accordion{
     margin:0 auto;
-     @include breakpoint(medium) {
+     @include breakpoint(large) {
       margin-left:18px;
     }
   }
@@ -126,6 +126,7 @@
 
 //Camps Tab Menu
 .camps-tab{
+
   @include breakpoint(small only) {
       .tabs{
         text-align: center;
@@ -141,6 +142,9 @@
         padding:10px;
       }
     }
+  @include breakpoint(large) {
+    margin-left:16px;
+  }
 }
 
 
@@ -306,6 +310,7 @@
     color:$black;
     border-radius: 5px;
     max-width: 250px;
+    background: $white;
 
     ul{
       list-style: none;

@@ -13,7 +13,7 @@
 ?>
 
 
-	<div class="camps-tab tabs-content nano has-scrollbar" data-tabs-content="rowing-camp-tabs">
+	<div class="camps-tab tabs-content nano has-scrollbar large-8 columns end" data-tabs-content="rowing-camp-tabs">
         <div class="nano-content">
             <ul class="tabs" data-tabs id="rowing-camp-tabs">
                 <li class="horizontal tabs-title is-active"><a href="#camp-overview" aria-selected="true">Camp Overview</a></li>
