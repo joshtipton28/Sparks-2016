@@ -22,7 +22,8 @@
 	if( have_rows('registration_headings') ): ?>
 	 	<thead>
 		 	<tr>
-		 		<th>
+		 		<?php if ($programType == 'camp') echo '<th>'; //adding Blank TH for Camps only ?>
+
 			    <?php while( have_rows('registration_headings') ): the_row(); ?>
 
 			        <?php
@@ -39,7 +40,8 @@
 	<?php /*Week One Registration Links*/
 	if( have_rows('week_one_registration_links') ): ?>
 		<tr>
-			<th>Week 1</th>
+			<?php if ($programType == 'camp') echo '<th>Week 1</th>'; //adding Week 1 TH for Camps only ?>
+
 		    <?php while( have_rows('week_one_registration_links') ): the_row(); ?>
 
 		        <?php
@@ -65,7 +67,7 @@
 
 	if( have_rows('week_two_registration_links') ): ?>
 		<tr>
-			<th>Week 2</th>
+			<?php if ($programType == 'camp') echo '<th>Week 2</th>'; //adding Week 2 TH for Camps only ?>
 	    <?php while( have_rows('week_two_registration_links') ): the_row(); ?>
 
 	        <?php
@@ -93,7 +95,7 @@
 
 	if( have_rows('week_three_registration_links') ): ?>
 	 	<tr>
-	 		<th>Week 3</th>
+	 		<?php if ($programType == 'camp') echo '<th>Week 3</th>'; //adding Week 3 TH for Camps only ?>
 	    <?php while( have_rows('week_three_registration_links') ): the_row(); ?>
 
 	        <?php
@@ -119,7 +121,7 @@
 
 	if( have_rows('week_four_registration_links') ): ?>
 		<tr>
-			<th>Week 4</th>
+			<?php if ($programType == 'camp') echo '<th>Week 4</th>'; //adding Week 4 TH for Camps only ?>
 	    <?php while( have_rows('week_four_registration_links') ): the_row(); ?>
 
 	        <?php
