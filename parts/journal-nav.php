@@ -31,7 +31,7 @@
 							<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
 								<?php get_template_part( 'parts/mobile-top-bar' ); ?>
 							<?php endif; ?>
-							<a class="journal-learn-more" style="display:none;" data-open="journal-learn-more">Learn More</a>
+							<a class="journal-learn-more" data-open="journal-learn-more">Learn More</a>
 						</div>
 					</nav>
 				</header>

@@ -20,7 +20,7 @@
 ?>
 <div class="journal-container">
 	<div class="row" data-equalizer="catTitle">
-	    <div class="journal-category" data-equalizer="catExcerpt">
+	    <div class="journal-category clearfix" data-equalizer="catExcerpt">
 
 		    	<div class="journal-cat-title">
 		    		<h2>Articles on <?php the_title(); ?></h2>

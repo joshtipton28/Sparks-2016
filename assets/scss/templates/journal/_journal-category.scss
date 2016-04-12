@@ -108,6 +108,10 @@
 
 	.journal-archive-article{
 		margin-bottom:30px;
+
+		&:last-child:not(:first-child), .columns:last-child:not(:first-child){
+			float: left !important;
+		}
 	}
 
 	//Excerpt More Styling

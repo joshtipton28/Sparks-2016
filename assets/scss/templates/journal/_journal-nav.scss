@@ -5,6 +5,10 @@
 
 .journal-header{
   background:$jlblue;
+
+  .top-bar{
+  	padding:25px 0;
+  }
 }
 .journal-logo{
   width:234px;
@@ -19,6 +23,7 @@
 .journal-nav{
 	> ul{
 		display: inline-block;
+		padding-top:4px;
 	}
 	li a{
 		&:hover{
@@ -40,6 +45,7 @@
 	border-radius: 5px;
 	color: $white;
 	font-size:rem-calc(14);
+	margin-top:4px;
 }
 
 //Modal fix
