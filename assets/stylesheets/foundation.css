@@ -4889,7 +4889,7 @@ body.is-reveal-open {
   padding: 1rem;
   border: 0px solid #cacaca;
   margin: 0 auto 0;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   position: absolute;
   overflow-y: auto; }
@@ -6421,6 +6421,8 @@ p {
   .camp-accordion .accordion-content {
     background: rgba(0, 0, 0, 0.5);
     max-width: 280px; }
+    .camp-accordion .accordion-content a {
+      font-size: 0.8125rem; }
   .camp-accordion .accordion-title:after {
     display: none; }
 
@@ -6703,7 +6705,7 @@ li.tabs-title {
   @media screen and (min-width: 64em) {
     .tabs-content {
       height: 76vh; } }
-  @media screen and (min-height: 600px) and (max-height: 800px) {
+  @media screen and (min-height: 600px) and (max-height: 670px) {
     .tabs-content {
       height: 67vh; } }
   .tabs-content h1, .tabs-content h2 {
@@ -6719,6 +6721,9 @@ li.tabs-title {
         line-height: 2.5rem;
         margin-top: 20px;
         text-align: left; } }
+    @media screen and (min-height: 600px) and (max-height: 800px) {
+      .tabs-content h1, .tabs-content h2 {
+        margin-top: 0; } }
 
 .tabs {
   display: block;
@@ -6728,6 +6733,9 @@ li.tabs-title {
     text-align: center; }
     .tabs .horizontal a {
       margin: 0px 2px; }
+  @media screen and (min-height: 600px) and (max-height: 800px) {
+    .tabs {
+      margin-top: 0; } }
 
 .tab-accordion {
   padding-top: 50px; }
@@ -6802,6 +6810,13 @@ li.tabs-title {
 
 .contact-us .contact-goals {
   display: block; }
+
+.map-wrap {
+  width: 75rem; }
+
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  .map-page {
+    overflow-y: scroll; } }
 
 .camp-map {
   position: relative;
@@ -7186,7 +7201,7 @@ body.is-reveal-open {
 .reveal {
   min-height: 500px; }
   .reveal li, .reveal p {
-    color: #0a0a0a;
+    color: #ffffff;
     font-weight: normal; }
   .reveal a {
     font-weight: normal;
@@ -7329,7 +7344,7 @@ body.is-reveal-open {
     @media screen and (min-width: 40em) {
       .featured-journal-post img {
         height: 475px;
-        margin-top: 106px; } }
+        margin-top: 100px; } }
 
 .journal-category {
   background: #ededed;
@@ -7374,7 +7389,7 @@ body.is-reveal-open {
     text-align: center;
     background: #e3a600;
     border-radius: 5px;
-    max-width: 325px;
+    max-width: 335px;
     margin: 0 auto; }
 
 .journal-cat-thumb {

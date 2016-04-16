@@ -1,4 +1,12 @@
 //Map Dimensions
+.map-wrap{
+	width: 75rem;
+}
+.map-page{
+	@include breakpoint(small only){
+		overflow-y: scroll;
+	}
+}
 .camp-map{
 	position: relative;
 	margin-top:10px;

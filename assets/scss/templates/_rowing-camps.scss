@@ -116,6 +116,10 @@
   .accordion-content{
     background:$charc;
     max-width: 280px;
+
+    a{
+      font-size: rem-calc(13);
+    }
   }
   .accordion-title{
     &:after{

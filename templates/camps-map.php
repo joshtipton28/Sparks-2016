@@ -18,9 +18,9 @@ get_header(); ?>
 			<?php endif; ?>
 		</div>
 	</div>
-	<div class="page-wrap">
+	<div class="page-wrap map-page">
 		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-			<div class="row">
+			<div class="map-wrap row">
 
 				<div class="camp-map large-12 columns">
 					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/map-of-rowing-camps.png" alt="Map of Rowing Camp Locations and Dates">
