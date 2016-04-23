@@ -6,8 +6,8 @@
 <div class="row">
     <div class="tabs-wrap medium-4 columns">
         <div class="tab-accordion show-for-small-only">
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-                <li class="accordion-item" data-accordion-item>
+            <ul class="accordion" data-accordion>
+                <li class="accordion-item is-active" data-accordion-item>
                     <a href="#" class="accordion-title"><h3><?php the_title();?><i class="fa fa-chevron-down"></i></h3></a>
                         <div class="accordion-content" data-tab-content>
                           <ul class="tabs vertical" data-tabs id="working-with-us">

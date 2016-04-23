@@ -2,9 +2,7 @@
 
   <?php /*Mobile Accordion Menu */ ?>
   <div class="tab-accordion hide-for-large">
-    <ul class="accordion" data-accordion-menu>
-        <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title"><h3>Select Camp Type<i class="fa fa-chevron-down"></i></h3></a>
+
 
                 <ul class="menu vertical nested accordion" data-accordion data-allow-all-closed="true">
                   <li class="accordion-item" data-accordion-item>
@@ -33,8 +31,7 @@
                     </a>
                   </li>
                 </ul>
-        </li>
-    </ul>
+
   </div>
 
 
