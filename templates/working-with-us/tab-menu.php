@@ -30,7 +30,8 @@
         <div class="hide-for-small-only">
           <h3><?php the_title();?></h3>
           <ul class="tabs vertical" data-tabs id="working-with-us">
-            <li class="tabs-title is-active"><a href="#college-counseling" aria-selected="true">College Counseling<i class="fa fa-chevron-right"></i></a></li>
+            <li class="tabs-title is-active"><a href="#wwu-overview" aria-selected="true">Working With Us<i class="fa fa-chevron-right"></i></a></li>
+            <li class="tabs-title"><a href="#college-counseling">College Counseling<i class="fa fa-chevron-right"></i></a></li>
             <li class="tabs-title"><a href="#coxswain-program">Coxswain Program<i class="fa fa-chevron-right"></i></a></li>
             <li class="tabs-title"><a href="#international-applicants">International Applicants<i class="fa fa-chevron-right"></i></a></li>
             <li class="tabs-title"><a href="#gap-year-advising">Gap Year Advising<i class="fa fa-chevron-right"></i></a></li>

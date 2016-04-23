@@ -4,7 +4,7 @@
  **/
 ?>
 
-<div class="tabs-panel is-active" id="college-counseling">
+<div class="tabs-panel" id="college-counseling">
     <h1>College Counseling</h1>
     <hr>
 

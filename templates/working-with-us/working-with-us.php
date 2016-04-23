@@ -4,7 +4,7 @@
  **/
 ?>
 
-<div class="tabs-panel tab-block" id="wwu-overview">
+<div class="tabs-panel tab-block is-active" id="wwu-overview">
 	<h2>Working With Us</h2>
 
 	<hr>
