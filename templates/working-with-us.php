@@ -15,6 +15,7 @@ get_header(); ?>
     <div class="page-wrap">
         
         <?php include(locate_template('templates/working-with-us/tab-menu.php' )); ?>
+        <?php include(locate_template('templates/working-with-us/working-with-us.php' )); ?>
         <?php include(locate_template('templates/working-with-us/college-counseling.php' )); ?>
         <?php include(locate_template('templates/working-with-us/coxswain-program.php' )); ?>  
         <?php include(locate_template('templates/working-with-us/intl-applicants.php' )); ?> 

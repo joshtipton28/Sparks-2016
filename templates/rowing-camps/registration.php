@@ -47,14 +47,15 @@
 		        <?php
 			        $registrationID = get_sub_field('regatta_registration_id');
 			        $registrationStatus = get_sub_field('registration_status');
+			        $conversionlink = get_sub_field ('custom_link');
 		        ?>
 
 		        <td>
-		        	<a onclick="_gaq.push(['_trackEvent', 'Outbound Links', 'Click', 'NYC Reg']);" class="button
+		        	<a class="button
 		        		<?php
 		        			if ($registrationStatus == 'Open') echo 'success';
 		        			else echo 'alert';?>"
-		        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
+		        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
 		        		?>
 	        		</a>
 				</td>
@@ -74,15 +75,16 @@
 
 		        $registrationID = get_sub_field('regatta_registration_id');
 		        $registrationStatus = get_sub_field('registration_status');
+		        $conversionlink = get_sub_field ('custom_link');
 
 	        ?>
 
 			<td>
-	        	<a onclick="_gaq.push(['_trackEvent', 'Outbound Links', 'Click', 'NYC Reg']);" class="button
+	        	<a class="button
 	        		<?php
 	        			if ($registrationStatus == 'Open') echo 'success';
 	        			else echo 'alert';?>"
-	        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
+	        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
 	        		?>
 	        	</a>
 			</td>
@@ -101,14 +103,15 @@
 	        <?php
 		        $registrationID = get_sub_field('regatta_registration_id');
 		        $registrationStatus = get_sub_field('registration_status');
+		        $conversionlink = get_sub_field ('custom_link');
 	        ?>
 
 	        <td>
-	        	<a onclick="_gaq.push(['_trackEvent', 'Outbound Links', 'Click', 'NYC Reg']);" class="button
+	        	<a class="button
 	        		<?php
 	        			if ($registrationStatus == 'Open') echo 'success';
 	        			else echo 'alert';?>"
-	        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
+	        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
 	        		?>
 	        	</a>
 			</td>
@@ -128,15 +131,16 @@
 
 		        $registrationID = get_sub_field('regatta_registration_id');
 		        $registrationStatus = 'Open';
+		        $conversionlink = get_sub_field ('custom_link');
 
 	        ?>
 
 	        <td>
-	        	<a onclick="_gaq.push(['_trackEvent', 'Outbound Links', 'Click', 'NYC Reg']);" class="button
+	        	<a class="button
 		        		<?php
 		        			if ($registrationStatus == 'Open') echo 'success';
 		        			else echo 'alert';?>"
-		        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
+		        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
 		        		?>
 	        	</a>
 			</td>
