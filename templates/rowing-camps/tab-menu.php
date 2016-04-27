@@ -11,7 +11,13 @@
 	$campName = get_field('camp_name');
 	$campLocation = get_field('camp_location');
 ?>
-
+        <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery("a.register-button").click(function() {
+                ga('send', 'event', 'Camp Registration', 'Click', 'Registration - <?php echo $campTitle ?> - <?php echo $campLocation ?>', '150'); 
+            });            
+        });
+        </script>
 
 	<div class="camps-tab tabs-content nano has-scrollbar large-8 columns end" data-tabs-content="rowing-camp-tabs">
         <div class="nano-content">
@@ -25,7 +31,7 @@
                 </li>
                 <li class="horizontal tabs-title"><a href="#camp-details">Details</a></li>
                 <li class="horizontal tabs-title">
-                    <a href="#camp-registration">
+                    <a class="register-button" href="#camp-registration">
                         <?php if ($programType == 'program') echo 'Apply';
                             else echo 'Registration'; ?>
                     </a>
