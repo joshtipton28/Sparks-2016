@@ -3,7 +3,33 @@
  * Template part for Working With Us - Tab Menu Navigation
  **/
 ?>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        function open_tab() {
+            if(window.location.hash){
+                jQuery('li.tabs-title a').each(function(){
+                    var hash = '#' + jQuery(this).attr('href').split('#')[1];
+                    if(hash === window.location.hash){
+                        jQuery(this).click();
+			jQuery(".nano").nanoScroller({ scroll: 'top' });
+                    }
+                });        
+            }
+        }        
 
+        jQuery(window).bind('hashchange', function() {
+            open_tab();
+        });
+        
+        jQuery("li.tabs-title a").click(function(){
+            var hash =jQuery(this).attr('href').split('#')[1];
+            window.location.hash = hash;
+        });
+
+        open_tab();
+    });
+    
+</script>
 <div class="row">
     <div class="tabs-wrap medium-4 columns">
         <div class="tab-accordion show-for-small-only">
