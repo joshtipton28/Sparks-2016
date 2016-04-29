@@ -11,35 +11,70 @@ function open_tab(tab_id,panel) {
 }
 
 
-/*Enableing On-page deep-linking
+/*Enabling On-page deep-linking
 *
 * Add internal link class to each on page internal link that you create.
 *
-* $(".college-counseling-link").on('click',function() { $("#working-with-us").foundation("selectTab",$("#college-counseling"))});
-*		^ class to give internal link on page				^ tab menu tab_id   							^target tab ID
 */
 
-$(".college-counseling").on('click',function() { $("#working-with-us").foundation("selectTab",$("#college-counseling"))});
-$(".coxswain-program").on('click',function() { $("#working-with-us").foundation("selectTab",$("#coxswain-program"))});
-$(".internal-applicants").on('click',function() { $("#working-with-us").foundation("selectTab",$("#internal-applicants"))});
-$(".gap-year-advising").on('click',function() { $("#working-with-us").foundation("selectTab",$("#gap-year-advising"))});
-$(".reports-from-the-front").on('click',function() { $("#working-with-us").foundation("selectTab",$("#reports-from-the-front"))});
-$(".our-approach").on('click',function() { $("#working-with-us").foundation("selectTab",$("#our-approach"))});
-$(".counseling-testimonials").on('click',function() { $("#working-with-us").foundation("selectTab",$("#counseling-testimonials"))});
-$(".rowing-camp-testimonials").on('click',function() { $("#working-with-us").foundation("selectTab",$("#rowing-camp-testimonials"))});
-$(".coxswain-testimonials").on('click',function() { $("#working-with-us").foundation("selectTab",$("#coxswain-testimonials"))});
+
+function changeTabHandler(tabGroupId, tabId) {
+  return function(e) {
+    e.preventDefault();
+    var ret = $(tabGroupId).foundation("selectTab", $(tabId));
+    return false;
+  }
+}
+
+$(".college-counseling").on('click',changeTabHandler("#working-with-us","#college-counseling"));
+$(".coxswain-program").on('click',changeTabHandler("#working-with-us","#coxswain-program"));
+$(".internal-applicants").on('click',changeTabHandler("#working-with-us","#internal-applicants"));
+$(".gap-year-advising").on('click',changeTabHandler("#working-with-us","#gap-year-advising"));
+$(".reports-from-the-front").on('click',changeTabHandler("#working-with-us","#reports-from-the-front"));
+$(".our-approach").on('click',changeTabHandler("#working-with-us","#our-approach"));
+$(".counseling-testimonials").on('click',changeTabHandler("#working-with-us","#counseling-testimonials"));
+$(".rowing-camp-testimonials").on('click',changeTabHandler("#working-with-us","#rowing-camp-testimonials"));
+$(".coxswain-testimonials").on('click',changeTabHandler("#working-with-us","#coxswain-testimonials"));
 
 //Rowing Camp Internal Deep Linking
-$(".camp-overview").on('click',function() { $("#rowing-camp-tabs").foundation("selectTab",$("#camp-overview"))});
-$(".camp-staff").on('click',function() { $("#rowing-camp-tabs").foundation("selectTab",$("#camp-staff"))});
-$(".camp-details").on('click',function() { $("#rowing-camp-tabs").foundation("selectTab",$("#camp-details"))});
-$(".camp-registration").on('click',function() { $("#rowing-camp-tabs").foundation("selectTab",$("#camp-registration"))});
-$(".camp-schedule").on('click',function() { $("#rowing-camp-tabs").foundation("selectTab",$("#camp-schedule"))});
+$(".camp-overview").on('click',changeTabHandler("#rowing-camp-tabs","#camp-overview"));
+$(".camp-staff").on('click',changeTabHandler("#rowing-camp-tabs","#camp-staff"));
+//$(".camp-details").on('click',changeTabHandler("#rowing-camp-tabs","#camp-details"));
+$(".camp-registration").on('click', changeTabHandler('#rowing-camp-tabs','#camp-registration'));
+$(".camp-schedule").on('click',changeTabHandler("#rowing-camp-tabs","#camp-schedule"));
 
 //About Us Internal Deep Linking
-$(".overview").on('click',function() { $("#about-us").foundation("selectTab",$("#overview"))});
-$(".leadership").on('click',function() { $("#about-us").foundation("selectTab",$("#leadership"))});
-$(".counseling-associates").on('click',function() { $("#about-us").foundation("selectTab",$("#counseling-associates"))});
-$(".coxing-associates").on('click',function() { $("#about-us").foundation("selectTab",$("#coxing-associates"))});
-$(".international-associates").on('click',function() { $("#about-us").foundation("selectTab",$("#international-associates"))});
-$(".administrative-associates").on('click',function() { $("#about-us").foundation("selectTab",$("#administrative-associates"))});
+$(".overview").on('click',changeTabHandler("#about-us","#overview"));
+$(".leadership").on('click',changeTabHandler("#about-us","#leadership"));
+$(".counseling-associates").on('click',changeTabHandler("#about-us","#counseling-associates"));
+$(".coxing-associates").on('click',changeTabHandler("#about-us","#coxing-associates"));
+$(".international-associates").on('click',changeTabHandler("#about-us","#international-associates"));
+$(".administrative-associates").on('click',changeTabHandler("#about-us","#administrative-associates"));
+
+
+//Enabling Hash in Address Bar to Enable Back Button
+
+jQuery(document).ready(function() {
+        function open_tab() {
+            if(window.location.hash){
+                jQuery('li.tabs-title a').each(function(){
+                    var hash = '#' + jQuery(this).attr('href').split('#')[1];
+                    if(hash === window.location.hash){
+                        jQuery(this).click();
+			jQuery(".nano").nanoScroller({ scroll: 'top' });
+                    }
+                });
+            }
+        }
+
+        jQuery(window).bind('hashchange', function() {
+            open_tab();
+        });
+
+        jQuery("li.tabs-title a").click(function(){
+            var hash =jQuery(this).attr('href').split('#')[1];
+            window.location.hash = hash;
+        });
+
+        open_tab();
+    });
