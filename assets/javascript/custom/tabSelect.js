@@ -50,31 +50,3 @@ $(".counseling-associates").on('click',changeTabHandler("#about-us","#counseling
 $(".coxing-associates").on('click',changeTabHandler("#about-us","#coxing-associates"));
 $(".international-associates").on('click',changeTabHandler("#about-us","#international-associates"));
 $(".administrative-associates").on('click',changeTabHandler("#about-us","#administrative-associates"));
-
-
-//Enabling Hash in Address Bar to Enable Back Button
-
-jQuery(document).ready(function() {
-        function open_tab() {
-            if(window.location.hash){
-                jQuery('li.tabs-title a').each(function(){
-                    var hash = '#' + jQuery(this).attr('href').split('#')[1];
-                    if(hash === window.location.hash){
-                        jQuery(this).click();
-			jQuery(".nano").nanoScroller({ scroll: 'top' });
-                    }
-                });
-            }
-        }
-
-        jQuery(window).bind('hashchange', function() {
-            open_tab();
-        });
-
-        jQuery("li.tabs-title a").click(function(){
-            var hash =jQuery(this).attr('href').split('#')[1];
-            window.location.hash = hash;
-        });
-
-        open_tab();
-    });
