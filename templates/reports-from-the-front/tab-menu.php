@@ -6,7 +6,7 @@
 <div class="tabs-wrap medium-4 columns">
   <h3>Working With Us</h3>
       <ul class="tabs vertical">
-        <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/#wwu-overview">Working With Us<i class="fa fa-chevron-right"></i></a></li>
+        <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/#working-with-us-overview">Working With Us<i class="fa fa-chevron-right"></i></a></li>
         <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/#college-counseling">College Counseling<i class="fa fa-chevron-right"></i></a></li>
         <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/#coxswain-program">Coxswain Program<i class="fa fa-chevron-right"></i></a></li>
         <li class="tabs-title"><a href="<?php echo home_url();?>/working-with-us/#international-applicants">International Applicants<i class="fa fa-chevron-right"></i></a></li>
