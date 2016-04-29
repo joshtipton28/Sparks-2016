@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
                     var hash = '#' + jQuery(this).attr('href').split('#')[1];
                     if(hash === window.location.hash){
                         jQuery(this).click();
-            jQuery(".nano").nanoScroller({ scroll: 'top' });
+                        jQuery(".nano").nanoScroller({ scroll: 'top' });
                     }
                 });
             }
@@ -24,6 +24,7 @@ jQuery(document).ready(function() {
         jQuery("li.tabs-title a").click(function(){
             var hash =jQuery(this).attr('href').split('#')[1];
             window.location.hash = hash;
+            jQuery(".show-for-small-only li.accordion-item.is-active > a").click();
         });
 
         open_tab();

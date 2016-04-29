@@ -1,9 +1,9 @@
 <div class="camp-accordion large-3 columns">
-
+    
   <?php /*Mobile Accordion Menu */ ?>
   <div class="tab-accordion hide-for-large">
     <ul class="accordion" data-accordion  data-allow-all-closed="true">
-      <li class="accordion-item is-active" data-accordion-item>
+      <li class="accordion-item <?php if(get_the_title() == 'Rowing Camps') { ?>is-active<?php } ?>" data-accordion-item>
         <a href="#" class="accordion-title"><h3><?php the_title();?><i class="fa fa-chevron-down"></i></h3></a>
           <div class="accordion-content" data-tab-content>
             <ul class="menu vertical nested accordion" data-accordion data-allow-all-closed="true">

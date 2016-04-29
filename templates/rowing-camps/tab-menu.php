@@ -4,7 +4,33 @@
  * Navigation for Tab Menus and opening HTML
  **/
 ?>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+        function open_tab() {
+            if(window.location.hash){
+                jQuery('li.tabs-title a').each(function(){
+                    var hash = '#' + jQuery(this).attr('href').split('#')[1];
+                    if(hash === window.location.hash){
+                        jQuery(this).click();
+                        jQuery(".nano").nanoScroller({ scroll: 'top' });
+                    }
+                });
+            }
+        }
 
+        jQuery(window).bind('hashchange', function() {
+            open_tab();
+        });
+
+        jQuery("li.tabs-title a").click(function(){
+            var hash =jQuery(this).attr('href').split('#')[1];
+            window.location.hash = hash;
+            
+        });
+
+        open_tab();
+    });
+</script>
 <?php
 	$showSchedule = get_field('show_schedule');
 	$campTitle = get_field('camp_title');
