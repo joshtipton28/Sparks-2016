@@ -52,7 +52,7 @@ p.wp-caption-text {
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px / 1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -6185,8 +6185,7 @@ table.hover tr:nth-of-type(even):hover {
  * remove :focus style via What Input using progressive enhancement
  * so :focus isn't left broken if JavaScript fails
  */
-[data-whatinput="mouse"] a:focus, button:focus
-[data-whatinput="touch"] a:focus, button:focus {
+[data-whatinput="mouse"] a:focus, button:focus [data-whatinput="touch"] a:focus, button:focus {
   outline: none; }
 
 hr {
@@ -6704,7 +6703,7 @@ li.tabs-title {
   position: relative; }
   @media screen and (min-width: 64em) {
     .tabs-content {
-      height: 76vh; } }
+      height: 77vh; } }
   @media screen and (min-height: 600px) and (max-height: 670px) {
     .tabs-content {
       height: 67vh; } }
