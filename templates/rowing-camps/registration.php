@@ -52,8 +52,8 @@
 
 		        <td>
 		        	<a class="button
-		        		<?php
-		        			if ($registrationStatus == 'Open') echo 'success';
+		        		<?php /*Adds Correct Button Class*/
+		        			if ($registrationStatus != 'Closed') echo 'success';
 		        			else echo 'alert';?>"
 		        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
 		        		?>
@@ -82,7 +82,7 @@
 			<td>
 	        	<a class="button
 	        		<?php
-	        			if ($registrationStatus == 'Open') echo 'success';
+	        			if ($registrationStatus != 'Closed') echo 'success';
 	        			else echo 'alert';?>"
 	        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
 	        		?>
@@ -109,7 +109,7 @@
 	        <td>
 	        	<a class="button
 	        		<?php
-	        			if ($registrationStatus == 'Open') echo 'success';
+	        			if ($registrationStatus != 'Closed') echo 'success';
 	        			else echo 'alert';?>"
 	        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
 	        		?>
@@ -138,7 +138,7 @@
 	        <td>
 	        	<a class="button
 		        		<?php
-		        			if ($registrationStatus == 'Open') echo 'success';
+		        			if ($registrationStatus != 'Closed') echo 'success';
 		        			else echo 'alert';?>"
 		        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
 		        		?>
