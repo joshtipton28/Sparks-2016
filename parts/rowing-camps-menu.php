@@ -1,3 +1,8 @@
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+       jQuery(".show-for-large ul li.active").parents('li.accordion-item').find('a').click(); 
+    });
+</script>
 <div class="camp-accordion large-3 columns">
     
   <?php /*Mobile Accordion Menu */ ?>
