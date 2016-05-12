@@ -25,18 +25,27 @@ jQuery(document).ready(function() {
         jQuery("li.tabs-title a").click(function(){
             var hash =jQuery(this).attr('href').split('#')[1];
             window.location.hash = hash;
-            
+
         });
 
         open_tab();
     });
 </script>
+
 <?php
 	$showSchedule = get_field('show_schedule');
 	$campTitle = get_field('camp_title');
 	$campName = get_field('camp_name');
 	$campLocation = get_field('camp_location');
 ?>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery("a.register-button").click(function() {
+        ga('send', 'event', 'Camp Registration', 'Click', 'Registration - <?php echo $campTitle ?> - <?php echo $campLocation ?>', '150');
+    });
+});
+</script>
 
 	<div class="camps-tab tabs-content nano has-scrollbar large-8 columns end" data-tabs-content="rowing-camp-tabs">
         <div class="nano-content">
