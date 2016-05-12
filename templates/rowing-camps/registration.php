@@ -45,19 +45,26 @@
 		    <?php while( have_rows('week_one_registration_links') ): the_row(); ?>
 
 		        <?php
+		        	$linkType = get_sub_field('link_type');
 			        $registrationID = get_sub_field('regatta_registration_id');
 			        $registrationStatus = get_sub_field('registration_status');
-			        $conversionlink = get_sub_field ('custom_link');
+			        $customURL = get_sub_field ('custom_url');
 		        ?>
 
 		        <td>
-		        	<a class="button
-		        		<?php /*Adds Correct Button Class*/
-		        			if ($registrationStatus != 'Closed') echo 'success';
-		        			else echo 'alert';?>"
-		        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
-		        		?>
-	        		</a>
+		        	<?php if ($linkType == 1) : ?>
+			        	<a class="button
+			        		<?php /*Adds Correct Button Class*/
+			        			if ($registrationStatus != 'Closed') echo 'success';
+			        			else echo 'alert';?>"
+			        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1" target="_blank"><?php echo $registrationStatus;
+			        		?>
+		        		</a>
+		        	<?php elseif ($linkType == 2) : ?>
+
+		        		<?php echo $customURL; ?>
+
+		        	<?php endif; ?>
 				</td>
 
 		    <?php endwhile; ?>
@@ -75,7 +82,7 @@
 
 		        $registrationID = get_sub_field('regatta_registration_id');
 		        $registrationStatus = get_sub_field('registration_status');
-		        $conversionlink = get_sub_field ('custom_link');
+
 
 	        ?>
 
@@ -84,7 +91,7 @@
 	        		<?php
 	        			if ($registrationStatus != 'Closed') echo 'success';
 	        			else echo 'alert';?>"
-	        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
+	        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1" target="_blank"><?php echo $registrationStatus;
 	        		?>
 	        	</a>
 			</td>
@@ -103,7 +110,7 @@
 	        <?php
 		        $registrationID = get_sub_field('regatta_registration_id');
 		        $registrationStatus = get_sub_field('registration_status');
-		        $conversionlink = get_sub_field ('custom_link');
+
 	        ?>
 
 	        <td>
@@ -111,7 +118,7 @@
 	        		<?php
 	        			if ($registrationStatus != 'Closed') echo 'success';
 	        			else echo 'alert';?>"
-	        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
+	        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1" target="_blank"><?php echo $registrationStatus;
 	        		?>
 	        	</a>
 			</td>
@@ -130,8 +137,7 @@
 	        <?php
 
 		        $registrationID = get_sub_field('regatta_registration_id');
-		        $registrationStatus = 'Open';
-		        $conversionlink = get_sub_field ('custom_link');
+		        $registrationStatus = get_sub_field('registration_status');
 
 	        ?>
 
@@ -140,7 +146,7 @@
 		        		<?php
 		        			if ($registrationStatus != 'Closed') echo 'success';
 		        			else echo 'alert';?>"
-		        		<?php echo $conversionlink;?> href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1"><?php echo $registrationStatus;
+		        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1" target="_blank"><?php echo $registrationStatus;
 		        		?>
 	        	</a>
 			</td>
