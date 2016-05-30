@@ -82,28 +82,34 @@ jQuery(document).ready(function() {
 
 	if( have_rows('week_two_registration_links') ): ?>
 		<tr>
-			<?php if ($programType == 'camp') echo '<th>Week 2</th>'; //adding Week 2 TH for Camps only ?>
-	    <?php while( have_rows('week_two_registration_links') ): the_row(); ?>
+			<?php if ($programType == 'camp') echo '<th>Week 2</th>'; //adding Week 1 TH for Camps only ?>
 
-	        <?php
+		    <?php while( have_rows('week_two_registration_links') ): the_row(); ?>
 
-		        $registrationID = get_sub_field('regatta_registration_id');
-		        $registrationStatus = get_sub_field('registration_status');
+		        <?php
+		        	$linkType = get_sub_field('link_type');
+			        $registrationID = get_sub_field('regatta_registration_id');
+			        $registrationStatus = get_sub_field('registration_status');
+			        $customURL = get_sub_field ('custom_url');
+		        ?>
 
+		        <td>
+		        	<?php if ($linkType == 1) : ?>
+			        	<a class="button
+			        		<?php /*Adds Correct Button Class*/
+			        			if ($registrationStatus != 'Closed') echo 'success';
+			        			else echo 'alert';?>"
+			        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1" target="_blank"><?php echo $registrationStatus;
+			        		?>
+		        		</a>
+		        	<?php elseif ($linkType == 2) : ?>
 
-	        ?>
+		        		<?php echo $customURL; ?>
 
-			<td>
-	        	<a class="button
-	        		<?php
-	        			if ($registrationStatus != 'Closed') echo 'success';
-	        			else echo 'alert';?>"
-	        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1" target="_blank"><?php echo $registrationStatus;
-	        		?>
-	        	</a>
-			</td>
+		        	<?php endif; ?>
+				</td>
 
-	    <?php endwhile; ?>
+		    <?php endwhile; ?>
 	    </tr>
 	<?php endif; ?>
 
@@ -111,26 +117,34 @@ jQuery(document).ready(function() {
 
 	if( have_rows('week_three_registration_links') ): ?>
 	 	<tr>
-	 		<?php if ($programType == 'camp') echo '<th>Week 3</th>'; //adding Week 3 TH for Camps only ?>
-	    <?php while( have_rows('week_three_registration_links') ): the_row(); ?>
+			<?php if ($programType == 'camp') echo '<th>Week 3</th>'; //adding Week 1 TH for Camps only ?>
 
-	        <?php
-		        $registrationID = get_sub_field('regatta_registration_id');
-		        $registrationStatus = get_sub_field('registration_status');
+		    <?php while( have_rows('week_three_registration_links') ): the_row(); ?>
 
-	        ?>
+		        <?php
+		        	$linkType = get_sub_field('link_type');
+			        $registrationID = get_sub_field('regatta_registration_id');
+			        $registrationStatus = get_sub_field('registration_status');
+			        $customURL = get_sub_field ('custom_url');
+		        ?>
 
-	        <td>
-	        	<a class="button
-	        		<?php
-	        			if ($registrationStatus != 'Closed') echo 'success';
-	        			else echo 'alert';?>"
-	        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1" target="_blank"><?php echo $registrationStatus;
-	        		?>
-	        	</a>
-			</td>
+		        <td>
+		        	<?php if ($linkType == 1) : ?>
+			        	<a class="button
+			        		<?php /*Adds Correct Button Class*/
+			        			if ($registrationStatus != 'Closed') echo 'success';
+			        			else echo 'alert';?>"
+			        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1" target="_blank"><?php echo $registrationStatus;
+			        		?>
+		        		</a>
+		        	<?php elseif ($linkType == 2) : ?>
 
-	    <?php endwhile; ?>
+		        		<?php echo $customURL; ?>
+
+		        	<?php endif; ?>
+				</td>
+
+		    <?php endwhile; ?>
 	    </tr>
 	<?php endif; ?>
 
@@ -138,27 +152,34 @@ jQuery(document).ready(function() {
 
 	if( have_rows('week_four_registration_links') ): ?>
 		<tr>
-			<?php if ($programType == 'camp') echo '<th>Week 4</th>'; //adding Week 4 TH for Camps only ?>
-	    <?php while( have_rows('week_four_registration_links') ): the_row(); ?>
+			<?php if ($programType == 'camp') echo '<th>Week 4</th>'; //adding Week 1 TH for Camps only ?>
 
-	        <?php
+		    <?php while( have_rows('week_four_registration_links') ): the_row(); ?>
 
-		        $registrationID = get_sub_field('regatta_registration_id');
-		        $registrationStatus = get_sub_field('registration_status');
+		        <?php
+		        	$linkType = get_sub_field('link_type');
+			        $registrationID = get_sub_field('regatta_registration_id');
+			        $registrationStatus = get_sub_field('registration_status');
+			        $customURL = get_sub_field ('custom_url');
+		        ?>
 
-	        ?>
+		        <td>
+		        	<?php if ($linkType == 1) : ?>
+			        	<a class="button
+			        		<?php /*Adds Correct Button Class*/
+			        			if ($registrationStatus != 'Closed') echo 'success';
+			        			else echo 'alert';?>"
+			        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1" target="_blank"><?php echo $registrationStatus;
+			        		?>
+		        		</a>
+		        	<?php elseif ($linkType == 2) : ?>
 
-	        <td>
-	        	<a class="button
-		        		<?php
-		        			if ($registrationStatus != 'Closed') echo 'success';
-		        			else echo 'alert';?>"
-		        		href="https://www.regattacentral.com/cart/index.jsp?job_id=1621&amp;sid_<?php echo $registrationID;?>=1" target="_blank"><?php echo $registrationStatus;
-		        		?>
-	        	</a>
-			</td>
+		        		<?php echo $customURL; ?>
 
-	    <?php endwhile; ?>
+		        	<?php endif; ?>
+				</td>
+
+		    <?php endwhile; ?>
 	    </tr>
 	<?php endif; ?>
 	</tbody>
