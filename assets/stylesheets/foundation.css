@@ -3743,7 +3743,7 @@ label {
   font-size: 0.875rem;
   font-weight: normal;
   line-height: 1.8;
-  color: #0a0a0a; }
+  color: #ffffff; }
   label.middle {
     margin: 0 0 1rem;
     padding: 0.5625rem 0; }
@@ -6574,6 +6574,46 @@ p {
     font-weight: 600; }
   .camp-schedule .dropdown-pane a {
     color: #1770ca; }
+
+.form-packet {
+  margin: 0 !important; }
+  .form-packet li {
+    list-style: none; }
+
+.form-toggle .gfield_label {
+  display: block !important;
+  margin: 0 !important; }
+
+.form-toggle input {
+  display: none; }
+
+.form-toggle .ginput_container {
+  display: inline-block;
+  float: left;
+  margin-top: 0 !important; }
+  .form-toggle .ginput_container label {
+    margin-left: 0 !important;
+    cursor: pointer;
+    color: #b2d6ff;
+    font-size: 1rem; }
+
+.form-toggle .gfield_description {
+  display: inline-block !important;
+  max-width: 50%;
+  margin-left: 4px;
+  font-size: 1rem !important;
+  line-height: 1 !important;
+  padding: 0 !important; }
+
+.gform_footer input[type='submit'] {
+  background: #1770ca; }
+
+.gform_wrapper {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.gform_wrapper .gform_footer {
+  padding: 0 !important; }
 
 /* Styles for Foundation Tabs used in:
   - About Us

@@ -1,10 +1,10 @@
 <script type="text/javascript">
     jQuery(document).ready(function() {
-       jQuery(".show-for-large ul li.active").parents('li.accordion-item').find('a').click(); 
+       jQuery(".show-for-large ul li.active").parents('li.accordion-item').find('a').click();
     });
 </script>
-<div class="camp-accordion large-3 columns">
-    
+<div class="camp-accordion large-3 columns end">
+
   <?php /*Mobile Accordion Menu */ ?>
   <div class="tab-accordion hide-for-large">
     <ul class="accordion" data-accordion  data-allow-all-closed="true">

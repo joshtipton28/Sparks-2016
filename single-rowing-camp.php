@@ -32,6 +32,7 @@ get_header(); ?>
 						if ($programType == 'camp')
 							include(locate_template('templates/rowing-camps/schedule.php' ));
 					?>
+					<?php include(locate_template('templates/rowing-camps/camp-forms.php' )); ?>
 
 		<?php endwhile;?>
 
