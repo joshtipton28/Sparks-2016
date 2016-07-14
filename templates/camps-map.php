@@ -32,6 +32,8 @@ get_header(); ?>
 					<?php include(locate_template('templates/camp-maps/florida.php' )); ?>
 					<?php include(locate_template('templates/camp-maps/new_zealand.php' )); ?>
 					<?php include(locate_template('templates/camp-maps/holland.php' )); ?>
+					<?php include(locate_template('templates/camp-maps/sandiego.php' )); ?>
+					<?php include(locate_template('templates/camp-maps/austin.php' )); ?>
 					<?php include(locate_template('templates/camp-maps/map-legend.php' )); ?>
 				</div>
 			</div>

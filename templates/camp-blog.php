@@ -16,6 +16,7 @@ get_header(); ?>
 		<div class="page-wrap">
 		  <?php include(locate_template('templates/camp-blog/tab-menu.php' )); ?>
 		  <?php include(locate_template('templates/camp-blog/all-posts.php' )); ?>
+		  <?php include(locate_template('templates/camp-blog/holland.php' )); ?>
 		  <?php include(locate_template('templates/camp-blog/sparks-summer-camp.php' )); ?>
 		  <?php include(locate_template('templates/camp-blog/coxswains-only.php' )); ?>
 		  <?php include(locate_template('templates/camp-blog/florida-winter-camps.php' )); ?>

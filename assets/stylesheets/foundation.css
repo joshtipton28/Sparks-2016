@@ -6613,7 +6613,11 @@ p {
   padding: 0 !important; }
 
 .gform_wrapper .gform_footer {
-  padding: 0 !important; }
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.gform_wrapper ul.gfield_checkbox li {
+  margin: 0 !important; }
 
 /* Styles for Foundation Tabs used in:
   - About Us
@@ -6913,6 +6917,14 @@ li.tabs-title {
 .holland-camp {
   top: 35%;
   left: 48%; }
+
+.sandiego-camp {
+  top: 42%;
+  left: 9.25%; }
+
+.austin-camp {
+  top: 47%;
+  left: 22%; }
 
 .summer-camp .dropdown-pane {
   background: rgba(255, 102, 0, 0.65); }

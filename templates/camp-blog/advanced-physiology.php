@@ -24,6 +24,8 @@
 
 				<?php while ( $physioCampBlog->have_posts() ) : $physioCampBlog->the_post();?>
 
+					<?php $test = get_the_terms(); echo $test;?>
+
 				<?php
 
 					$post_month = get_the_date('F');
