@@ -13,17 +13,22 @@ get_header(); ?>
 	  <div class="row">
 	    <?php include(locate_template('parts/rowing-camps-menu.php' )); ?>
 
-	        	<div class="camps-tab tabs-content nano has-scrollbar large-8 columns end" data-tabs-content="rowing-camp-tabs">
-			        <div class="nano-content">
-			        	<h2><?php the_title(); ?></h2>
-			        	<hr>
-			        		<?php if ( have_posts() ) : ?>
-								<?php while ( have_posts() ) : the_post(); ?>
+	    	<?php if ( have_posts() ) : ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php $content = get_the_content(); ?>
+					<?php if (!empty($content) ): ?>
+			        	<div class="camps-tab tabs-content nano has-scrollbar large-8 columns end" data-tabs-content="rowing-camp-tabs">
+					        <div class="nano-content">
+					        	<h2><?php the_title(); ?></h2>
+					        	<hr>
+
 									<?php the_content(); ?>
-								<?php endwhile; ?>
-							<?php endif; ?>
-			        </div>
-		        </div>
+
+					        </div>
+				        </div>
+				    <?php endif; ?>
+		    	<?php endwhile; ?>
+			<?php endif; ?>
 
 
 	</div>
