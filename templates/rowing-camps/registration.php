@@ -17,7 +17,7 @@
 ?>
 <script type="text/javascript">
 jQuery(document).ready(function() {
-    jQuery(".registration-table a").click(function() {
+    jQuery(".registration table a").click(function() {
         ga('send', 'event', 'Camp Registration', 'Click', 'Registration - <?php echo get_field('camp_title') ?> - <?php echo get_field('camp_location') ?>', '150');
     });
 });
