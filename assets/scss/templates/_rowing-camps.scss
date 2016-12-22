@@ -134,6 +134,7 @@
   @include breakpoint(small only) {
       .tabs{
         text-align: center;
+        border: 0;
 
         a{
           font-weight: 300 !important;
