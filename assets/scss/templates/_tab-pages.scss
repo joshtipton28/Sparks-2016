@@ -237,5 +237,8 @@ li.tabs-title{
   }
 }
 .vertical{
-  border-color: #222;
+  border: 0;
+}
+.tabs-content.vertical{
+  border: 0;
 }
